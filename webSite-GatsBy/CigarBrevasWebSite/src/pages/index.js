@@ -7,10 +7,15 @@ import Seo from "../components/seo"
 
 
 const IndexPage = () => (
-  <main>
-    <h1>Hi people</h1>
-    <p>Welcome to your new Gatsby site.</p>
-  </main>
+
+  <main className="bg-main">
+  <div class="left"></div>
+  <div class="right"></div>
+
+  <div className="absolute text-3xl font-bold font-[bungee] font-color[main]"> fentuchinis</div>
+
+</main>
+
 )
 
 /**
@@ -18,6 +23,12 @@ const IndexPage = () => (
  *
  * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
  */
-export const Head = () => <Seo title="Home" />
+export const Head = () =>
+  <>
 
+    <title>Puros Brevas&reg;</title>
+    <meta name="description" content="Cigarros Brevas Web Page" />
+
+
+</>
 export default IndexPage
