@@ -58,9 +58,9 @@ const IndexPage = () => (
 
 <StaticImage src="../assets/images/page1/colombia.webp" alt="Imagen abuela torcedora trabajadora" className="aspect-square  w-1/5 h-1/5 object-cover  pointer-events-none user-select-none"
   layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
-  />  
- 
- 
+  />
+
+
 </section>
 
 </div>  {/* Columna 4 */}
