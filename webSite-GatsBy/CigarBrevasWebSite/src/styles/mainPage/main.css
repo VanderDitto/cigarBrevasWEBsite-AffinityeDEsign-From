@@ -57,32 +57,61 @@ body {
     font-optical-sizing: auto;
   }
 
-/*
-.bg-main {
-  @apply h-screen bg-gradient-to-r from-[#f5e6d3] to-[#4caf50];
-}
-*/
 main {
-
-    display: flex;
-    height: 100vh; /* ocupa toda la pantalla */
-    @apply w-[88%]  mx-auto  my-0;
-
+  display: flex;
+  flex-direction: column; /* Móvil por defecto */
+  
+  /* SOLUCIÓN FULL PANTALLA */
+  min-height: 100vh;           /* Fallback para navegadores viejos */
+  min-height: 100svh;          /* "Small Viewport Height": ignora barras dinámicas */
+  min-height: -webkit-fill-available; /* Ajuste específico para Safari/iOS */
+  
+  @apply w-full mx-auto my-0;
 }
 
+/* El iPad Pro tiene resoluciones altas (1024px o más), 
+   ajustamos el breakpoint para que se vea en paralelo (fila) */
+@media (min-width: 1024px) {
 
+  main {
+    flex-direction: row;
+    @apply w-[88%]; /* Aplicamos el ancho reducido solo en pantallas grandes */
+  }
+
+  main .left, main .right {
+  flex: 1;
+  width: 100%; /* En móvil ocupan todo el ancho */
+                          }
+
+}
 main .left {
   flex: 1;
-  background: linear-gradient(to bottom, #f5e6d3, #f4a261); /* beige → naranja */
+  background: linear-gradient(to bottom, #f5e6d3, #f4a261);
+  /* Eliminamos el w-1/2 fijo para que flex-1 haga el trabajo */
 }
 
 main .right {
   flex: 1;
-  background: linear-gradient(-45deg, #755431 3px, #74A865 , #74A865 12px, #74A865 ); /* verde pastel → verde medio */
+  background: linear-gradient(-45deg, #755431 3px, #74A865, #74A865 12px, #74A865);
+}
+
+/* Cuando la pantalla sea mediana (tablet/pc) se ponen de lado */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .left, main .right {
+    width: 50%; /* En iPad Pro/PC ocupan la mitad cada uno */
+  }
 }
 
 
+
 .text-bungeespice{
+
 
     font-size: clamp(3rem, 4vw + 0.5rem, 5.5rem);
     font-family: 'Bungee Tint', cursive;
@@ -92,6 +121,7 @@ main .right {
 
 }
 .text-bungeespice-3xl{
+
     font-size: clamp(1rem, 2vw + 0.5rem, 3.5rem);
     font-family: 'Bungee Tint', cursive;
     font-weight: bolder;

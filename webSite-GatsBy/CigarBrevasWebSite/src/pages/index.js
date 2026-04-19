@@ -24,14 +24,14 @@ const IndexPage = () => (
   </div>
 
   <div className="relative w-dvh h-dvh flex items-center justify-center">
-    <div className="mt-[4svh] ml-[12rem] ">SUFICIENTE</div>
+    <div className="mt-[4svh] ml-[12rem]">SUFICIENTE</div>
   </div>
 
 
   <div className="ml-[27svw] mt-[1rem] mb-[2rem] mx-auto text-fluid">
     PARA FUMAR?
     <div className="flex justify-end-safe items-stretch float-right">
-       <StaticImage src="../assets/images/page1/icon-alarm.webp" alt="Imagen Cortadora de Cigarro Brevas" className=" w-33  col-start-4 row-start-3  right-0 object-cover  pointer-events-none  user-select-none"
+      <StaticImage src="../assets/images/page1/icon-alarm.webp" alt="Imagen Icon Alarm" className="aspect-square  w-33  col-start-4 row-start-3  right-0 object-cover  pointer-events-none block  user-select-none"
     layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
   />
     </div>
@@ -46,17 +46,33 @@ const IndexPage = () => (
   <div className="bg-black/1"></div>   {/* Columna 1 */}
   <div className="bg-black/1"></div>   {/* Columna 2 */}
 
-  <StaticImage src="../assets/images/page1/perilla-cigar-Brevas.webp" alt="Imagen perillas bitola N°5" className="w-full h-full object-cover  pointer-events-none user-select-none"
+  <StaticImage src="../assets/images/page1/perilla-cigar-Brevas.webp" alt="Imagen perillas bitola N°5" className="aspect-square  w-full h-full object-cover  pointer-events-none user-select-none"
   layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
   /> {/* Columna 3 */}
-  <div className="bg-black/1"></div>   {/* Columna 4 */}
+
+
+
+<div className="bg-black/50">
+
+<section className="w-full  h-full flex items-center wrap justify-center">
+
+<StaticImage src="../assets/images/page1/colombia.webp" alt="Imagen abuela torcedora trabajadora" className="aspect-square  w-1/5 h-1/5 object-cover  pointer-events-none user-select-none"
+  layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
+  />  
+ 
+ 
+</section>
+
+</div>  {/* Columna 4 */}
+
+
 
   {/* Fila 2 */}
- <StaticImage src="../assets/images/page1/fachada-cigar-Brevas.webp" alt="Imagen perillas bitola N°5" className="w-1/2 h-1/2 object-cover  pointer-events-none user-select-none"
+ <StaticImage src="../assets/images/page1/fachada-cigar-Brevas.webp" alt="Imagen fachada de Cigar Brevas" className="aspect-square  w-1/2 h-1/2 object-cover  pointer-events-none user-select-none"
   layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
   />
 
-  <StaticImage src="../assets/images/page1/abue-rosa-cigar-Brevas.webp" alt="Imagen perillas bitola N°5" className="w-full h-full object-cover  pointer-events-none user-select-none"
+  <StaticImage src="../assets/images/page1/abue-rosa-cigar-Brevas.webp" alt="Imagen abuela torcedora trabajadora" className="aspect-square  w-full h-full object-cover  pointer-events-none user-select-none"
   layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
   />
 
@@ -69,7 +85,7 @@ const IndexPage = () => (
 
   {/* Fila 3 */}
   <div className="flex justify-start bottom-0 items-stretch">
-  <StaticImage src="../assets/images/page1/rollero-cortadora-cigar-brevas.webp" alt="Imagen Cortadora de Cigarro Brevas" className=" w-3/4 h-3/4 object-cover  pointer-events-none  user-select-none"
+  <StaticImage src="../assets/images/page1/rollero-cortadora-cigar-brevas.webp" alt="Imagen Maquina de Rollero y cortadora" className=" w-3/4 h-3/4 object-cover  pointer-events-none  user-select-none"
   layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
   />
 </div>
@@ -79,7 +95,7 @@ const IndexPage = () => (
 
 
 <div className="flex justify-end-safe items-stretch">
-  <StaticImage src="../assets/images/page1/cigar-Brevas-tabaco-Flor.webp" alt="Imagen Cortadora de Cigarro Brevas" className=" w-33  col-start-4 row-start-3  right-0 object-cover  pointer-events-none  user-select-none"
+  <StaticImage src="../assets/images/page1/cigar-Brevas-tabaco-Flor.webp" alt="Imagen tabaco flor" className=" w-33  col-start-4 row-start-3  right-0 object-cover   pointer-events-none  user-select-none"
     layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
   />
 </div>
@@ -88,12 +104,10 @@ const IndexPage = () => (
 
 </section>
 
-
-<section className="w-full h-dvh flex items-center justify-center absolute left-0 top-0">
-
-
+<section className="w-full h-dvh flex  items-center justify-center absolute left-0 top-0">
 
 </section>
+
 
   </main>
 
