@@ -1,14 +1,14 @@
 import * as React from "react"
 import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
-
+import  Btn_select  from "../components/Btn-y&n"
 
 import Seo from "../components/seo"
 
 
 const IndexPage = () => (
 
-  <main className="bg-main  relative left-0 top-0 w-[85%] h-dvh">
+  <main className="bg-main  relative left-0 top-0 w-[7] h-dvh">
   <div class="left"></div>
   <div class="right"></div>
 
@@ -16,14 +16,14 @@ const IndexPage = () => (
 
   {/* Primer div con grid responsivo */}
   <div className="grid place-items-center w-full px-4 sm:px-8 md:px-16 lg:px-24">
-    <span className="mr-[41rem] mt-[4rem]  text-fluid">Você tem </span>
+    <span className="mr-[4rem] mt-[4rem] w-full text-fluid">Você tem </span>
   </div>
 
   <div className="w-dvh ml-[22rem] mt-[2rem]  mx-auto text-[clamp(1rem,2vw+0.5rem,2.5rem)]">
     IDADE
   </div>
 
-  <div className="relative w-dvh h-dvh flex items-center justify-center">
+  <div className="relative w-[85%] h-dvh flex items-center justify-center">
     <div className="mt-[4svh] ml-[12rem]">SUFICIENTE</div>
   </div>
 
@@ -54,11 +54,25 @@ const IndexPage = () => (
 
 <div className="bg-black/50">
 
-<section className="w-full  h-full flex items-center wrap justify-center">
 
-<StaticImage src="../assets/images/page1/colombia.webp" alt="Imagen abuela torcedora trabajadora" className="aspect-square  w-1/5 h-1/5 object-cover  pointer-events-none user-select-none"
+<section className="w-full gap-4 h-full flex items-center  justify-center">
+<Btn_select />
+<span className="text-white text-xl  font-bold">Co </span>
+<StaticImage src="../assets/images/page1/colombia.webp" alt="Imagen Bandera Colombia" className="inline-block align-middle w-9 h-9 mr-2 rounded-full object-cover pointer-events-none user-select-none"
+  layout="constrained"  placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
+/>
+
+
+  <span className="text-white text-xl font-bold">Br</span>
+<StaticImage src="../assets/images/page1/Brazil.webp" alt="Imagen bandera de Brazil" className="inline-block align-middle w-9 h-9 mr-2 rounded-full object-cover pointer-events-none user-select-none"
   layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
   />
+
+<span className="text-white text-xl font-bold">USA</span>
+  <StaticImage src="../assets/images/page1/usa.webp" alt="Imagen Bandera" className="inline-block align-middle w-9 h-9 mr-2 rounded-full object-cover pointer-events-none user-select-none"
+  layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
+  />
+
 
 
 </section>
@@ -78,10 +92,11 @@ const IndexPage = () => (
 
   <div className="bg-black/1"></div>
 
-  <StaticImage src="../assets/images/page1/solo-cortadora-Cigar-brevas.webp" alt="Imagen Cortadora de Cigarro Brevas" className=" w-3/4 h-3/4 object-cover  pointer-events-none  user-select-none"
+<div className="flex justify-end-safe items-stretch">
+  <StaticImage src="../assets/images/page1/solo-cortadora-Cigar-Brevas.webp" alt="Imagen Cortadora de Cigarro Brevas" className=" w-3/4 h-3/4 object-cover  pointer-events-none right-0    user-select-none"
   layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
   />
-
+</div>
 
   {/* Fila 3 */}
   <div className="flex justify-start bottom-0 items-stretch">
@@ -95,7 +110,7 @@ const IndexPage = () => (
 
 
 <div className="flex justify-end-safe items-stretch">
-  <StaticImage src="../assets/images/page1/cigar-Brevas-tabaco-Flor.webp" alt="Imagen tabaco flor" className=" w-33  col-start-4 row-start-3  right-0 object-cover   pointer-events-none  user-select-none"
+  <StaticImage src="../assets/images/page1/cigar-Brevas-tabaco-Flor.webp" alt="Imagen tabaco flor" className=" w-33  col-start-4 row-start-3  right-0 object-cover   pointer-events-none  user-select-none "
     layout="constrained" placeholder = "dominantColor" onContextMenu={(e) => e.preventDefault()}
   />
 </div>

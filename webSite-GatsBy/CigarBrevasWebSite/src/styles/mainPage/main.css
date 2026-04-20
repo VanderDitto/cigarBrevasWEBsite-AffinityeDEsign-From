@@ -75,7 +75,7 @@ main {
 
   main {
     flex-direction: row;
-    @apply w-[88%]; /* Aplicamos el ancho reducido solo en pantallas grandes */
+    @apply w-[78%]; /* Aplicamos el ancho reducido solo en pantallas grandes */
   }
 
   main .left, main .right {
