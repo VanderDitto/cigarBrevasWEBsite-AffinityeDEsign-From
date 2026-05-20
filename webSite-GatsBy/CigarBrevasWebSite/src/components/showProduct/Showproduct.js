@@ -217,7 +217,9 @@ El cigarro nace de la constacia  del buen esmero y de la pasión que, durante ge
 
 
 
-
+                    <span className = "text-white">
+                        <img src="/static/cigar-vitola/compra-cigars-brevas/-name-enterprice-rec.webp" alt="Imagen Corazón" className="object-cover pointer-events-none select-none w-[content] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
+                         </span>
 
 
             </section>
