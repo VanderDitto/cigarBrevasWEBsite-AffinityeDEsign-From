@@ -73,7 +73,7 @@ if(previum_index != index_product_num){
 
 
 return <>
-<section className =' w-[78vw] relative top-0 left-0  z-1  m-auto h-full bg-white flex flex-col items-center justify-center '>
+<section className =' w-[81vw] relative top-0 left-0  z-1  m-auto h-full bg-white flex flex-col items-center justify-center '>
 
 
             <section className = 'grid  grid-cols-2   border-amber-300 border-2  w-full h-full '>
@@ -106,7 +106,7 @@ return <>
 
                              
 
-                        <div className = "w-[8vw] h-auto absolute top-[23%]  m-auto z-18 cursor-pointer mt-29  flex-end right-[-3rem]" >
+                        <div className = "w-[8vw] h-auto absolute top-[12%]  m-auto z-18 cursor-pointer mt-29  flex-end right-[-3rem]" >
                                         
                                             <StaticImage
                                             src="../../static/cigar-vitola/-pluss-count.webp"
@@ -189,7 +189,7 @@ El cigarro nace de la constacia  del buen esmero y de la pasión que, durante ge
     </span>
 
 
-                        <div className = "w-[32vw] h-auto bottom-17 m-auto flex flex-col items-center justify-center relative align-content:space-between ">
+                        <div className = "w-[32vw] h-auto bottom-[calc(15%-9em)] m-auto flex flex-col items-center justify-center relative align-content:space-between ">
                                             <StaticImage
                                             src="../../static/cigar-vitola/-base-circular.webp"
                                             alt="Imagen Base circular Cigar"
@@ -213,13 +213,15 @@ El cigarro nace de la constacia  del buen esmero y de la pasión que, durante ge
                         </div>
            
                </div>
+
+                <span className = "text-white w-[50%] h-[content]  m-auto z-12 flex items-center justify-center   mt-5 ">
+                        <img src="/cigar-vitola/compra-cigars-brevas/-name-enterprice-rec.webp" alt="Imagen name marcas REgistradas" className="object-cover pointer-events-none select-none w-[content] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
+                         </span>
                     </div>
 
 
 
-                    <span className = "text-white">
-                        <img src="/static/cigar-vitola/compra-cigars-brevas/-name-enterprice-rec.webp" alt="Imagen Corazón" className="object-cover pointer-events-none select-none w-[content] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
-                         </span>
+                   
 
 
             </section>

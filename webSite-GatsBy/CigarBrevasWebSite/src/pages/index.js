@@ -326,15 +326,17 @@ const IndexPage = () => {
 
     </div>
 
-<div className = "h-[20px] pt-2 top-[15px] relative w-full m-auto mt-16"></div>
-      <div className="h-screen w-full relative flex flex-col justify-center   left-0 top-43  m-auto ">
-        <Showproduct  className = "absolute min-h-screen  block-2 "/>
+<div className = "h-[20px] pt-2 top-[15px] relative w-full m-auto mt-1 border-red-700 bg-red-800 block"></div>
+      <div className="h-screen w-full relative flex flex-col justify-center   left-0 top-0  m-auto ">
+        <Showproduct  className = " min-h-screen  block-2 "/>
       </div>
 
-<div className = "h-[22px]  relative w-full m-auto top-[10]">f</div>
-        <div className=" h-[content] bg-[#FFA800] top-3 ">
+
+{/* 
+<div className = "h-[22px]  relative w-full m-auto center "></div>
+    
         <Footer />
-        </div>
+     */}
 
 
 

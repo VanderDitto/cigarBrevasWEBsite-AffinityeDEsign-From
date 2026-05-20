@@ -4,9 +4,7 @@ import { StaticImage } from "gatsby-plugin-image";
 const Footer = () => {
   return (
     <>
-      <footer className="bg-[#FFA800] w-screen h-[43%]  mt-6  border-t-2 border-[#bf5512] relative  top-50  flex flex-col items-center justify-center">
-
-
+      <footer className="bg-[#FFA800] w-screen h-auto    border-t-2 border-[#bf5512] relative    flex flex-row items-center justify-center">
 
 
     <div className= " grid   grid-cols-[2fr_2fr_1fr_1fr]   m-auto gap-4 w-full border-2 border-red-900 ">
