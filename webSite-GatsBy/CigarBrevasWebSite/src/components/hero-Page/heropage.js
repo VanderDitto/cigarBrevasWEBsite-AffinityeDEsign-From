@@ -5,7 +5,7 @@ const Heropage_features = () => {
     <>
       <section
         id="features"
-        className="py-12 pl-7.5 w-full h-screen bg-[url('../../assets/images/page2/Background-image-cigar-Brevas.webp')] bg-cover bg-center relative flex justify-between items-center z-50"
+        className="py-12 pl-7.5 w-full h-screen bg-[url('../../assets/images/page2/Background-Image-cigar-Brevas.webp')] bg-cover bg-center relative flex justify-between items-center z-50"
       >
         <div
           className="bg-[url('../../assets/images/page2/logo-cigar-brevas.webp')] bg-no-repeat bg-contain bg-center w-[49svh] h-40 absolute bottom-12"
