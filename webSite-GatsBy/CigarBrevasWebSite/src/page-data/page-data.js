@@ -23,9 +23,9 @@ const Info_Vitola = {
 
     Show_Card: [
 
-      { id: 1, src_image1: "/cigar-vitola/compra-cigars-brevas/7-mini/-caja-10-unidaddes-mini.webp", item_product_cuantiti: "Cigar Brevas MINI-Exquisito ", cantidad_unidades:"CAJA DE CARTON 10 UNIDADES" ,src_image2: "/cigar-vitola/compra-cigars-brevas/7-mini/-cigar-medida-mini.webp",  num_item:"1/12", src_image3:"/cigar-vitola/compra-cigars-brevas/7-mini/mini-2.jpg" , precio: '50000' ,  } ,
+      { id: 1, src_image1: "/cigar-vitola/compra-cigars-brevas/7-mini/-caja-10-unidaddes-mini.webp", item_product_cuantiti: "Cigar Brevas MINI-Exquisito ", cantidad_unidades:"CAJA DE CARTON 10 UNIDADES" ,src_image2: "/cigar-vitola/compra-cigars-brevas/7-mini/-cigar-medida-mini.webp",  num_item:"1/12", src_image3:"/cigar-vitola/compra-cigars-brevas/7-mini/mini-2.jpg" , precio: '50.000' ,  } ,
 
-      { id: 2, src_image1: "/cigar-vitola/compra-cigars-brevas/2-churchill/churchill-2.jpg" , item_product_cuantiti: "Cigar Brevas CHURCHILL <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/2-churchill/-cigar-unidad-medida-churchill.webp" , num_item:"2/12", src_image3: "/cigar-vitola/compra-cigars-brevas/2-churchill/churchill-show.webp" , precio: "186.000" } ,
+      { id: 2, src_image1: "/cigar-vitola/compra-cigars-brevas/2-churchill/churchill-2.jpg" , item_product_cuantiti: "Cigar Brevas CHURCHILL <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/2-churchill/-cigar-unidad-medida-churchill.webp" , num_item:"2/12", src_image3: "/cigar-vitola/compra-cigars-brevas/2-churchill/-cigar-churchill-show.jpg" , precio: "186.000" } ,
 
       { id: 2, src_image1: "/cigar-vitola/compra-cigars-brevas/2-churchill/cigar-breva-caja-churchill.png" , item_product_cuantiti: "Cigar Brevas CHURCHILL <u>CAJA DE MADERA 25 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/2-churchill/-cigar-unidad-medida-churchill.webp" , num_item:"2/12", src_image3: "/cigar-vitola/compra-cigars-brevas/2-churchill/churchill5_g.jpg" , precio: "515.000" } ,
 

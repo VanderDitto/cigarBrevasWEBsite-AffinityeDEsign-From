@@ -53,7 +53,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
     //                     bg-[linear-gradient(45deg,#D5D1CD,#D1C8C0,#C2AB94,#BC9B7B,#BB9B7C,#C89C6F)] ">
 
 
-
+<> 
  <section className = " bg-[url('../../static/cigar-vitola/fondo_2.jpg')] bg-cover  w-[88vw] relative top-[3rem] left-0   z-1  m-auto h-[content]" >
 
 
@@ -415,7 +415,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
 
 
     </section>
-
+</>
 
 );
 };

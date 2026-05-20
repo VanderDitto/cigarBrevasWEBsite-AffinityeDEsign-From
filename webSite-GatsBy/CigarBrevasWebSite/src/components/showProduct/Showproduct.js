@@ -10,6 +10,7 @@ const Showproduct = () => {
 const data_cigar = useMemo(() => CigarVitolas_Price, []);
 
 let previum_index = 0;
+let id_preview = "numero_1";
 // ✅ Estado que guarda el índice del producto seleccionado
 const [selectedIndex, setSelectedIndex] = useState(0);
 
@@ -25,26 +26,37 @@ const precio            = selected_card.precio;
 
 
 // ✅ Handler: actualiza el estado → React re-renderiza automáticamente
-const Handle_InfCigar = (index_product) => {
+const Handle_InfCigar = (index_product,id_TOcall) => {
 
 console.log("Producto seleccionado:", index_product);
 
-console.log("Producto seleccionado:", index_product);
-   let index_product_num = index_product.split("_")[1];
-    
-    setSelectedIndex(index_product_num);
+
+
+//    let index_product_num = index_product.split("_")[1];
+
+    let index_product_num = index_product;
+
 
 if(previum_index != index_product_num){
 
 
-    document.getElementById(index_product).classList.add("underline-estilo");
-    document.getElementById(previum_index).classList.remove("underline-estilo");
+    document.getElementById(id_TOcall).classList.add("underline-estilo");
+
+    id_preview = "numero_" + index_product_num;
+
+    document.getElementById(id_preview).classList.remove("underline-estilo");
 
     previum_index = index_product_num;
-}else {
+    
+setSelectedIndex(index_product_num);
+
+
+        }else {
 
 // document.getElementById(index_product).classList.add("underline-estilo");
-}
+
+        }
+
 };
 
 //         // Consulta el precio del dólar en pesos colombianos
@@ -104,7 +116,7 @@ return <>
 
                                  </div>
 
-                             
+                            
 
                         <div className = "w-[8vw] h-auto absolute top-[12%]  m-auto z-18 cursor-pointer mt-29  flex-end right-[-3rem]" >
                                         
@@ -118,33 +130,37 @@ return <>
                         </div>
                                             </div>
 
-<p  className = "pl-2 text-[2.4em]  text-right  right-12 font-semibold text-[#783689] m-2 relative" >${precio} COP</p>
+ <p  className = "pl-2 text-[2.4em]  text-right  right-12 font-semibold text-[#783689] m-2 relative" >${precio} COP</p>
 
-                                 <span id = "find_cigar" className = "w-[full] h-[content] flex-row m-auto z-12 items-center  justify-center mt-2 mb-1 "> 
+                    <span id = "find_cigar" className = "w-[full] h-[content] flex-row-reverse flex flex-row gap-5 m-auto z-12 items-center space-even justify-center mt-2 mb-1 "> 
                                   
-                                 
+                                 <span className = "w-[content] h-[content] cursor-pointer z-12 flex-inline  ">  
 
-                                <div className = "w-[3vw] h-[content] cursor-pointer z-12 flex items-center justify-center ">
-                                         <img src= "/cigar-vitola/-left-signus.webp"  alt="Imagen left-sign" className="object-cover  cursor-pointer select-none w-[43px] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
-                                         </div>
+  <span className = " underline-estilo font-medium text-[1.8em] ml-7" > {cantidad_unidades}  </span>
+</span>
 
-                                         <span className = " block-[content]  ">
-                                        <h2 class = "font-name-vitolas m-3 bottom-6 relative block-1" >
+                                <div className = "w-[content] h-[content] cursor-pointer z-12 flex-inline  ">
+                                    <img src= "/cigar-vitola/-right-signus.webp"  alt="Imagen left-sign" className="object-cover  cursor-pointer select-none w-[content] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
+                                </div>
+
+                                <span className = " relative flex-inline flex-col items-center justify-center  z-12">
+                                        <h2 class = "font-name-vitolas ml-5  relative bg-red-700" >
                                             {name_cigar}
                                         </h2>
+                                        <span className="relative ">
+                                        <p className = " text-[1.7em] font-bold text-black ml-5 pl-8 relative left-8  center" >&nbsp; {item_count} </p>
+                                        </span>
+                                
                                 </span>
                                         
 
-                    <div className = "w-[3vw] h-[content] cursor-pointer   z-12 flex items-center justify-center  ">
-                         <img src= "/cigar-vitola/-right-signus.webp"  alt="Imagen right-sign" className="object-cover cursor-pointer select-none w-[35px] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
+                    <span className = "w-[content] h-[content] cursor-pointer   z-12  ">
+                         <img src= "/cigar-vitola/-left-signus.webp"  alt="Imagen right-sign" className = "object-cover cursor-pointer select-none w-[content] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
 
-<p className = "pl-2 text-[1.7em] font-bold text-black m-8  relative " >&nbsp; {item_count} </p>
-  <span className = " underline-estilo font-medium text-[1.3em]" > {cantidad_unidades}  </span>
-
-                                         </div>
+                                </span>
 
 
-                                         </span>
+                                </span>
 
   
 
@@ -155,38 +171,71 @@ El cigarro nace de la constacia  del buen esmero y de la pasión que, durante ge
                                     </div>
                         </div>
 
-                    <div className = "flex flex-col items-center justify-center center space-between h-auto w-fulll bg-red-700">
+                    <div className = "flex flex-col items-center justify-center center space-between h-auto w-fulll ">
 
-    <span className = "w-[full] h-[auto]  space m-7 font-name-vitolas  mb-[0rem] bg-[#E1E4E9] z-12 flex wrap-normal flex-row "> 
+    <span className = "w-[full] h-[13vh] letter-spacing-[5px]  m-7 font-name-vitolas  mb-[0rem] bg-[#E1E4E9] z-12 flex wrap-normal flex-row ">  
 
        
 
-<span id="numero_1"  onClick={()=>Handle_InfCigar(0)} className = "block m-3 underline-estilo cursor-pointer select-none" > Brevas Mini-exquisito
+<span id="numero_1"  onClick={()=>Handle_InfCigar(0,"numero_1")} className = "flex flex-col items-center justify-center relative m-3 underline-estilo cursor-pointer select-none" > Brevas<br /> Mini-exquisito
             
-<span className = "absolute top-[18.5rem] z-11 left-[8.5rem] ">  
+<span className = "absolute top-[18.5rem] z-11 left-[8.5rem] ">
 
-</span>
+        </span>
 
-</span>
+            </span>
 
-	    <span id="numero_2" onClick={()=>Handle_InfCigar(1)} className = "block m-3 select-none cursor-pointer " > Brevas Churchill 
-            
-<span className = "absolute top-[18.5rem] z-11 left-[8.5rem] ">  
+<span className = "flex flex-col items-center justify-center relative"> 
+            <span className = "  bg-red-600 w-[18px]  h-[27px] relative  text-center text-white text-[15px]  ">10</span>  
+	    <span id="numero_2" onClick={()=>Handle_InfCigar( 1, "numero_2" )} className = "text-center  flex justify-center items-center m-0 select-none cursor-pointer relative" >
+             Brevas Churchill
+              </span> 
+           <span className = "  bg-red-600 w-5 h-[50px] text-center text-[15px]  text-white"> 22 </span>
+           
+            </span>
+{/* <span className = "absolute top-[18.5rem] z-11 left-[8.5rem] ">  
 
-</span>
-             </span> 
+</span> */}
+             
 
 
-	    <span id="numero_3" className = "block m-3">Brevas  Panetela </span> <span id="numero_4" className = "block m-3"> Brevas Aromado </span>
+	    <span id="numero_3" className = " m-6 text-center  flex justify-center items-center  select-none">Brevas <br /> Panetela </span> 
+        
+        
+        <span className = "flex flex-col items-center justify-center relative"> 
+
+        <span className = "  bg-red-600 w-[18px]  h-[27px] relative  text-center text-white text-[15px] "> 10 </span>
+        <span id="numero_4" className = "  text-center flex justify-center items-center  select-none mr-[5px]"> Brevas <br />Aromado  </span>
+        <span className =  "  bg-red-600 w-[18px] h-[27px] text-center text-[15px]  text-white"> 25 </span>
+                       
                         </span>
+ </span>
+
+<span id="box"  className = "w-[full] h-[14vh] mt-5 font-name-vitolas font-light text-[4.26em] space-around  mb-[1rem] bg-[#E1E4E9] z-12 flex wrap-normal flex-row " >
+<span id="numero_6" className = "block m-3 flex justify-center items-center m-0 select-none"> Brevas <br /> Purito </span> 
+ 
 
 
-    <span id="box"  className = "w-[full] h-[auto] font-name-vitolas font-light text-[4.26em] space  m-1 mb-[0rem] bg-[#E1E4E9] z-12 flex wrap-normal flex-row " >
+<span className = " flex flex-col items-center justify-center relative"> 
 
- <span id="numero_6" className = "block m-3"> Brevas Purito </span> <span id="numero_7" className = "block m-3"> Brevas Robusto </span> <span id="numero_8" className = "block m-3"> Brevas N°5</span>
-<span id="numero_9" className = "block m-3">Brevas Torpedo </span>
+ <span className = "  bg-red-600 w-[18px] h-[27px]  text-center text-white text-[15px] "> 10 </span>
+ <span id="numero_7" className = "block m-0 text-center flex justify-center items-center m-0 select-none"> Brevas <br /> Robusto </span> 
+  <span className = "  bg-red-600 w-5 h-[70px]  text-center text-white text-[15px]  "> 25 </span>
+ </span>
 
-    </span>
+
+
+<span id="numero_8" className = " m-8 flex-col items-center flex relative   "> Brevas <br /> N°5</span>
+
+
+<span span className = "flex flex-col  m-8 items-center justify-center relative">
+<span className = "  bg-red-600 w-[18px] h-[27px]  text-center text-white text-[15px] "> 10 </span>
+<span id="numero_9" className = "  text-center flex justify-center items-center  select-none">Brevas <br /> Torpedo </span>
+<span className = "  bg-red-600 w-[18px] h-[70px]  text-center text-white text-[15px] "> 25 </span>
+</span>
+    
+
+ </span>
 
 
                         <div className = "w-[32vw] h-auto bottom-[calc(15%-9em)] m-auto flex flex-col items-center justify-center relative align-content:space-between ">
@@ -198,9 +247,9 @@ El cigarro nace de la constacia  del buen esmero y de la pasión que, durante ge
                                             onContextMenu={(e) => e.preventDefault()}
                                             />
                        
-                            <div className = "w-[32vw]  border-white  absolute  top-[9vh]  m-auto  h-[5vw] bg-[#783689] border border-1 flex items-center justify-center ">
+                            <div className = "w-[32vw]  border-white  absolute  top-[5vh]  m-auto  h-[7vw] bg-[#783689] border border-1 flex items-center justify-center ">
                            <spand>
-                             <img src={second_image} alt="Imagen single cigar Brevas Vitola" className="object-cover pointer-events-none select-none w-[content] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
+                             <img src={second_image} alt="Imagen single cigar Brevas Vitola" className="bottom-[14px] relative object-cover pointer-events-none select-none w-[content] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
                            </spand>
                         </div>
 
@@ -212,13 +261,17 @@ El cigarro nace de la constacia  del buen esmero y de la pasión que, durante ge
                             </span>
                         </div>
            
-               </div>
 
-                <span className = "text-white w-[50%] h-[content]  m-auto z-12 flex items-center justify-center   mt-5 ">
+<span className = "text-white w-[50%] h-[content]  m-auto z-12 flex items-center justify-center   mt-5 ">
                         <img src="/cigar-vitola/compra-cigars-brevas/-name-enterprice-rec.webp" alt="Imagen name marcas REgistradas" className="object-cover pointer-events-none select-none w-[content] h-[content] " placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
                          </span>
+
+
                     </div>
 
+               </div>
+
+                
 
 
                    
