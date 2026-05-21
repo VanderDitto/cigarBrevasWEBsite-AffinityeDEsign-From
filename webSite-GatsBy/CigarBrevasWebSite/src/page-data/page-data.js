@@ -18,34 +18,44 @@ const Info_Vitola = {
 
   const CigarVitolas_Price = {
 
-    
 
-
-    Show_Card: [
+    Show_Cigar: [
 
       { id: 1, src_image1: "/cigar-vitola/compra-cigars-brevas/7-mini/-caja-10-unidaddes-mini.webp", item_product_cuantiti: "Cigar Brevas MINI-Exquisito ", cantidad_unidades:"CAJA DE CARTON 10 UNIDADES" ,src_image2: "/cigar-vitola/compra-cigars-brevas/7-mini/-cigar-medida-mini.webp",  num_item:"1/12", src_image3:"/cigar-vitola/compra-cigars-brevas/7-mini/mini-2.jpg" , precio: '50.000' ,  } ,
 
       { id: 2, src_image1: "/cigar-vitola/compra-cigars-brevas/2-churchill/churchill-2.jpg" , item_product_cuantiti: "Cigar Brevas CHURCHILL <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/2-churchill/-cigar-unidad-medida-churchill.webp" , num_item:"2/12", src_image3: "/cigar-vitola/compra-cigars-brevas/2-churchill/-cigar-churchill-show.jpg" , precio: "186.000" } ,
 
-      { id: 2, src_image1: "/cigar-vitola/compra-cigars-brevas/2-churchill/cigar-breva-caja-churchill.png" , item_product_cuantiti: "Cigar Brevas CHURCHILL <u>CAJA DE MADERA 25 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/2-churchill/-cigar-unidad-medida-churchill.webp" , num_item:"2/12", src_image3: "/cigar-vitola/compra-cigars-brevas/2-churchill/churchill5_g.jpg" , precio: "515.000" } ,
+      { id: 2, src_image1: "/cigar-vitola/compra-cigars-brevas/2-churchill/cigar-breva-caja-churchill.webp" , item_product_cuantiti: "Cigar Brevas CHURCHILL <u>CAJA DE MADERA 25 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/2-churchill/-cigar-unidad-medida-churchill.webp" , num_item:"2/12", src_image3: "/cigar-vitola/compra-cigars-brevas/2-churchill/-cigar-churchill-show.jpg" , precio: "515.000" } ,
 
-       { id: 3, src_image1: "/cigar-vitola/compra-cigars-brevas/3-panetela/cigar--breva-panetela-4-unidades.jpg" , item_product_cuantiti: "Cigar Brevas PANETELA <u>CAJA DE CARTON 4 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/3-panetela/-medida-unidad-panetela.jpg" , num_item:"3/12", src_image3: "/cigar-vitola/compra-cigars-brevas/2-churchill/-show-panetela.webp" , precio: "57.000" } ,
+       { id: 3, src_image1: "/cigar-vitola/compra-cigars-brevas/3-panetela/-cigar-caja-breva-panetela.webp" , item_product_cuantiti: "Cigar Brevas PANETELA ",  cantidad_unidades:"CAJA DE CARTON 4 UNIDADES"  ,  src_image2: "/cigar-vitola/compra-cigars-brevas/3-panetela/-medida-unidad-panetela.webp" , num_item:"3/12", src_image3: "/cigar-vitola/compra-cigars-brevas/3-panetela/-show-panetela.webp" , precio: "57.000" } ,
 
-        { id: 4, src_image1: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-caja-25-aromados.webp" , item_product_cuantiti: "Cigar Brevas  <u>CAJA DE CARTON 25 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-medida-aromado.webp" , num_item:"4/12", src_image3: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-breva-show.webp" , precio: "95.000" } ,
+        { id: 4, src_image1: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-caja-25-aromados.webp", item_product_cuantiti: "Cigar Brevas", cantidad_unidades: "CAJA DE CARTON 25 UNIDADES", src_image2: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-breva-aromado-medida.webp", num_item:"4/12", src_image3: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-show-breva-25.webp", precio: "95.000" } ,
 
-         { id: 4, src_image1: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-caja10--aromados.webp" , item_product_cuantiti: "Cigar Brevas  <u>CAJA DE CARTON 25 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-medida-aromado.webp" , num_item:"4/12", src_image3: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-breva-show.webp" , precio: "50.000" } ,
+         { id: 4, src_image1: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-caja-10-aromados.png", item_product_cuantiti: "Cigar Brevas", cantidad_unidades: "CAJA DE CARTON 10 UNIDADES", src_image2: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-breva-aromado-medida.webp", num_item:"4/12", src_image3: "/cigar-vitola/compra-cigars-brevas/4-aromado/-cigar-show-breva-25.webp", precio: "50.000" } ,
 
 
          { id: 5, src_image1: "/cigar-vitola/compra-cigars-brevas/5-purito/-cigar-purito-caja-10.webp" , item_product_cuantiti: "Cigar Brevas PURITO <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/5-purito/unidad-medida-purito.webp" , num_item:"5/12", src_image3: "/cigar-vitola/compra-cigars-brevas/5-purito/purito_caja-show.jpg" , precio: "65.000" } ,
 
-        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robusto/-cigar-robusto-caja-10-unidades.webp" , item_product_cuantiti: "Cigar Brevas ROBUSTO <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/6-robusto/-medida-unidad-robusto.jpg" , num_item:"6/12", src_image3: "/cigar-vitola/compra-cigars-brevas/6-robusto/robusto_caja-show.jpg" , precio: "75.000" } ,
 
-        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robusto/-cigar-caja-20-robusto.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO <u>CAJA DE MADERA 20 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/6-robusto/-medida-unidad-robusto.jpg" , num_item:"6/12", src_image3: "/cigar-vitola/compra-cigars-brevas/8-torpedo/robusto_caja-show.jpg" , precio: "340.000" },
+
+        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robusto/-caja-cigar-10-robusto.webp" , item_product_cuantiti: "Cigar Brevas ROBUSTO" , cantidad_unidades: "CAJA DE CARTON 10 UNIDADES" , src_image2: "/cigar-vitola/compra-cigars-brevas/6-robusto/cigar-robustos-unidad.webp" , num_item:"6/12", src_image3: "/cigar-vitola/compra-cigars-brevas/6-robusto/-cigar-robusto-show.jpg" , precio: "75.000" } ,
+
+
+
+        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robusto/-cigar-caja-20-robusto.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO" ,
+          cantidad_unidades: "CAJA DE MADERA 20 UNIDADES" ,
+           src_image2: "/cigar-vitola/compra-cigars-brevas/6-robusto/cigar-robustos-unidad.webp" , num_item:"6/12", src_image3: "/cigar-vitola/compra-cigars-brevas/6-robusto/-cigar-robusto-show.jpg" , precio: "340.000" },
+
+
 
          { id: 7, src_image1: "/cigar-vitola/compra-cigars-brevas/7-numero5/-cigar-numero5-caja-10-unidades.webp" , item_product_cuantiti: "Cigar Brevas NUMERO 5 <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/7-numero5/-medida-unidad-numero5.jpg" , num_item:"7/12", src_image3: "/cigar-vitola/compra-cigars-brevas/7-numero5/numero5_caja-show.jpg" , precio: "70.000" } ,
 
+
+
          { id: 8, src_image1: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-torpedo-caja-10-unidades.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-medida-unidad-torpedo.jpg" , num_item:"8/12", src_image3: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-show-torpedo.webp" , precio: "415.000" } ,
 
+
+         
         { id: 8, src_image1: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-caja20-torpedo.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO <u>CAJA DE MADERA 20 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-medida-unidad-torpedo.webp" , num_item:"8/12", src_image3: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-show-torpedo.webp" , precio: "80.000" }
 
     ]
