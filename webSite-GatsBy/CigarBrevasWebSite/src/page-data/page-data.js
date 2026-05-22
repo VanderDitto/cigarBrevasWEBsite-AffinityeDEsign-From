@@ -38,25 +38,25 @@ const Info_Vitola = {
 
 
 
-        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robusto/-caja-cigar-10-robusto.webp" , item_product_cuantiti: "Cigar Brevas ROBUSTO" , cantidad_unidades: "CAJA DE CARTON 10 UNIDADES" , src_image2: "/cigar-vitola/compra-cigars-brevas/6-robusto/cigar-robustos-unidad.webp" , num_item:"6/12", src_image3: "/cigar-vitola/compra-cigars-brevas/6-robusto/-cigar-robusto-show.jpg" , precio: "75.000" } ,
+        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robustos/-caja-cigar-10-robusto.webp" , item_product_cuantiti: "Cigar Brevas ROBUSTO" , cantidad_unidades: "CAJA DE CARTON 10 UNIDADES" , src_image2: "/cigar-vitola/compra-cigars-brevas/6-robustos/cigar-robustos-unidad.webp" , num_item:"6/12", src_image3: "/cigar-vitola/compra-cigars-brevas/6-robustos/-cigar-robusto-show.webp" , precio: "75.000" } ,
 
 
 
-        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robusto/-cigar-caja-20-robusto.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO" ,
+        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robustos/-cigar-caja-20-robusto.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO" ,
           cantidad_unidades: "CAJA DE MADERA 20 UNIDADES" ,
-           src_image2: "/cigar-vitola/compra-cigars-brevas/6-robusto/cigar-robustos-unidad.webp" , num_item:"6/12", src_image3: "/cigar-vitola/compra-cigars-brevas/6-robusto/-cigar-robusto-show.jpg" , precio: "340.000" },
+           src_image2: "/cigar-vitola/compra-cigars-brevas/6-robustos/cigar-robustos-unidad.webp" , num_item:"6/12", src_image3: "/cigar-vitola/compra-cigars-brevas/6-robustos/-cigar-robusto-show.webp" , precio: "340.000" },
 
 
 
-         { id: 7, src_image1: "/cigar-vitola/compra-cigars-brevas/7-numero5/-cigar-numero5-caja-10-unidades.webp" , item_product_cuantiti: "Cigar Brevas NUMERO 5 <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/7-numero5/-medida-unidad-numero5.jpg" , num_item:"7/12", src_image3: "/cigar-vitola/compra-cigars-brevas/7-numero5/numero5_caja-show.jpg" , precio: "70.000" } ,
+         { id: 7, src_image1: "/cigar-vitola/compra-cigars-brevas/7-numero5/-cigar-caja-numero5.webp" , item_product_cuantiti: "Cigar Brevas NUMERO 5 <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/7-numero5/medida-numero5-cigarBreva.webp" , num_item:"7/12", src_image3: "/cigar-vitola/compra-cigars-brevas/7-numero5/numero5_cigar-show.jpg" , precio: "70.000" } ,
 
 
 
-         { id: 8, src_image1: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-torpedo-caja-10-unidades.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-medida-unidad-torpedo.jpg" , num_item:"8/12", src_image3: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-show-torpedo.webp" , precio: "415.000" } ,
+         { id: 8, src_image1: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-caja-cigar-10-torpedo.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO <u>CAJA DE CARTON 10 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-medida-torpedo.webp" , num_item:"8/12", src_image3: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-show-torpedo.webp" , precio: "415.000" } ,
 
 
-         
-        { id: 8, src_image1: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-caja20-torpedo.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO <u>CAJA DE MADERA 20 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-medida-unidad-torpedo.webp" , num_item:"8/12", src_image3: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-show-torpedo.webp" , precio: "80.000" }
+
+        { id: 8, src_image1: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-caja-cigar-25-torpedo.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO <u>CAJA DE MADERA 20 UNIDADES</u>" , src_image2: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-medida-torpedo.webp" , num_item:"8/12", src_image3: "/cigar-vitola/compra-cigars-brevas/8-torpedo/-cigar-show-torpedo.webp" , precio: "80.000" }
 
     ]
 

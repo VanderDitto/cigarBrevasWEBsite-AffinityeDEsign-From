@@ -30,7 +30,7 @@ const precio            = selected_card.precio;
 // ✅ Handler: actualiza el estado → React re-renderiza automáticamente
 const Handle_InfCigar = (index_product,id_TOcall) => {
 
-console.log("Producto seleccionado:", index_product,  " lklkl" , id_);
+console.log("Producto seleccionado:", index_product,  " lklkl" , id_TOcall);
 
 
 
@@ -239,9 +239,9 @@ El cigarro nace de la constacia  del buen esmero y de la pasión que, durante ge
 
 
 <span span className = "flex flex-col  m-8 items-center justify-center relative">
-<span className = "  bg-red-600 w-[18px] h-[27px]  text-center text-white text-[15px] "> 10 </span>
+<span id="numero_11" onClick={()=>Handle_InfCigar( 10, "numero_11" )} className = "  bg-red-600 w-[18px] h-[27px]  text-center text-white text-[15px] "> 10 </span>
 <span id="numero_9" className = "  text-center flex justify-center items-center  select-none">Brevas <br /> Torpedo </span>
-<span className = "  bg-red-600 w-[18px] h-[70px]  text-center text-white text-[15px] "> 25 </span>
+<span id="numero_12" onClick={()=>Handle_InfCigar( 11, "numero_12" )} className = "  bg-red-600 w-[18px] h-[70px]  text-center text-white text-[15px] "> 25 </span>
 </span>
 
 
