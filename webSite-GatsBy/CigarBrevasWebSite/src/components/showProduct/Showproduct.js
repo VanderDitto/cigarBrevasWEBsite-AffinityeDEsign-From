@@ -30,7 +30,7 @@ const precio            = selected_card.precio;
 // ✅ Handler: actualiza el estado → React re-renderiza automáticamente
 const Handle_InfCigar = (index_product,id_TOcall) => {
 
-console.log("Producto seleccionado:", index_product);
+console.log("Producto seleccionado:", index_product,  " lklkl" , id_);
 
 
 
@@ -46,7 +46,7 @@ if(previum_index != index_product_num){
 
     id_preview = "numero_" + ( previum_index  +  1 );
 
-    console.log("@@@@@@id_preview:::" ,  id_preview);
+                             console.log("@@@@@@id_preview:::" ,  id_preview);
 
     document.getElementById(id_preview).classList.remove("underline-estilo");
 
