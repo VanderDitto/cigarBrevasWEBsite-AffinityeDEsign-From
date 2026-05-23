@@ -28,13 +28,19 @@ const Welcome = () => {
                     {/* Left Column: Torpedo Image & Vertical Text */}
                     <div className="lg:col-span-3 flex flex-row items-center justify-center relative">
                         <div className="relative ">
-                            <p className="text-[#9B7F49] vertical-text font-bold text-2xl uppercase tracking-widest absolute -left-12 top-1/2 -translate-y-1/2 select-none">
+                            {/* <p className="text-[#9B7F49] vertical-text font-bold text-2xl uppercase tracking-widest absolute -left-12 top-1/2 -translate-y-1/2 select-none"> 
                                 {t("hecho")}
-                            </p>
+                            </p> */}
                             <div className="border-8 border-[#F3F4F6] p-4 bg-white shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
                                
-                               <div className = "">
-
+                               <div className = "w-[content] h-auto ">
+                                        <StaticImage
+                                    src="../../assets/images/welcome/foto-7.webp"
+                                    alt="img fundadora cigar brevas"
+                                    className="object-contain w-full max-w-sm"
+                                    placeholder="blurred"
+                                    onContextMenu={(e) => e.preventDefault()}
+                                />
                                </div>
                                
                                 <StaticImage
@@ -95,6 +101,59 @@ const Welcome = () => {
                             </div>
                         </div>
                     </div>
+
+ <div className="lg:col-span-2 flex flex-col items-center  justify-center relative">
+                        <div className="relative h-[12rem] bottom-24">
+                            <p className="text-[#ca8429] ml-3.5 pl-8  h-[1/2] vertical-text font-bold text-2xl uppercase tracking-widest absolute -left-27 top-1/2 -translate-y-[calc(1/2 - 13px)] select-none"> 
+                                {t("hecho")}
+                            </p>
+                            <div className="border-8 border-[#F3F4F6] p-4 bg-white shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                               
+                               <div className = "w-[content] h-[24px] ">
+                                        <StaticImage
+                                    src="../../assets/images/welcome/cigar-moldes-brevas.webp"
+                                    alt="base image"
+                                    className="object-fit w-full h-auto"
+                                    placeholder="blurred"
+                                    onContextMenu={(e) => e.preventDefault()}
+                                />
+                                <span> cigar brevas EN modo de operacion exepcionales descanso para tu paladar</span>
+
+                               </div>
+                                 <div className = "w-[content] h-[24px] ">
+                                        <StaticImage
+                                    src="../../assets/images/welcome/foto-6.webp"
+                                    alt="base image"
+                                    className="object-fit w-full h-auto"
+                                    placeholder="blurred"
+                                    onContextMenu={(e) => e.preventDefault()}
+                                />
+                                <span> cigar brevas EN modo de operacion exepcionales descanso para tu paladar</span>
+                                
+                               </div>
+                               <div className = "w-[content] h-[84px] border border-amber-400 border-3  p-9">
+                                        <StaticImage
+                                    src="../../assets/images/welcome/foto-7.webp"
+                                    alt="base image"
+                                    className="object-fit w-full h-auto"
+                                    placeholder="blurred"
+                                    onContextMenu={(e) => e.preventDefault()}
+                                />
+                               </div>
+                                <StaticImage
+                                    src="../../assets/images/welcome/base.webp"
+                                    alt="base image"
+                                    className="object-contain w-full max-w-sm"
+                                    placeholder="blurred"
+                                    onContextMenu={(e) => e.preventDefault()}
+                                />
+                            </div>
+                            <p className="mt-4 text-center text-sm italic text-gray-500">
+                                Fermentación y paciencia del maestro Torcedor
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
