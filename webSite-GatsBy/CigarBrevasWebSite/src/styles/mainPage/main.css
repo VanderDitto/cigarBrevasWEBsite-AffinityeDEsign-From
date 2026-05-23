@@ -35,7 +35,8 @@ body {
   text-decoration-thickness: 3px; /* grosor */
   text-decoration-style: solid;   /* estilos: solid, dotted, dashed, double, wavy */
   padding:  2px; /* espacio entre texto y subrayado */
-
+          width:44px;
+  background-color: gold;
 }
 
 
@@ -184,7 +185,13 @@ body.no-scroll {
   font-size:1.1em;
   /* font-size: clamp(1.2rem, 0.8vw + 0.3rem, 2.1rem); */
     font-family: 'Funnel Display', "sans";
-    font-weight: 600;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.font-name-vitolas-center{
+
+  font-size: 1.1em;
+  font-weight: 400;
 }
 
 .firstPage-word-font-bold{
