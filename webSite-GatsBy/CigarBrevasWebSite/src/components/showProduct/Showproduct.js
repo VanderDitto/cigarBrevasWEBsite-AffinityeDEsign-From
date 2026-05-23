@@ -95,9 +95,9 @@ const Showproduct = () => {
                                 </span>
                             </div>
 
-                            <div className="top-[2rem] w-[15vw] h-[45vh] border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
+                            <div className="top-[2rem] w-[15vw] h-[45vh] shadow-xl border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
                                 <div className="flex flex-col items-center justify-center w-full h-full md:p-2 p-3">
-                                    <div className="w-full bg-[#783689] md:py-0.5 md:mb-1 py-1 mb-2 rounded">
+                                    <div className="w-full bg-[#783689] shadow-xl md:py-0.5 md:mb-1 py-1 mb-2 rounded">
                                         <p className="text-[1.2rem] md:text-[0.9rem] font-bold text-white select-none uppercase tracking-wider">
                                             voucher
                                         </p>
@@ -182,7 +182,7 @@ const Showproduct = () => {
                                 </span>
                             </span>
 
-                            <span className="top-64 right-4 relative flex-inline flex-col items-center justify-center z-12 ">
+                            <span className="top-45 right-4 relative flex-inline flex-col items-center justify-center z-12 ">
                                 <h2 className=" font-name-vitolas-center  m-2  absolute  bottom-24">
                                     {name_cigar}
                                 </h2>

@@ -52,7 +52,6 @@ body {
 
 
 
-
 #___gatsby,
 #gatsby-focus-wrapper {
   height: 100%;
@@ -178,7 +177,7 @@ body.no-scroll {
 .firstPage-word-font{
     font-size: clamp(0.6rem, 0.6vw + 0.3rem, 1rem);
     font-family: 'Funnel Display', "sans";
-    font-weight: 300;
+    font-weight: 100;
 }
 
 .font-name-vitolas{

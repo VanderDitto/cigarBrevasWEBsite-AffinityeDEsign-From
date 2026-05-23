@@ -7,8 +7,8 @@ const CigarVitolar = () => {
   
 const  data = useMemo(() => ({ Info_Vitola }), []);
 
-  let Show_Image1 = "";
-  let Show_Image2 = "";
+  let Show_Image1 = "/coquet/-cigar-brevas-galery-1.webp";
+  let Show_Image2 = "/coquet/-cigar-brevas-galery-2.webp";
 
    Show_Image1 = data.FirstCardPhoto;
    Show_Image2 = data.SecondCardPhoto;
@@ -75,7 +75,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
   
 
 
-        <span className = "w-[16vw]  h-[1/3] absolute left-0 bottom-0 top-full">
+        <span className = "w-[16vw] z-2 h-[1/3] absolute left-0 bottom-0 top-full">
             <StaticImage
             src="../../static/coquet/-cigar-brevas-noni-torcedorA.webp"
             alt="Imagen cigar Brevas Ubiccacion"
@@ -96,7 +96,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
 
 
         <div className=" flex flex-row w-[85%] bg-[#9B7F49] h-[8%] m-[3rem]  absolute z-[-1]">  </div>
-        <span className = "w-[16vw]  absolute top-0 left-[10%]  h-[1/3]">
+        <span className = "w-[16vw]  absolute top-0 left-[10%]  z-5 h-[1/3]">
             <StaticImage
             src="../../static/coquet/-cigar-brevas-ubicacion.webp"
             alt="Imagen cigar Brevas Ubiccacion"
@@ -111,7 +111,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
 
                       <span className = "w-[content]  relative mt-6  m-5">
                       <img
-                      src = {cardSelected==null?Show_Image1:cardSelected.Image_bitola}
+                      src = {cardSelected==null?"/coquet/-cigar-brevas-galery-1.webp":cardSelected.Image_bitola}
                       alt = "Image Show Cigar Brevas"             // {cardSelected==null?"":cardSelected.title}
                       className="object-cover pointer-events-none select-none pt-2  pl-2 pr-2"
                       placeholder="dominantColor"
@@ -122,13 +122,13 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
                   <div className="w-[content] text-[1.1em]  sulphur-point-bold relative  text-center">
                     <p className = "text-bold p-3 text-[1.6em] bg-amber-300 leading-relaxed tracking-wide whitespace-pre-line"  >  
                       {/* Tradición – Maestría – Calidad  */}
-                      { cardSelected==null?"":cardSelected[textByLang] }
+                      { cardSelected==null?"Tradición – Maestría – Calidad ":cardSelected[textByLang] }
                       </p>
                   </div>
 
                   <span className = "w-[content] relative mt-2 m-5">
                               <img
-                              src= {cardSelected==null?Show_Image2:cardSelected.Image_cigar}
+                              src= {cardSelected==null?"/coquet/-cigar-brevas-galery-2.webp":cardSelected.Image_cigar}
                               alt="Imagen cigar Brevas Ubiccacion"
                               className="object-cover pointer-events-none select-none  m-[0.1rem]"
                               placeholder="dominantColor"

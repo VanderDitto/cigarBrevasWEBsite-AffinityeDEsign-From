@@ -45,7 +45,7 @@ const IndexPage = () => {
                 <div className="right"></div>
 
                 {/* Layer 1: Background Images */}
-                <section className="w-full h-dvh flex items-center justify-center absolute left-0 top-0 z-0">
+                <section className="min-w-full  min-h-screen flex items-center justify-center absolute left-0 top-0 z-0">
                     <section className="grid grid-cols-4 w-full h-dvh grid-rows-3 gap-[3vw] gap-y-0.5 p-0">
                         <div className="bg-black/5"></div>
                         <div className="bg-black/5"></div>
@@ -57,8 +57,9 @@ const IndexPage = () => {
                             placeholder="dominantColor"
                             onContextMenu={(e) => e.preventDefault()}
                         />
-                        <div className="bg-black/20 w-full flex flex-col items-center justify-center relative">
-                            <span className="z-40 relative">
+
+                        <div className="bg-black/20 w-full flex flex-col left-0 items-center justify-center relative">
+                            <span className="z-40 relative right-6.5 block-[content] ">
                                 <LanguageSelector />
                                 <Btn_select className="z-10" />
                             </span>
@@ -132,7 +133,7 @@ const IndexPage = () => {
 
                     <div className="col-span-2 flex items-center justify-center">
                         <svg viewBox="0 0 400 100" className="w-full h-24 mx-auto">
-                            <text x="0" y="60" className="text-[3.2em] letter-spacing-[2px] stroke-[#dfc114] fill-none" strokeWidth="1">
+                            <text x="0" y="60" className="text-[1.2em] letter-spacing-[2px] stroke-[#dfc114] fill-none" strokeWidth="1">
                                 Cigarros Brevas
                                 <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" fill="freeze" />
                             </text>
@@ -157,7 +158,7 @@ const IndexPage = () => {
                         <span className="firstPage-word-font text-[2px] text-fluid-mini text-center w-full">serenidad</span>
                     </div>
 
-                    <div className="flecha-completa firstPage-word-font text-center w-full vertical-text text-[funnel] text-white">
+                    <div className="flecha-completa  color-white  text-center w-full  text-[funnel] text-white">
                         Constancia
                     </div>
 
@@ -190,8 +191,8 @@ const IndexPage = () => {
                     </div>
 
                     <div className="flex justify-center items-center">
-                        <svg viewBox="0 0 400 150" width="400" height="150" className="pointer-events-auto">
-                            <text x="150" y="80" fontSize="40" fontFamily="Fira Code" fill="black">
+                        <svg viewBox="0 0 400 150" width="300" height="150" className="pointer-events-auto">
+                            <text x="150" y="80" fontSize="20" fontFamily="Fira Code" fill="white">
                                 constancia
                             </text>
                             <ellipse cx="200" cy="75" rx="150" ry="50" stroke="red" fill="none" strokeWidth="3" className="anim-ellipse" />
@@ -199,12 +200,12 @@ const IndexPage = () => {
                     </div>
 
                     <div className="relative w-[85%] flex items-center justify-center pointer-events-auto">
-                        <div className="mt-[4svh] ml-[12rem] bungee-Tint-regular-large">SUFICIENTE</div>
+                        <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large">SUFICIENTE</div>
                     </div>
 
                     <div className="ml-[27svw] bungee-Tint-regular mt-[1rem] mb-[2rem] mx-auto text-fluid pointer-events-auto">
                         PARA FUMAR?
-                        <div className="flex justify-end-safe items-stretch float-right">
+                        <div className="flex justify-end-safe items-stretch float-right bottom-3 relative ">
                             <StaticImage
                                 src="../assets/images/page1/icon-alarm.webp"
                                 alt="Imagen Icon Alarm"
@@ -217,15 +218,17 @@ const IndexPage = () => {
                     </div>
                 </section>
 
-                {/* Footer Message */}
-                <section className="w-full h-14 firstPage-word-font bottom-0 absolute flex flex-row z-30 bg-white/50 backdrop-blur-sm">
+             
+
+                <section className="w-1/4 h-14 firstPage-word-font bottom-0 absolute m-[20px] bottom-[-30px] flex flex-row z-30 bg-white/50 backdrop-blur-sm">
                     <span className="text-black m-auto p-1.5 firstPage-word-font-bold text-center box-content">
                         “Prohibida la venta a menores de 18 años. El consumo de tabaco es nocivo para la salud.”
                     </span>
-                </section>
+                </section> 
+
             </main>
 
-            <span className="m-auto bg-amber-400 max-w-full block">
+            <span className="mt-9 bg-amber-400 max-w-full block ">
                 <Banner />
             </span>
 
