@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
+import { StaticImage } from "gatsby-plugin-image";
+
 const GallerySection = () => {
     const images = [
         "/galeria-temp/-galery-cigar-brevas-1.webp",
@@ -24,8 +26,15 @@ const GallerySection = () => {
     const secondImage = images[(currentIndex + 1) % images.length];
 
     return (
+
+
+
+
         <section className="relative w-full min-h-screen bg-[#FDFBF7] py-20 px-4 flex items-center justify-center overflow-hidden">
             
+
+    
+
             {/* TEXTO CENTRAL: HAND MADE */}
             <div className="absolute z-30 pointer-events-none transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 flex flex-col items-center">
                 <h2 className="text-6xl md:text-8xl lg:text-9xl font-black text-[#783689] opacity-10 whitespace-nowrap tracking-tighter bungee-shade-regular select-none uppercase">
@@ -43,6 +52,73 @@ const GallerySection = () => {
                 {/* Columna Izquierda (Espacio o Contenido Adicional) */}
                 <div className="lg:col-span-6 hidden lg:block">
                     {/* Espacio reservado para el texto central o equilibrio visual */}
+                                    
+<div className="grid grid-cols-3 grid-rows-4 gap-4 ">
+    <div className="row-span-2 col-start-1 row-start-2">
+        <img src="/footer/-logo-cigar-brevas.png" alt="Cigar gallery view 1" className="w-full h-full object-contain transition-opacity duration-1000" />
+    </div>
+    <div className="col-start-2 row-start-2 text-[0.65rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em]"><p>
+        Elaboracion a mano de hoja de tabaco
+seleccionada tanto nacional como importada.
+    </p>
+    
+    </div>
+    <div className="col-start-2 row-start-3 text-[0.65rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em]">
+         “Prohibida la venta a menores de 18 años”
+    </div>
+    <div className="row-span-4 col-start-3 row-start-1 ">
+        
+        <div className = "flex flex-col  items-center justify-center gap-2 mt-3 align-center">
+        
+                    <div className="w-[4rem] bg-[#E5FDD3]  align-start border-radius-2xl"> 
+        
+                        {/* // zone redes socials */}
+                            <span className="  h-[content] m-3 ">
+                            <StaticImage
+                            src="../../static/footer/-logo-msn-telegram.webp"
+                            alt="Logo Cigar Breva"
+                            className="w-[2rem] h-auto object-cover pointer-events-none select-none m-2"
+                            placeholder="dominantColor"
+                            onContextMenu={(e) => e.preventDefault()}
+                        />
+                        
+                            <StaticImage
+                            src="../../static/footer/-logo-cigar-face.webp"
+                            alt="Logo Cigar Breva"
+                            className="w-[2rem] h-auto object-cover pointer-events-none select-none  m-2"
+                            placeholder="dominantColor"
+                            onContextMenu={(e) => e.preventDefault()}
+                        />
+        
+                          <StaticImage
+                            src="../../static/footer/-logo-msn-whatup.webp"
+                            alt="Logo Cigar Breva"
+                            className="w-[2rem] h-auto object-cover pointer-events-none select-none  m-2"
+                            placeholder="dominantColor"
+                            onContextMenu={(e) => e.preventDefault()}
+                        />
+        
+                          <StaticImage
+                            src="../../static/footer/-logo-insta-social.webp"
+                            alt="Logo Cigar Breva"
+                            className="w-[2rem] h-auto object-cover pointer-events-none select-none  m-2"
+                            placeholder="dominantColor"
+                            onContextMenu={(e) => e.preventDefault()}
+                        />
+                            </span>
+                    </div>
+        
+                    <span className="text-[0.65rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em]">
+                        Cigar Brevas - Todos los derechos reservados © 2026
+                    </span>
+        </div>
+
+    </div>
+    <div className="col-span-2 col-start-1 row-start-1 ">
+<img src="/footer/-name-cigar-Brevas.webp" alt="Cigar gallery view 1" className="w-full h-full object-contain transition-opacity duration-1000" />
+    </div>
+</div>
+
                 </div>
 
                 {/* Columna Derecha: Galería Dinámica */}
