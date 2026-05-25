@@ -98,14 +98,14 @@ const Showproduct = () => {
                             <div className="top-[2rem] w-[15vw] h-[45vh] shadow-xl border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
                                 <div className="flex flex-col items-center justify-center w-full h-full md:p-2 p-3">
                                     <div className="w-full bg-[#783689] shadow-xl md:py-0.5 md:mb-1 py-1 mb-2 rounded">
-                                        <p className="text-[1.2rem] md:text-[0.9rem] font-bold text-white select-none uppercase tracking-wider">
+                                        <p className="text-[1.4rem] md:text-[1.2rem] font-bold text-white select-none uppercase tracking-wider">
                                             voucher
                                         </p>
                                     </div>
                                     
                                     {voucher.length > 0 ? (
                                         <div className="text-white text-center flex flex-col items-center justify-center w-full h-full">
-                                            <div className="w-full flex-1 overflow-y-auto md:pr-0.5 pr-1 md:mb-1 mb-2">
+                                            <div className="w-full  flex-1 overflow-y-auto md:pr-0.5 pr-1 md:mb-1 mb-2">
                                                 {voucher.map((item, index) => (
                                                     <div 
                                                         key={index}
@@ -130,7 +130,7 @@ const Showproduct = () => {
                                             </div>
                                         </div>
                                     ) : (
-                                        <span className="md:text-[0.6rem] text-[0.7rem] text-white font-light text-center px-2 select-none italic opacity-80">
+                                        <span className="md:text-[0.7rem] text-[0.8rem] text-white font-light text-center px-2 select-none italic opacity-80">
                                             <p>No pierdas esta oportunidad de adquirir este producto</p>
                                         </span>
                                     )}
