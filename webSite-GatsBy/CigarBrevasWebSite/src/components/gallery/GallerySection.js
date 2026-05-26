@@ -30,7 +30,7 @@ const GallerySection = () => {
 
 
 
-        <section className="relative w-full h-screen bg-[#FDFBF7] py-20 px-4 flex items-center justify-center overflow-hidden">
+        <section className="relative w-full min-h-screen bg-[#FDFBF7] py-20 px-4 flex items-center justify-center overflow-hidden">
             
 
     

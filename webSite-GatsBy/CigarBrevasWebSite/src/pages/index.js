@@ -215,7 +215,7 @@ const IndexPage = () => {
                         <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large">SUFICIENTE</div>
                     </div>
 
-                    <div className="ml-[27svw] bungee-Tint-regular det:mt[6em] ltp:mt-[2em] tb:mt-[4em] relative mt-1  mx-auto text-fluid pointer-events-auto">
+                    <div className="ml-[27svw]   bungee-Tint-regular  relative  mx-auto text-fluid pointer-events-auto">
                         PARA FUMAR?  
                         <div className="flex justify-end-safe  w-25  items-stretch float-right bottom-3 relative ">
                                
