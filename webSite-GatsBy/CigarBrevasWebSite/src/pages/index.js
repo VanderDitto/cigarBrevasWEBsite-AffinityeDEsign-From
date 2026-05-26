@@ -58,7 +58,7 @@ const IndexPage = () => {
                             onContextMenu={(e) => e.preventDefault()}
                         />
 
-                        <div className="bg-black/20 w-full flex flex-col left-0 items-center justify-center relative">
+                        <div className="bg-black/20 w-full   flex flex-col left-0 items-center justify-center relative">
                             <span className="z-40 relative right-6.5 block-[content] ">
                                 <LanguageSelector />
                                 <Btn_select className="z-10" />
@@ -125,7 +125,7 @@ const IndexPage = () => {
                             <span className="firstPage-word-font text-fluid-mini text-center w-full vertical-text text-[funnel]">
                                 tiempo
                             </span>
-                            <span className="mr-22 mt-12 text-[2px] firstPage-word-font text-fluid-mini text-center w-full vertical-text text-[funnel]">
+                            <span className="mr-22 mt-12 text-[2px] text-white firstPage-word-font text-fluid-mini text-center w-full vertical-text text-[funnel]">
                                 jubilo
                             </span>
                         </div>
@@ -133,7 +133,7 @@ const IndexPage = () => {
 
                     <div className="col-span-2 flex items-center justify-center">
                         <svg viewBox="0 0 400 100" className="w-full h-24 mx-auto">
-                            <text x="0" y="60" className="text-[1.2em] letter-spacing-[2px] stroke-[#dfc114] fill-none" strokeWidth="1">
+                            <text x="0" y="60" className="text-[0.4em] letter-spacing-[2px] stroke-[#dfc114] fill-none" strokeWidth="1">
                                 Cigarros Brevas
                                 <animate attributeName="stroke-dasharray" from="0,200" to="200,0" dur="2s" fill="freeze" />
                             </text>
@@ -147,7 +147,7 @@ const IndexPage = () => {
                     <div className="firstPage-word-font text-center w-full vertical-text text-white flex items-center justify-center">Pasión</div>
 
                     <div className="chevron w-full flex items-center justify-center">
-                        <span className="firstPage-word-font left-[-9em] vertical-text relative bottom-0.1 text-left w-full">equipo</span>
+                        <span className="firstPage-word-font left-[-9em] vertical-text relative bottom-0.1 text-left w-full">aroma</span>
                     </div>
 
                     <div className="chevron w-full flex items-center justify-center">
@@ -157,9 +157,8 @@ const IndexPage = () => {
                     <div className="chevron w-full flex items-center justify-center">
                         <span className="firstPage-word-font text-[2px] text-fluid-mini text-center w-full">serenidad</span>
                     </div>
-
-                    <div className="flecha-completa  color-white  text-center w-full  text-[funnel] text-white">
-                        Constancia
+ <div className="chevron w-full flex items-center justify-center">
+                        <span className="firstPage-word-font text-[2px] text-fluid-mini text-center w-full text-white">maestria</span>
                     </div>
 
                     <div className="chevron w-full flex items-center justify-center">
@@ -170,7 +169,7 @@ const IndexPage = () => {
                     </div>
 
                     <div className="chevron w-full firstPage-word-font block-0 bottom-0 flex items-center justify-center">
-                        <span className="text-white text-[2px] text-fluid-mini text-center w-full">Calidad</span>
+                        <span className="text-white  text-fluid-mini text-center w-full">Calidad</span>
                     </div>
 
                     <div className="chevron w-full flex items-center justify-center">
@@ -186,14 +185,14 @@ const IndexPage = () => {
                         <span className="mr-[4rem] mt-[4rem] w-full bungee-Tint-regular pointer-events-auto"> {t("tienes")} </span>
                     </div>
 
-                    <div className="w-dvh ml-[22rem] mt-[2rem] bungee-Tint-regular mx-auto text-[clamp(1rem,2vw+0.5rem,2.5rem)] pointer-events-auto">
+                    <div className="w-dvh ml-[22rem] mt-[2rem] bungee-Tint-regular mx-auto text-[clamp(1.7rem,2vw+0.8rem,2.9rem)] pointer-events-auto">
                         IDADE
                     </div>
 
                     <div className="flex justify-center items-center">
-                        <svg viewBox="0 0 400 150" width="300" height="150" className="pointer-events-auto">
+                        <svg viewBox="0 0 400 150" width="100" height="50" className="pointer-events-auto">
                             <text x="150" y="80" fontSize="20" fontFamily="Fira Code" fill="white">
-                                constancia
+                            tiempo
                             </text>
                             <ellipse cx="200" cy="75" rx="150" ry="50" stroke="red" fill="none" strokeWidth="3" className="anim-ellipse" />
                         </svg>
@@ -203,13 +202,13 @@ const IndexPage = () => {
                         <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large">SUFICIENTE</div>
                     </div>
 
-                    <div className="ml-[27svw] bungee-Tint-regular mt-[1rem] mb-[2rem] mx-auto text-fluid pointer-events-auto">
+                    <div className="ml-[27svw] bungee-Tint-regular mt-[2rem] mb-[2rem] mx-auto text-fluid pointer-events-auto">
                         PARA FUMAR?
-                        <div className="flex justify-end-safe items-stretch float-right bottom-3 relative ">
+                        <div className="flex justify-end-safe  w-25  items-stretch float-right bottom-3 relative ">
                             <StaticImage
                                 src="../assets/images/page1/icon-alarm.webp"
                                 alt="Imagen Icon Alarm"
-                                className="aspect-square w-33 right-0 object-cover pointer-events-none block user-select-none"
+                                className="aspect-square w-[23] right-0 bottom-6 object-contain pointer-events-none block user-select-none"
                                 layout="constrained"
                                 placeholder="dominantColor"
                                 onContextMenu={(e) => e.preventDefault()}
@@ -241,13 +240,13 @@ const IndexPage = () => {
             </div>
 
             <div className="min-h-screen relative left-0 top-3 m-17 mb-5">
-                <CigarVitolar />
+                <CigarVitolar  id = "vitolar"/>
             </div>
 
             <div className="h-[30px] pt-2 top-[15px] relative w-full m-auto mt-1 border-red-700 bg-red-800 block"></div>
             
             <div className="min-h-screen w-full relative flex flex-col justify-center left-0 top-0 mt-9">
-                <Showproduct />
+                <Showproduct id="compras" />
             </div>
 
             <div className="w-full">

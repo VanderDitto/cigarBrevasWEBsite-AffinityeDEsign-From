@@ -34,7 +34,7 @@ const Btn_select = () => {
   <div className="relative z-50 h-10 border-[#994743] border bg-[#B8C2B9] pt-0.5 pl-0.3 flex items-center justify-around w-25 m-auto">
     <button
       onClick={() => handleClick(option)}
-      className="bg-[#007F0D] firstPage-word-font border border-[#994743] w-[5rem] text-white font-bold rounded cursor-pointer"
+      className="bg-[#007F0D] text-[1.2em] border border-[#994743] w-[5rem] text-white font-bold rounded cursor-pointer"
     >
       {option}
     </button>

@@ -120,7 +120,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
                   </span>
 
                   <div className="w-[content] text-[1.1em]  sulphur-point-bold relative  text-center">
-                    <p className = "text-bold p-3 text-[1.6em] bg-amber-300 leading-relaxed tracking-wide whitespace-pre-line"  >  
+                    <p className = "text-bold p-3 text-[1.3em] bg-amber-300 leading-relaxed tracking-wide whitespace-pre-line"  >  
                       {/* Tradición – Maestría – Calidad  */}
                       { cardSelected==null?"Tradición – Maestría – Calidad ":cardSelected[textByLang] }
                       </p>

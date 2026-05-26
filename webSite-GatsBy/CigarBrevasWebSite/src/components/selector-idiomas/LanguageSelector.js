@@ -33,7 +33,7 @@ useEffect(() => {
     <span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
             <button id="btn_default"
               onClick={() => changeLang("es")}
-              className="flex flex-col items-center m-2 pt-1 cursor-pointer  rounded-lg border border-[#994743] bg-[#B8C2B9] hover:border-0  hover:bg-[#007f0d34] transition cursor-pointer"
+              className = " flex flex-col items-center m-2 pt-1  rounded-lg border border-[#994743] hover:border-0  hover:bg-[#007f0d34] transition cursor-pointer bg-[#B8C2B9]"
             >
               <StaticImage
                 src="../../assets/images/page1/colombia.webp"
