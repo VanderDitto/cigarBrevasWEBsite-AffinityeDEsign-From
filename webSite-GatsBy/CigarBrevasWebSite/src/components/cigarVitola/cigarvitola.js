@@ -54,7 +54,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
 
 
 <> 
- <section className = " bg-[url('../../static/cigar-vitola/fondo_2.jpg')] bg-cover  w-[88vw] relative top-[3rem] left-0   z-1  m-auto h-[content]" >
+ <section className = " bg-[url('../../static/cigar-vitola/hojas-fondo.jpg')] bg-cover  w-[88vw] relative top-[3rem] left-0   z-1  m-auto h-[content]" >
 
 
 
