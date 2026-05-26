@@ -1,4 +1,17 @@
-/* @import "tailwindcss"; */
+ @import "tailwindcss"; 
+
+
+html { font-size: 16px; }
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-tb:60rem;
+
+
+
+  --breakpoint-ltp: 86rem;
+  --breakpoint-det: 89rem;
+}
 
 .cigar-vitola:hover {
 

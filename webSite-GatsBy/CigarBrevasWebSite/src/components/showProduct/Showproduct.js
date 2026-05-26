@@ -183,7 +183,7 @@ const Showproduct = () => {
                             </span>
 
                             <span className="top-45 right-4 relative flex-inline flex-col items-center justify-center z-12 ">
-                                <h2 className=" font-name-vitolas-center  m-2  absolute  bottom-24">
+                                <h2 className=" font-name-vitolas-center  m-2 bg-[#ffcf22] p-2  absolute   bottom-24">
                                     {name_cigar}
                                 </h2>
                                 <span className="relative">
@@ -195,7 +195,7 @@ const Showproduct = () => {
                         </span>
 
                         <div onContextMenu={(e) => {
-    e.preventDefault();}} className="text-2xl relative flex flex-row gap-2 w-[79%]  justify-end top-0 m-2 inset-1.5 select-none">
+    e.preventDefault();}} className="text-[0.9rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em] relative flex flex-row gap-2 w-[79%]  justify-end top-0 m-2 inset-1.5 select-none">
                             No es solo hoja, es herencia; no es solo humo, es memoria. El cigarro nace de la constacia del
                             buen esmero y de la pasión que, durante generaciones, han tejido un símbolo de excelencia.
                         </div>

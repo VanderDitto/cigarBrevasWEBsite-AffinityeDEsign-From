@@ -70,9 +70,9 @@ const Welcome = () => {
                             <div className="flex flex-col items-center">
                                 <div className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300">
                                     <StaticImage
-                                        src="../../assets/images/welcome/cigar-vitolas-brevas.webp"
+                                        src="../../assets/images/welcome/vitolario-puros.png"
                                         alt="Diversas Vitolas de Puros Brevas"
-                                        className="object-cover w-full h-48"
+                                        className="object-contain aspect-video w-full h-48"
                                         placeholder="blurred"
                                         onContextMenu={(e) => e.preventDefault()}
                                     />
@@ -80,8 +80,8 @@ const Welcome = () => {
                                 <span className="mt-3 font-bold uppercase tracking-widest text-[#783689]">Vitolas</span>
                             </div>
 
-                            {/* Moldes */}
-                            <div className="flex flex-col items-center">
+                            {/* MoldesTODO: Click goto */}
+                            <div className="flex flex-col items-center" >
                                 <div className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300">
                                     <StaticImage
                                         src="../../assets/images/welcome/toBuy.webp"
@@ -93,6 +93,7 @@ const Welcome = () => {
                                 </div>
                                 <span className="mt-3 font-bold uppercase tracking-widest text-[#783689]">compras</span>
                             </div>
+                            
                         </div>
                     </div>
 

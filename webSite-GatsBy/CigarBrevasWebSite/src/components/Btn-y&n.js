@@ -29,12 +29,12 @@ const Btn_select = () => {
   return ["yes", "no"].map((option) => (
     <div id ="btn-action"
   key={option}
-  className="w-full h-12 right-0 top-[3rem] flex items-center justify-around bg-[#b8c2b922]"
+  className="w-full h-12 right-0 top-[3rem] flex flex-row items-center justify-around bg-[#b8c2b922]"
 >
-  <div className="relative z-50 h-10 border-[#994743] border bg-[#B8C2B9] pt-0.5 pl-0.3 flex items-center justify-around w-25 m-auto">
+  <div className="relative z-50 pt-2 pb-2  border-[#994743] border bg-[#B8C2B9] pt-0.5 pl-0.3  flex items-center justify-around w-25 m-auto">
     <button
       onClick={() => handleClick(option)}
-      className="bg-[#007F0D] text-[1.2em] border border-[#994743] w-[5rem] text-white font-bold rounded cursor-pointer"
+      className="bg-[#007F0D] text-[1.2em] border border-[#994743] w-[1/7] pl-5 pr-5   text-white font-bold rounded cursor-pointer"
     >
       {option}
     </button>

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 
 import Footer from "../components/footer/Footer";
@@ -36,6 +36,19 @@ const IndexPage = () => {
         }
     }, []);
 
+
+    /*
+    const [id_goto , irPorId] = useState[""];
+
+    const irPorId = (id) => {
+  const elemento = document.getElementById(id);
+  if (elemento) {
+    elemento.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }
+};
+*/
+
+
     return (
         <>
             <PrivacyBanner />
@@ -58,10 +71,10 @@ const IndexPage = () => {
                             onContextMenu={(e) => e.preventDefault()}
                         />
 
-                        <div className="bg-black/20 w-full   flex flex-col left-0 items-center justify-center relative">
+                        <div className="bg-black/20  w-full   flex flex-col left-0 items-center justify-center relative">
                             <span className="z-40 relative right-6.5 block-[content] ">
                                 <LanguageSelector />
-                                <Btn_select className="z-10" />
+                               
                             </span>
                         </div>
 
@@ -181,7 +194,7 @@ const IndexPage = () => {
 
                 {/* Layer 3: Foreground Content */}
                 <section className="z-20 text-bungeespice text-fluid w-full h-dvh flex flex-col absolute left-0 top-0 pointer-events-none">
-                    <div className="grid place-items-center w-full px-4 sm:px-8 md:px-16 lg:px-24">
+                    <div className="flex justify-center items-center w-full px-4 sm:px-8 md:px-16 lg:px-24">
                         <span className="mr-[4rem] mt-[4rem] w-full bungee-Tint-regular pointer-events-auto"> {t("tienes")} </span>
                     </div>
 
@@ -202,9 +215,11 @@ const IndexPage = () => {
                         <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large">SUFICIENTE</div>
                     </div>
 
-                    <div className="ml-[27svw] bungee-Tint-regular mt-[2rem] mb-[2rem] mx-auto text-fluid pointer-events-auto">
-                        PARA FUMAR?
+                    <div className="ml-[27svw] bungee-Tint-regular det:mt[6em] ltp:mt-[2em] tb:mt-[4em] relative mt-1  mx-auto text-fluid pointer-events-auto">
+                        PARA FUMAR?  
                         <div className="flex justify-end-safe  w-25  items-stretch float-right bottom-3 relative ">
+                               
+
                             <StaticImage
                                 src="../assets/images/page1/icon-alarm.webp"
                                 alt="Imagen Icon Alarm"
@@ -215,9 +230,14 @@ const IndexPage = () => {
                             />
                         </div>
                     </div>
+
+                     
+
                 </section>
 
-             
+                <div className = "w-full h-auto absolute bottom-0">
+                            <Btn_select className="z-10" />
+                        </div>
 
                 <section className="w-1/4 h-14 firstPage-word-font bottom-0 absolute m-[20px] bottom-[-30px] flex flex-row z-30 bg-white/50 backdrop-blur-sm">
                     <span className="text-black m-auto p-1.5 firstPage-word-font-bold text-center box-content">
