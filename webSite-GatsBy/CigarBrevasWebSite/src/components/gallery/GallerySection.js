@@ -30,13 +30,13 @@ const GallerySection = () => {
 
 
 
-        <section className="relative w-full min-h-screen bg-[#FDFBF7] py-20 px-4 flex items-center justify-center overflow-hidden">
+        <section className="relative w-full h-screen bg-[#FDFBF7] py-20 px-4 flex items-center justify-center overflow-hidden">
             
 
     
 
             {/* TEXTO CENTRAL: HAND MADE */}
-            <div className="absolute z-30 pointer-events-none transform -translate-x-1/2 -translate-y-1/2 top-3/5 left-1/2 flex flex-col items-center">
+            <div className="absolute z-30 pointer-events-none transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 flex flex-col items-center">
                 <h2 className="text-6xl md:text-8xl lg:text-9xl font-black text-[#783689] opacity-10 whitespace-nowrap tracking-tighter bungee-shade-regular select-none uppercase">
                     HAND MADE
                 </h2>
@@ -55,7 +55,7 @@ const GallerySection = () => {
                                     
 <div className="grid grid-cols-3 grid-rows-4 gap-4 ">
     <div className="row-span-2 col-start-1 row-start-2">
-        <img src="/footer/logo-brevas.webp" alt="logo cigar brevas" className="w-full h-full object-contain transition-opacity duration-1000" />
+        <img src="/footer/-logo-cigar-brevas.png" alt="Cigar gallery view 1" className="w-full h-full object-contain transition-opacity duration-1000" />
     </div>
     <div className="col-start-2 row-start-2 text-[0.65rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em]"><p>
         Elaboracion a mano de hoja de tabaco
@@ -63,7 +63,6 @@ seleccionada tanto nacional como importada.
     </p>
     
     </div>
-    
     <div className="col-start-2 row-start-3 text-[0.65rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em]">
          “Prohibida la venta a menores de 18 años”
     </div>
@@ -160,10 +159,16 @@ seleccionada tanto nacional como importada.
                     </div>
 
                     {/* Escrito final de cuatro líneas */}
-               
-                </div>
+                    <div className="max-w-md pt-8 border-t border-[#9B7F49] w-full text-right">
+                        <p className="text-sm md:text-base text-[#783689] font-medium leading-relaxed italic">
+                            Más que un producto, entregamos un pedazo de historia colombiana.<br />
+                            Cultivado con respeto, nacido entre montañas y nubes,<br />
+                            seleccionado para paladares que entienden de silencios y humo,<br />
+                            Brevas es el punto donde el tiempo se detiene para disfrutar.
+                        </p>
+                    </div>
 
-                
+                </div>
             </div>
 
             <style>{`
