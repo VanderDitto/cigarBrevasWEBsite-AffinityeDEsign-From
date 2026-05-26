@@ -18,6 +18,9 @@ import sharePage from "../pages/sharePage/sharePage";
 import LanguageSelector from "../components/selector-idiomas/LanguageSelector"
 import { useTranslation } from "react-i18next"; 
 
+
+import { useRef } from "react";
+
 const IndexPage = () => {
     const { t } = useTranslation();
 
@@ -48,6 +51,11 @@ const IndexPage = () => {
 };
 */
 
+    const contactoRef = useRef(null);
+
+  const scrollToContacto = () => {
+    contactoRef.scrollIntoView({ behavior: "smooth" });
+  };
 
     return (
         <>
@@ -259,14 +267,14 @@ const IndexPage = () => {
                 <Welcome />
             </div>
 
-            <div className="min-h-screen relative left-0 top-3 m-17 mb-5">
-                <CigarVitolar  id = "vitolar"/>
+            <div  id= "contactoRef_vitolar" className="min-h-screen relative left-0 top-3 m-17 mb-5">
+                <CigarVitolar />
             </div>
 
             <div className="h-[30px] pt-2 top-[15px] relative w-full m-auto mt-1 border-red-700 bg-red-800 block"></div>
             
-            <div className="min-h-screen w-full relative flex flex-col justify-center left-0 top-0 mt-9">
-                <Showproduct id="compras" />
+            <div id="compras"  className="min-h-screen w-full relative flex flex-col justify-center left-0 top-0 mt-9">
+                <Showproduct />
             </div>
 
             <div className="w-full">

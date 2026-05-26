@@ -54,7 +54,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
 
 
 <> 
- <section className = " bg-[url('../../static/cigar-vitola/hojas-fondo.jpg')] bg-cover  w-[88vw] relative top-[3rem] left-0   z-1  m-auto h-[content]" >
+ <section id="vitolar" className = " bg-[url('../../static/cigar-vitola/hojas-fondo.jpg')] bg-cover  w-[88vw] relative top-[3rem] left-0   z-1  m-auto h-[content]" >
 
 
 
@@ -106,7 +106,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
           />
         </span>
 
-{/* // Galeria de imagenes  == post show INFooooo */}TODO:showINFO
+{/* // Galeria de imagenes  == post show INFooooo */}
         <div className = 'bg-[#D5D1CD]  w-[13rem] m-[1rem] absolute right-0 top-0  flex flex-col  justify-around div-con-borde' >
 
                       <span className = "w-[content]  relative mt-6  m-5">
@@ -139,15 +139,15 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
         </div>
 
 
-<div  className="flex  gap-[2vw]  items-baseline space-evenly flex-wrap justify-center  ml-20 py-8 mt-12 w-[88vdw] ">
+<div  className="flex  gap-[2vw]  items-baseline flex-wrap center justify-center space-around  ml-20 py-8 mt-12 w-[78vw] ">
 
   {/* Bloque Numero-5 */}
   <div  className = " relative  w-40  h-40  cigar-vitola " >
-    
+
     {/* Círculo amarillo */}
     <div  onMouseEnter={(event) => { handleInfo(1); setHoveredCircle(1); }}  onMouseLeave={() => setHoveredCircle(null)} className = "w-47 h-47 rounded-full border-2 border-[#9B7F49] bg-[#e6d8bc] flex items-center justify-center overflow-hidden">
 
-       <StaticImage
+      <StaticImage
                             src="../../static/cigar-vitola/-cigar-breva-numero5.webp"
                             alt="Imagen cigarro Aromado Brevas"
                             className=" object-contain pointer-events-none select-none   "

@@ -55,7 +55,7 @@ const GallerySection = () => {
                                     
 <div className="grid grid-cols-3 grid-rows-4 gap-4 ">
     <div className="row-span-2 col-start-1 row-start-2">
-        <img src="/footer/-logo-cigar-brevas.png" alt="Cigar gallery view 1" className="w-full h-full object-contain transition-opacity duration-1000" />
+        <img src="/footer/logo-brevas.webp" alt="Cigar gallery view 1" className="w-full h-full object-contain transition-opacity duration-1000" />
     </div>
     <div className="col-start-2 row-start-2 text-[0.65rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em]"><p>
         Elaboracion a mano de hoja de tabaco

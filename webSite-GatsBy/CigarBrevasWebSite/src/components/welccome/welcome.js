@@ -5,6 +5,19 @@ import { useTranslation } from "react-i18next";
 const Welcome = () => {
     const { t } = useTranslation("translation");
 
+     const scrollToContacto = () => {
+
+    document.getElementById("contactoRef_vitolar").scrollIntoView({ behavior: "smooth" });
+
+                        };
+
+    const onScrool_To = () => {
+    
+    document.getElementById("compras").scrollIntoView({ behavior: "smooth" });
+    
+    };
+
+
     return (
         <section id='welcome-section' className="relative w-full min-h-screen py-16 px-4 sm:px-8 lg:px-16 overflow-hidden bg-white">
             {/* Background Decorative Elements (Optional) */}
@@ -67,7 +80,7 @@ const Welcome = () => {
                         {/* Secondary Images Row */}
                         <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
                             {/* Vitolas */}
-                            <div className="flex flex-col items-center">
+                            <div onClick={scrollToContacto}  className="flex flex-col items-center cursor-pointer">
                                 <div className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300">
                                     <StaticImage
                                         src="../../assets/images/welcome/vitolario-puros.png"
@@ -77,12 +90,17 @@ const Welcome = () => {
                                         onContextMenu={(e) => e.preventDefault()}
                                     />
                                 </div>
-                                <span className="mt-3 font-bold uppercase tracking-widest text-[#783689]">Vitolas</span>
+                                
+                                <span className="mt-3 font-bold uppercase tracking-widest text-[#783689]">
+Vitolas
+                                </span>
+                            
+                            
                             </div>
 
                             {/* MoldesTODO: Click goto */}
-                            <div className="flex flex-col items-center" >
-                                <div className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300">
+                            <div className="flex flex-col items-center cursor-pointer" onClick={onScrool_To}  >
+                                <div  className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300">
                                     <StaticImage
                                         src="../../assets/images/welcome/toBuy.webp"
                                         alt="Moldes artesanales usados en la producción de cigarros"

@@ -3,6 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { CigarVitolas_Price } from "./../../page-data/page-data";
 
 const Showproduct = () => {
+    
     const data_cigar = useMemo(() => CigarVitolas_Price, []);
 
     const [selectedIndex, setSelectedIndex] = useState(0);
@@ -125,8 +126,8 @@ const Showproduct = () => {
                                                 ))}
                                             </div>
                                             <div className="border-t border-white/30 md:pt-0.1 pt-1 w-full">
-                                                <p className="md:text-[0.65rem] text-[0.8rem] font-semibold">${totalCOP.toLocaleString("es-CO")} COP</p>
-                                                <p className="md:text-[0.6rem] text-[0.9rem] opacity-90">${totalUSD} USD</p>
+                                                <p className="md:text-[0.75rem] text-black bg-amber-50 p-2 text-[0.85rem] font-semibold"> + Total ${totalCOP.toLocaleString("es-CO")} COP</p>
+                                                <p className=" bg-amber-50 p-2 text-black md:text-[0.6rem] text-[0.9rem] opacity-90">${totalUSD} USD</p>
                                             </div>
                                         </div>
                                     ) : (
@@ -230,7 +231,7 @@ const Showproduct = () => {
                                         onClick={() => Handle_InfCigar(2, "numero_3")}
                                         className="cursor-pointer bg-red-600 w-[25px] h-[50px] text-center text-[15px] text-white"
                                     >
-                                        22
+                                        25
                                     </span>
                                 </span>
 
@@ -292,7 +293,7 @@ const Showproduct = () => {
                                         onClick={() => Handle_InfCigar(8, "numero_9")}
                                         className="cursor-pointer bg-red-600 w-[25px] h-[70px] text-center text-white text-[15px]"
                                     >
-                                        25
+                                        20
                                     </span>
                                 </span>
 
