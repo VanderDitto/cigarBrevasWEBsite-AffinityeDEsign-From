@@ -1,0 +1,34 @@
+ @import "tailwindcss"; 
+
+
+.cigar-vitola:hover {
+
+  cursor: url('../../static/cursor/cursor-medida.webp') 0 0, pointer; 
+  /* @apply   border-2 border-amber-300; */
+    /* border-color: #D5D1CD;
+    border-width: 9px; */
+
+}
+
+/* en el click mostrar el componente  */
+.display-lapiz-amarillo{
+
+
+  display: inline-flex;
+  background-image: url('../../static/cursor/refLapiz.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  z-index: 25;
+  position: relative;
+  top:0;
+  height: 210px;
+  left: 20px;
+
+
+}
+
+
+.display-none{
+  display: none;
+}

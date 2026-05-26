@@ -2,59 +2,405 @@
 
 
 
-@layer base{
+ /* @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&display=swap');
 
-    .body{
+@import url('https://fonts.googleapis.com/css2?family=Sulphur+Point:wght@300;400;700&display=swap');
 
-    background-color: #4caf50;
-    @apply w-full h-full font-[sans];
+html,
+body {
+
+  background-color: #9FB697 ;
+  margin: 0;        /* <- sin auto */
+  padding: 0;
+
+  width: 100%;
+  height: 100%;
+  font-size: 16px;
 
 }
-    @font-face{
-    font-family: 'Funnel Display, sans';
-    src: url('/fonts/Funnel/FunnelDisplay-Regular.ttf') format('truetype');
+
+
+@theme {
+
+
+  --breakpoint-*: initial;
+  --breakpoint-tb:60rem;
+
+  --breakpoint-moniT: 85rem;
+  --breakpoint-Dest: 89rem;
+}
+
+
+.cursor-default {
+
+  cursor:url("../../static/cursor/cursor-medida.webp") 0 0, default;
+
+}
+
+  .underline-estilo {
+
+  text-decoration: underline;
+  text-decoration-color: gold;   /* color del subrayado */
+  text-decoration-thickness: 3px; /* grosor */
+  text-decoration-style: solid;   /* estilos: solid, dotted, dashed, double, wavy */
+  padding:  2px; /* espacio entre texto y subrayado */
+          width:44px;
+  background-color: gold;
+}
+
+
+.anim-ellipse {
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  animation: drawEllipse 3s ease forwards;
+}
+
+@keyframes drawEllipse {
+  to { stroke-dashoffset: 0; }
+}
+
+
+
+#___gatsby,
+#gatsby-focus-wrapper {
+  height: 100%;
+
+}
+body::-webkit-scrollbar {
+  display: none;           /* Chrome, Safari */
+}
+
+body.no-scroll {
+
+  overflow: hidden;
+
+}
+
+@layer utilities {
+  .text-fluid {
+    font-size: clamp(1rem, 1vw + 0.5rem, 2.5rem);
+  }
+  .text-fluid-mini{
+    font-size: clamp(0.2rem, 0.6vw + 0.5rem, 1.7rem);
+  }
+}
+
+
+
+@font-face{
+
+  font-family:"Poiret One";
+
+    src: url('../../assets/fonts/Poiret-One/PoiretOne-Regular.ttf') format('truetype');
+    src: url("../../assets/fonts/Poiret-One/PoiretOne-Regular.woff2") format("woff2");
+    font-weight: 300;
+    font-style: normal;
+    font-optical-sizing: auto;
+}
+
+.poiret-one-Festy {
+
+  font-family: "Poiret One", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  font-size:clamp(3vw , 2vw + 0.7rem , 4.6rem  );
+}
+
+.bungee-shade-regular {
+
+  font-family: "Bungee shade", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+
+  /*font-size:clamp( 1.1em , 7vw , 2.9em );*/
+  color:#B14B39;
+}
+
+.bungee-Tint-regular {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:clamp( 3rem, 2vw + 0.5rem, 4.5rem );
+}
+
+
+.bungee-Tint-regular-large {
+  font-family: "Bungee Tint", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size:clamp( 5rem, 1.1vw + 0.5rem, 6rem );
+}
+
+.caption-label-img{
+
+  font-family: "Funnel Display";
+  font-size: clamp( 0.7rem , 33vw , 1.1rem);
+
+}
+.poiret-strong-large{
+
+  font-family: "Poiret One";
+  font-weight: 400;
+  font-style: normal;
+  font-size: Clamp(0.6em , 4.5vw   , 2.0em);
+  /*font-size: 2.3em;*/
+}
+  @font-face {
+
+    font-family: 'Funnel Display';
+    src: url('../../assets/fonts/Funnel/FunnelDisplay-SemiBold.ttf') format('truetype');
+
+    font-weight: 450;
+    font-style: semibold;
+    font-optical-sizing: auto;
+  }
+
+ @font-face {
+    font-family: 'Funnel Display';
+
+    src: url('../../assets/fonts/Funnel/FunnelDisplay-Light.woff2') format('woff2');
+    font-weight: 300;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+
+
+
+  @font-face {
+    font-family: 'Bungee Tint';
+    src: url('../../assets/fonts/Bungee/BungeeTint-Regular.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+  }
+
+
+  @font-face {
+    font-family: 'Host Grotesk';
+    src: url('../../assets/fonts/Grotesk/HostGrotesk-SemiBold.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-optical-sizing: auto;
-    }
-    @font-face {
-        font-family: 'Bungee Tint, sans';
-        src: url('/fonts/Bungee/Bungee_Shade/BungeeTint-Regular.ttf') format ('truetype');
-        font-weight: normal;
-        font-style: normal;
-        font-optical-sizing: auto;
-        color:#BE3939;
-    }
-    @font-face {
-        font-family: 'Host Grotesk, sans';
-        src: url('/fonts/Grotesk/HostGrotesk-SemiBold.ttf')
-        format ('truetype');
-        font-weight: normal;
-        font-style: normal;
-        font-optical-sizing: auto;
-    }
+  }
 
-
-
+.firstPage-word-font{
+    font-size: clamp(0.2rem, 0.4vw + 0.3rem, 0.5rem);
+    font-family: 'Funnel Display', "sans";
+    font-weight: 100;
 }
 
-.bg-main{
-    @apply h-screen bg-gradient-to-r from-[#f5e6d3] to-[#4caf50];
+.font-name-vitolas{
+  font-size:1.1em;
+  /* font-size: clamp(1.2rem, 0.8vw + 0.3rem, 2.1rem); */
+    font-family: 'Funnel Display', "sans";
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+.font-name-vitolas-center{
 
+  font-size: 1.1em;
+  font-weight: 600;
+  
+}
+
+.firstPage-word-font-bold{
+    font-size: clamp(0.4rem, 0.6vw + 0.1rem, 0.9rem);
+    font-family: 'Funnel Display', "sans";
+    font-weight: 450;
 }
 
 
 main {
+
+
   display: flex;
-  height: 100vh; /* ocupa toda la pantalla */
+  flex-direction: column; /* Móvil por defecto */
+  overflow: hidden;
+
+  @apply w-full mx-auto my-0;
 }
 
+main > .scroll-area {
+  flex: 1;
+  overflow: hidden;
+}
+
+
+/* El iPad Pro tiene resoluciones altas (1024px o más), 
+   ajustamos el breakpoint para que se vea en paralelo (fila) */
+@media (min-width: 1024px) {
+
+  main {
+
+    flex-direction: row;
+    @apply w-[78%] mx-auto m-0 m-auto; /* Aplicamos el ancho reducido solo en pantallas grandes */
+  }
+
+  main .left, main .right {
+  flex: 1;
+  width: 100%; /* En móvil ocupan todo el ancho */
+  height: 110vh;
+  min-height: auto;
+
+                          }
+
+}
 main .left {
   flex: 1;
-  background: linear-gradient(to bottom, #f5e6d3, #f4a261); /* beige → naranja */
+  background: linear-gradient(to bottom, #f5e6d3, #f4a261);
+
+  /* Eliminamos el w-1/2 fijo para que flex-1 haga el trabajo */
 }
 
 main .right {
   flex: 1;
-  background: linear-gradient(to bottom, #a5d6a7, #4caf50); /* verde pastel → verde medio */
+  background: linear-gradient(-45deg, #755431 3px, #74A865, #74A865 12px, #74A865);
 }
+
+/* Cuando la pantalla sea mediana (tablet/pc) se ponen de lado */
+@media (min-width: 768px) {
+  main {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .left, main .right {
+    width: 50%; /* En iPad Pro/PC ocupan la mitad cada uno */
+  }
+}
+
+.text-funnel-descripcion{
+
+  font-size:clamp(0.5rem , 1vw + 0.2rem , 4rem);
+  font-family:"Funnel Display";
+  font-weight: 700;
+  color:#5B000F;
+}
+
+.text-bungeespice{
+
+    font-size: clamp(3rem, 4vw + 0.5rem, 5.5rem);
+    font-family: 'Bungee Tint', "sans";
+    font-weight: bolder;
+    @apply  font-[bungee] text-[#C9302A]  ;
+
+}
+.text-bungeespice-3xl{
+
+    font-size: clamp(1rem, 2vw + 0.5rem, 3.5rem);
+    font-family: 'Bungee Tint', cursive;
+    font-weight: bolder;
+    @apply   font-[bungee] text-[#C9302A]  ;
+}
+
+.chevron {
+
+  @apply w-1/2;
+  height: 15px;
+  border-right: 3px solid #C42B25;
+  border-bottom: 3px solid #C42B25;
+
+  transform: rotate(45-deg); /* Apunta a la derecha */
+
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+}
+
+.flecha-completa {
+  position: relative;
+  @apply w-1/2;
+  height: 2px;
+  background: rgb(99, 42, 6);
+  transform: rotate(90deg); /* Apunta a la derecha */
+}
+
+.flecha-completa::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: -4px; /* Ajustar según grosor */
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-left: 8px solid rgba(51, 4, 4, 0.962);
+}
+
+#section-dir{
+
+display: flex;
+flex-direction: row;            /* Móvil por defecto */
+  
+  /* SOLUCIÓN FULL PANTALLA */
+  height: 110vh;                  /* Fallback para navegadores viejos */
+                                 /* "Small Viewport Height": ignora barras dinámicas */
+  
+  
+  @apply w-full mx-auto;
+
+}
+
+ section #left, section #right {
+  flex: 1;
+  width: 100%; /* En móvil ocupan todo el ancho */
+  
+                          }
+
+.border-coquet{
+
+@apply w-full h-8 bg-[url('../../static/coquet/patter.png')] bg-repeat-x bg-bottom z-20;
+background-image: url('../../static/coquet/patter.png') ;
+background-repeat: repeat-x;
+}
+/* 
+.left_insign{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image:url('/compra-cigars-brevas/-left-signus.webp') no-repeat center center;
+} */
+
+section #left {
+  flex: 1;
+  background: linear-gradient(to bottom, #f5e6d3, #f4a261);
+  /* Eliminamos el w-1/2 fijo para que flex-1 haga el trabajo */
+  height:calc(110vh + 55px);
+}
+
+section #right {
+  flex: 1;
+  background: linear-gradient(-45deg, #755431 13px, #57804b, #56824a 12px, #89c678);
+  height:calc(110vh + 55px);
+}
+
+.div-con-borde {
+  border-bottom: 6px solid;
+  border-image: linear-gradient(to right, #C79941 , #C79945 ) 1;
+}
+
+.sulphur-point-light {
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.sulphur-point-regular {
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sulphur-point-bold {
+  font-family: "Sulphur Point", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
