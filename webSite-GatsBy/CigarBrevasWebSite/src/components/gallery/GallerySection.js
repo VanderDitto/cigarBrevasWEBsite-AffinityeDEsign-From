@@ -10,9 +10,9 @@ const GallerySection = () => {
         "/galeria-temp/-galery-cigar-brevas-4.webp",
         "/galeria-temp/-galery-cigar-brevas-5.webp",
         "/galeria-temp/-galery-cigar-brevas-6.webp",
-        "/galeria-temp/-galery-cigar-brevas-7.webp",
-        "/galeria-temp/-galery-cigar-brevas-8.webp",
-        "/galeria-temp/-galery-cigar-brevas-9.webp",
+        "/galeria-temp/-galery-cigar-brevas-7.jpg",
+        "/galeria-temp/-galery-cigar-brevas-8.jpg",
+        "/galeria-temp/-galery-cigar-brevas-9.jpg",
         "/galeria-temp/-galery-cigar-brevas-10.webp",
         "/galeria-temp/-galery-cigar-brevas-11.webp",
 
@@ -25,7 +25,7 @@ const GallerySection = () => {
         const interval = setInterval(() => {
 
             setCurrentIndex((prevIndex) => (prevIndex + 2) % images.length);
-        }, 2100);
+        }, 2800);
         return () => clearInterval(interval);
     }, [images.length]);
 

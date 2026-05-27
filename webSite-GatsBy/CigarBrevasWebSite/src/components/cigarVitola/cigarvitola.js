@@ -252,7 +252,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
 
 
 <div  className="flex justify-center w-full ">
-        <div className="w-full left-[1/2] border border-amber-600 border-3  sulphur-point-bold absolute  h-[auto] text-center">
+        <div className="w-full left-[1/2]  sulphur-point-bold absolute  h-[auto] text-center">
                             <p className = "text-bold p-3 text-[1.6em] bg-amber-300 leading-relaxed tracking-wide whitespace-pre-line"  >  
                               {/* Tradición – Maestría – Calidad  */}
                               { cardSelected==null?"Tradición – Maestría – Calidad ":cardSelected[textByLang] }
@@ -262,7 +262,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
  
 
 
-<div className="flex gap-17 justify-center transform scale-88 flex-wrap  items-baseline py-5 mb-[3rem]">
+<div className="flex gap-17 justify-center transform scale-88 flex-wrap  items-baseline py-5 mb-[7rem]">
   {/* Bloque Purito */}
   <div className="relative w-[147px] h-[147px] cigar-vitola" onMouseEnter={() => { handleInfo(4); setHoveredCircle(4); }} onMouseLeave={() => setHoveredCircle(null)}>
     {/* Círculo amarillo */}
