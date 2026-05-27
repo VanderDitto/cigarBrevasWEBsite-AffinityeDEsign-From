@@ -3,7 +3,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import { CigarVitolas_Price } from "./../../page-data/page-data";
 
 const Showproduct = () => {
-    
+
     const data_cigar = useMemo(() => CigarVitolas_Price, []);
 
     const [selectedIndex, setSelectedIndex] = useState(0);
@@ -38,12 +38,20 @@ const Showproduct = () => {
     const Handle_InfCigar = (index_product, id_TOcall) => {
         console.log("Producto seleccionado:", index_product, id_TOcall);
 
+
+        
+
+        
+
         const index_product_num = Number(index_product);
         if (selectedIndex !== index_product_num) {
+
             const currentEl = document.getElementById(id_TOcall);
             const previousId = `numero_${selectedIndex + 1}`;
             const previousEl = document.getElementById(previousId);
+           
 
+            setSelectedIndex(index_product_num);
             if (currentEl) currentEl.classList.add("underline-estilo");
             if (previousEl) previousEl.classList.remove("underline-estilo");
 
@@ -52,6 +60,14 @@ const Showproduct = () => {
     };
 
     const addProduct = () => {
+        
+
+        const solicitar_on = document.getElementById("solicitar_on");
+         solicitar_on.style.opacity= 1;
+
+        
+        
+
         const productToAdd = {
             name: name_cigar,
             presentation: cantidad_unidades,
@@ -77,6 +93,21 @@ const Showproduct = () => {
 
         const encodedMessage = encodeURIComponent(message);
         window.open(`https://wa.me/573174044408?text=${encodedMessage}`, "_blank");
+    };
+
+    const sendTelegram = () => {
+if (voucher.length === 0) return;
+
+        let message = "Hola, me gustaría hacer un pedido:\n\n";
+        voucher.forEach((item, index) => {
+            message += `${index + 1}. ${item.name} - ${item.presentation} ($${item.precio} COP)\n`;
+        });
+        message += `\nTotal COP: $${totalCOP.toLocaleString("es-CO")}\n`;
+        message += `Total USD: $${totalUSD}\n`;
+
+        const encodedMessage = encodeURIComponent(message);
+        window.open(`https://t.me/usuario?text=${encodedMessage}`, "_blank");
+    
     };
 
     return (
@@ -136,9 +167,11 @@ const Showproduct = () => {
                                         </span>
                                     )}
                                 </div>
+
+                                <div id="solicitar_on" className = "flex  opacity-10 flex-row space-around gap-4 h-full w-full center justify-center "> 
                                   <div 
                                 onClick={sendWhatsApp}
-                                className="cursor-pointer bottom-[-5.4rem] group flex flex-col items-center transition-all hover:scale-110 absolute z-18"
+                                className="cursor-pointer bottom-[-5.4rem] left-2   group flex flex-col items-center transition-all hover:scale-110 absolute z-18"
                             >
                                 <div className="bg-white md:p-1.5 p-2 rounded-full shadow-lg group-hover:bg-green-50 transition-colors">
                                     <StaticImage
@@ -150,6 +183,22 @@ const Showproduct = () => {
                                 </div>
                                 <p className="md:text-[0.6rem] text-[0.75rem] md:mt-0.5 mt-1 font-medium group-hover:underline text-center">Solicitar</p>
                             </div>
+
+                                           <div 
+                                onClick={sendTelegram}
+                                className="cursor-pointer bottom-[-5.4rem] right-7 group flex flex-col items-center transition-all hover:scale-110 absolute z-18"
+                            >
+                                <div className="bg-white  md:p-1.5 p-2 rounded-full shadow-lg group-hover:bg-green-50 transition-colors">
+                                    <StaticImage
+                                        src="../../static/footer/-logo-msn-telegram.webp"
+                                        alt="Send order via WhatsApp"
+                                        className="md:w-9 md:h-9 w-10 h-10"
+                                        placeholder="blurred"
+                                    />
+                                </div>
+                                <p className="md:text-[0.6rem] text-[0.75rem] md:mt-0.5 mt-1 font-medium group-hover:underline text-center">Solicitar</p>
+                            </div>
+                                            </div>
 
                             </div>
 

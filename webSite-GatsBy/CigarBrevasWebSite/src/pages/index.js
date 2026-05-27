@@ -276,11 +276,11 @@ const IndexPage = () => {
             <div id="compras"  className="min-h-screen w-full relative flex flex-col justify-center left-0 top-0 mt-9">
                 <Showproduct />
             </div>
-
+<footer> 
             <div className="w-full">
                 <GallerySection />
             </div>
-
+</footer>
             {/* <Footer /> */}
         </>
     );

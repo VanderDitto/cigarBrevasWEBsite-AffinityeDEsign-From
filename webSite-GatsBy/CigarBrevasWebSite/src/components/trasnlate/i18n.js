@@ -9,13 +9,16 @@ i18n.use(initReactI18next).init({
         wellcome: "Bienvenido",
         tienes: "Tienes",
         hecho: "Hecho a Mano",
+        edad: "edad",
+        suficiente: "suficiente"
       },
     },
     en: {
       translation: {
-        wellcome: "Wellcome",
-        tienes: "You have",
+        wellcome: "Wellcome", 
+        tienes: "Are You",
         hecho: "Hand Made",
+        suficiente: "enough"
       },
     },
     pt: {
@@ -23,6 +26,7 @@ i18n.use(initReactI18next).init({
         wellcome: "Bem-vindo",
         tienes: "Você tem",
         hecho: "Feito à Mão",
+        suficiente: "suficiente"
       },
     },
   },

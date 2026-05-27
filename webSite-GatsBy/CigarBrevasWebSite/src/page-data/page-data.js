@@ -4,13 +4,13 @@ const Info_Vitola = {
 
     FirstCardPhoto:"/coquet/-cigar-brevas-galery-1.webp",    SecondCardPhoto:"/coquet/-cigar-brevas-galery-2.webp",
 
-    Card1:{id:1,Image_bitola:'/cigar-vitola/info-show/numero5/numero5_cigar.jpg', Image_cigar:'/cigar-vitola/info-show/numero5/_cortadora.png',title:'Numero 5',text_es:'Largo: 10.16 Cm\nPeso: 7 Gr\n ring: 1.524 Cm' , text_pt:'Comprimento: 10.16 Cm\nPeso: 7 Gr\n ring: 1.524 Cm' , text_en:'Length: 10.16 Cm\nWeight: 7 Gr\n ring: 1.524 Cm' },
-    Card2:{id:2,Image_bitola:"/cigar-vitola/info-show/robusto/Robusto_1.jpg", Image_cigar: "/cigar-vitola/info-show/robusto/Robusto_2.jpg",title:"Robusto Brevas",text_es:"Largo: 12.7 Cm\nPeso: 10 Gr\n ring: 1.524 Cm" , text_pt:'Comprimento: 12.7 Cm\nPeso: 10 Gr\n ring: 1.524 Cm' , text_en:'Length: 12.7 Cm\nWeight: 10 Gr\n ring: 1.524 Cm' },
-    Card3:{id:3,Image_bitola:"/cigar-vitola/info-show/panetela/panetela.png", Image_cigar:"/cigar-vitola/info-show/panetela/panetela2.png", title:"Panetela Brevas",text_es:"Largo: 13.97 Cm\nPeso: 16 Gr\n ring: 0.5 Cm", text_pt:'Comprimento: 13.97 Cm\nPeso: 16 Gr\n ring: 0.5 Cm', text_en:'Length: 13.97 Cm\nWeight: 16 Gr\n ring: 0.5 Cm' },
-    Card4:{id:4,Image_bitola:"/cigar-vitola/info-show/purito/purito.jpg", Image_cigar:"/cigar-vitola/info-show/purito/purito2.jpg", title:"Purito Brevas",text_es:"Largo: 7.62 Cm\nPeso: 4 Gr\n ring: 1.27 Cm", text_pt:'Comprimento: 7.62 Cm\nPeso: 4 Gr\n ring: 1.27 Cm' , text_en:'Length: 7.62 Cm\nWeight: 4 Gr\n ring: 1.27 Cm' },
-    Card5:{id:5,Image_bitola:"/cigar-vitola/info-show/torpedo/torpedo.jpg", Image_cigar:"/cigar-vitola/info-show/torpedo/torpedo2.jpg", title:"Torpedo Brevas",text_es:"Largo: 7.62 Cm\nPeso: 4 Gr\n ring: 1.27 Cm", text_pt:'Comprimento: 7.62 Cm\nPeso: 4 Gr\n ring: 1.27 Cm' , text_en:'Length: 7.62 Cm\nWeight: 4 Gr\n ring: 1.27 Cm' },
-    Card6:{id:6,Image_bitola:"/cigar-vitola/info-show/churchill/churchill.jpg", Image_cigar:"/cigar-vitola/info-show/churchill/churchill2.jpg", title:"Churchill Brevas",text_es:"Largo: 17.1 Cm\nPeso: 15.5 Gr\n ring: 1.90 Cm", text_pt:'Comprimento: 17.1 Cm\nPeso: 15.5 Gr\n ring: 1.90 Cm' , text_en:'Length: 17.1 Cm\nWeight: 15.5 Gr\n ring: 1.90 Cm' },
-    Card7:{id:7,Image_bitola:"/cigar-vitola/info-show/mini/mini.jpg", Image_cigar:"/cigar-vitola/info-show/mini/mini2.jpg", title:"mini-exquisito Brevas", text_es:"Largo: 8.89 Cm\nPeso: 5.5 Gr\n ring: 0.53 Cm", text_pt:'Comprimento: 8.89 Cm\nPeso: 5.5 Gr\n ring: 0.53 Cm' , text_en:'Length: 8.89 Cm\nWeight: 5.5 Gr\n ring: 0.53 Cm' },
+    Card1:{id:1,Image_bitola:'/cigar-vitola/info-show/numero5/numero5_cigar.jpg', Image_cigar:'/cigar-vitola/info-show/numero5/_cortadora.png',title:'Numero 5',text_es:'Largo: 10.16 Cm Peso: 7 Gr  Ring: 1.524 Cm' , text_pt:'Comp.: 10.16 Cm Peso: 7 Gr  Ring: 1.524 Cm' , text_en:'Length: 10.16 Cm Weight: 7 Gr  Ring: 1.524 Cm' },
+    Card2:{id:2,Image_bitola:"/cigar-vitola/info-show/robusto/Robusto_1.jpg", Image_cigar: "/cigar-vitola/info-show/robusto/Robusto_2.jpg",title:"Robusto Brevas",text_es:"Largo: 12.7 Cm Peso: 10 Gr  Ring: 1.524 Cm" , text_pt:'Comp.: 12.7 Cm Peso: 10 Gr  Ring: 1.524 Cm' , text_en:'Length: 12.7 Cm Weight: 10 Gr  Ring: 1.524 Cm' },
+    Card3:{id:3,Image_bitola:"/cigar-vitola/info-show/panetela/panetela.png", Image_cigar:"/cigar-vitola/info-show/panetela/panetela2.png", title:"Panetela Brevas",text_es:"Largo: 13.97 Cm Peso: 16 Gr  Ring: 0.5 Cm", text_pt:'Comp.: 13.97 Cm Peso: 16 Gr  Ring: 0.5 Cm', text_en:'Length: 13.97 Cm Weight: 16 Gr  Ring: 0.5 Cm' },
+    Card4:{id:4,Image_bitola:"/cigar-vitola/info-show/purito/purito.jpg", Image_cigar:"/cigar-vitola/info-show/purito/purito2.jpg", title:"Purito Brevas",text_es:"Largo: 7.62 Cm Peso: 4 Gr  Ring: 1.27 Cm", text_pt:'Comp.: 7.62 Cm Peso: 4 Gr  Ring: 1.27 Cm' , text_en:'Length: 7.62 Cm Weight: 4 Gr  Ring: 1.27 Cm' },
+    Card5:{id:5,Image_bitola:"/cigar-vitola/info-show/torpedo/torpedo.jpg", Image_cigar:"/cigar-vitola/info-show/torpedo/torpedo2.jpg", title:"Torpedo Brevas",text_es:"Largo: 7.62 Cm Peso: 4 Gr  Ring: 1.27 Cm", text_pt:'Comp.: 7.62 Cm Peso: 4 Gr  Ring: 1.27 Cm' , text_en:'Length: 7.62 Cm Weight: 4 Gr  Ring: 1.27 Cm' },
+    Card6:{id:6,Image_bitola:"/cigar-vitola/info-show/churchill/churchill.jpg", Image_cigar:"/cigar-vitola/info-show/churchill/churchill2.jpg", title:"Churchill Brevas",text_es:"Largo: 17.1 Cm Peso: 15.5 Gr  Ring: 1.90 Cm", text_pt:'Comp.: 17.1 Cm Peso: 15.5 Gr  Ring: 1.90 Cm' , text_en:'Length: 17.1 Cm Weight: 15.5 Gr  Ring: 1.90 Cm' },
+    Card7:{id:7,Image_bitola:"/cigar-vitola/info-show/mini/mini.jpg", Image_cigar:"/cigar-vitola/info-show/mini/mini2.jpg", title:"mini-exquisito Brevas", text_es:"Largo: 8.89 Cm Peso: 5.5 Gr  Ring: 0.53 Cm", text_pt:'Comp.: 8.89 Cm Peso: 5.5 Gr  Ring: 0.53 Cm' , text_en:'Length: 8.89 Cm Weight: 5.5 Gr  Ring: 0.53 Cm' },
   };
 
 
@@ -42,7 +42,7 @@ const Info_Vitola = {
 
 
 
-        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robustos/-cigar-caja-20-robusto.webp" , item_product_cuantiti: "Cigar Brevas TORPEDO" ,
+        { id: 6, src_image1: "/cigar-vitola/compra-cigars-brevas/6-robustos/-cigar-caja-20-robusto.webp" , item_product_cuantiti: "Cigar Brevas ROBUSTO" ,
           cantidad_unidades: "CAJA DE MADERA 20 UNIDADES" ,
            src_image2: "/cigar-vitola/compra-cigars-brevas/6-robustos/cigar-robustos-unidad.webp" , num_item:"9/12", src_image3: "/cigar-vitola/compra-cigars-brevas/6-robustos/-cigar-robusto-show.webp" , precio: "340.000" },
 

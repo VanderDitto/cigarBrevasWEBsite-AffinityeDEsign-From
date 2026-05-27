@@ -10,12 +10,20 @@ const GallerySection = () => {
         "/galeria-temp/-galery-cigar-brevas-4.webp",
         "/galeria-temp/-galery-cigar-brevas-5.webp",
         "/galeria-temp/-galery-cigar-brevas-6.webp",
+        "/galeria-temp/-galery-cigar-brevas-7.webp",
+        "/galeria-temp/-galery-cigar-brevas-8.webp",
+        "/galeria-temp/-galery-cigar-brevas-9.webp",
+        "/galeria-temp/-galery-cigar-brevas-10.webp",
+        "/galeria-temp/-galery-cigar-brevas-11.webp",
+
+
     ];
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
     useEffect(() => {
         const interval = setInterval(() => {
+
             setCurrentIndex((prevIndex) => (prevIndex + 2) % images.length);
         }, 2100);
         return () => clearInterval(interval);
@@ -26,8 +34,6 @@ const GallerySection = () => {
     const secondImage = images[(currentIndex + 1) % images.length];
 
     return (
-
-
 
 
         <section className="relative w-full min-h-screen bg-[#FDFBF7] py-20 px-4 flex items-center justify-center overflow-hidden">
@@ -49,10 +55,14 @@ const GallerySection = () => {
 
             <div className="max-w-7xl w-full grid grid-cols-1 lg:grid-cols-12 gap-8 relative z-10">
                 
+                
                 {/* Columna Izquierda (Espacio o Contenido Adicional) */}
                 <div className="lg:col-span-6 hidden lg:block">
                     {/* Espacio reservado para el texto central o equilibrio visual */}
-                                    
+                                
+
+
+
 <div className="grid grid-cols-3 grid-rows-4 gap-4 ">
     <div className="row-span-2 col-start-1 row-start-2">
         <img src="/footer/logo-brevas.webp" alt="Cigar gallery view 1" className="w-full h-full object-contain transition-opacity duration-1000" />
@@ -66,6 +76,7 @@ seleccionada tanto nacional como importada.
     <div className="col-start-2 row-start-3 text-[0.65rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em]">
          “Prohibida la venta a menores de 18 años”
     </div>
+    
     <div className="row-span-4 col-start-3 row-start-1 ">
         
         <div className = "flex flex-col  items-center justify-center gap-2 mt-3 align-center">
@@ -73,23 +84,28 @@ seleccionada tanto nacional como importada.
                     <div className="w-[4rem] bg-[#E5FDD3]  align-start border-radius-2xl"> 
         
                         {/* // zone redes socials */}
-                            <span className="  h-[content] m-3 ">
-                            <StaticImage
-                            src="../../static/footer/-logo-msn-telegram.webp"
-                            alt="Logo Cigar Breva"
-                            className="w-[2rem] h-auto object-cover pointer-events-none select-none m-2"
-                            placeholder="dominantColor"
-                            onContextMenu={(e) => e.preventDefault()}
-                        />
-                        
-                            <StaticImage
-                            src="../../static/footer/-logo-cigar-face.webp"
-                            alt="Logo Cigar Breva"
-                            className="w-[2rem] h-auto object-cover pointer-events-none select-none  m-2"
-                            placeholder="dominantColor"
-                            onContextMenu={(e) => e.preventDefault()}
-                        />
-        
+                    < span>
+                           
+
+
+                      <div className = "m-3 cursor-pointer " target = "_blank"  > 
+                        <a href = "http://www.facebook.com/cigarros.brevas.9"> 
+                                    <StaticImage
+                                    src="../../static/footer/-logo-cigar-face.webp"
+                                    alt="Logo Cigar Breva"
+                                    className="w-[2rem] h-auto object-cover pointer-events-none select-none  m-2"
+                                    placeholder="dominantColor"
+                                    onContextMenu={(e) => e.preventDefault()}
+                                    />
+                        </a>
+
+                        </div>  
+
+
+        <div className = "m-3 cursor-pointer "   >
+
+        <a href = "https://wa.me/573174044408?text=hola quiero conocer mas del producto cigar brevas" target=  "_blank"> 
+                
                           <StaticImage
                             src="../../static/footer/-logo-msn-whatup.webp"
                             alt="Logo Cigar Breva"
@@ -97,15 +113,25 @@ seleccionada tanto nacional como importada.
                             placeholder="dominantColor"
                             onContextMenu={(e) => e.preventDefault()}
                         />
-        
+
+                        </a>
+        </div>
+
+        <div className = "m-3 cursor-pointer"  >
+            <a href= "https://www.instagram.com/vitolasbrevas" target="_blank"> 
                           <StaticImage
-                            src="../../static/footer/-logo-insta-social.webp"
-                            alt="Logo Cigar Breva"
-                            className="w-[2rem] h-auto object-cover pointer-events-none select-none  m-2"
+                            src = "../../static/footer/-logo-insta-social.webp"
+                            alt = "Logo instagram to vitolasBrevas"
+                            className="w-[2rem] h-auto object-cover cursor-pointer pointer-events-none select-none  m-2"
                             placeholder="dominantColor"
                             onContextMenu={(e) => e.preventDefault()}
+                            
                         />
+            </a>
+                         </div>
                             </span>
+                   
+
                     </div>
         
                     <span className="text-[0.65rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em]">
@@ -114,6 +140,9 @@ seleccionada tanto nacional como importada.
         </div>
 
     </div>
+
+
+
     <div className="col-span-2 col-start-1 row-start-1 ">
 <img src="/footer/-name-cigar-Brevas.webp" alt="Cigar gallery view 1" className="w-full h-full object-contain transition-opacity duration-1000" />
     </div>

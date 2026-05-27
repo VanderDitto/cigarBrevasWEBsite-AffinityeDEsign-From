@@ -109,7 +109,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
 {/* // Galeria de imagenes  == post show INFooooo */}
         <div className = 'bg-[#D5D1CD]  w-[13rem] m-[1rem] absolute right-0 top-8 mt-4  flex flex-col  justify-around div-con-borde' >
 
-                      <span className = "w-[content]  relative mt-6  m-5">
+                  <span className = "w-[content]  relative mt-6  m-5">
                       <img
                       src = {cardSelected==null?"/coquet/-cigar-brevas-galery-1.webp":cardSelected.Image_bitola}
                       alt = "Image Show Cigar Brevas"             // {cardSelected==null?"":cardSelected.title}
@@ -119,8 +119,8 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
                     />
                   </span>
 
-                  <div className="w-[content] text-[1.1em]  sulphur-point-bold relative  text-center">
-                    <p className = "text-bold p-3 text-[1.3em] bg-amber-300 leading-relaxed tracking-wide whitespace-pre-line"  >  
+                  <div className="w-full   sulphur-point-bold relative   text-center">
+                    <p className = "text-bold p-3 text-[1.3em] bg-amber-300 leading-relaxed tracking-wide whitespace-pre-line"  >
                       {/* Tradición – Maestría – Calidad  */}
                       { cardSelected==null?"Tradición – Maestría – Calidad ":cardSelected[textByLang] }
                       </p>
@@ -251,8 +251,18 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
 </div>
 
 
+<div  className="flex justify-center w-full ">
+        <div className="w-full left-[1/2] border border-amber-600 border-3  sulphur-point-bold absolute  h-[auto] text-center">
+                            <p className = "text-bold p-3 text-[1.6em] bg-amber-300 leading-relaxed tracking-wide whitespace-pre-line"  >  
+                              {/* Tradición – Maestría – Calidad  */}
+                              { cardSelected==null?"Tradición – Maestría – Calidad ":cardSelected[textByLang] }
+                              </p>
+          </div>
+</div>
+ 
 
-<div className="flex gap-17 justify-center transform scale-88 flex-wrap  items-baseline py-5">
+
+<div className="flex gap-17 justify-center transform scale-88 flex-wrap  items-baseline py-5 mb-[3rem]">
   {/* Bloque Purito */}
   <div className="relative w-[147px] h-[147px] cigar-vitola" onMouseEnter={() => { handleInfo(4); setHoveredCircle(4); }} onMouseLeave={() => setHoveredCircle(null)}>
     {/* Círculo amarillo */}
