@@ -107,7 +107,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
         </span>
 
 {/* // Galeria de imagenes  == post show INFooooo */}
-        <div className = 'bg-[#D5D1CD]  w-[13rem] m-[1rem] absolute right-0 top-0  flex flex-col  justify-around div-con-borde' >
+        <div className = 'bg-[#D5D1CD]  w-[13rem] m-[1rem] absolute right-0 top-8 mt-4  flex flex-col  justify-around div-con-borde' >
 
                       <span className = "w-[content]  relative mt-6  m-5">
                       <img
@@ -139,10 +139,10 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
         </div>
 
 
-<div  className="flex  gap-[2vw]  items-baseline flex-wrap center justify-center space-around  ml-20 py-8 mt-12 w-[78vw] ">
+<div  className="flex  gap-[2vw]  transform scale-88 items-baseline flex-wrap center justify-center space-around  ml-20 py-8 mt-12 w-[78vw] ">
 
   {/* Bloque Numero-5 */}
-  <div  className = " relative  w-40  h-40  cigar-vitola " >
+  <div  className = " relative  w-40  h-40  cigar-vitola  " >
 
     {/* Círculo amarillo */}
     <div  onMouseEnter={(event) => { handleInfo(1); setHoveredCircle(1); }}  onMouseLeave={() => setHoveredCircle(null)} className = "w-47 h-47 rounded-full border-2 border-[#9B7F49] bg-[#e6d8bc] flex items-center justify-center overflow-hidden">
@@ -252,7 +252,7 @@ const  data = useMemo(() => ({ Info_Vitola }), []);
 
 
 
-<div className="flex gap-17 justify-center flex-wrap  items-baseline py-5">
+<div className="flex gap-17 justify-center transform scale-88 flex-wrap  items-baseline py-5">
   {/* Bloque Purito */}
   <div className="relative w-[147px] h-[147px] cigar-vitola" onMouseEnter={() => { handleInfo(4); setHoveredCircle(4); }} onMouseLeave={() => setHoveredCircle(null)}>
     {/* Círculo amarillo */}
