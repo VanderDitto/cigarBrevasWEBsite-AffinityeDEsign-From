@@ -395,8 +395,8 @@ if (voucher.length === 0) return;
                                     </span>
                                 </div>
 
-                                <div className="w-[20vw] absolute top-[23vh] m-auto h-[17vw] bg-[#9B7F49] border flex items-center justify-center border-[white] border-3 border">
-                                    <span className="w-[18vw] h-[content] m-auto z-12 flex items-center justify-center absolute mt-5">
+                                <div className="w-[25vw] absolute mt-5 top-[23vh] m-auto h-[17vw] bg-[#9B7F49] border flex items-center justify-center border-[white] border-3 border">
+                                    <span className="w-[23vw] h-[content] m-auto z-12 flex items-center justify-center absolute mt-5">
                                         <img
                                             src={third_image}
                                             alt="Brevas cigar segment resting on a gold and brown display tray"

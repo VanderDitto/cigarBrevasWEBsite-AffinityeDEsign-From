@@ -99,7 +99,7 @@ Vitolas
                             </div>
 
                             {/* MoldesTODO: Click goto */}
-                            <div className="flex flex-col items-center cursor-pointer" onClick={onScrool_To}  >
+                            <div className = " flex flex-col ml-7 items-center cursor-pointer " onClick={onScrool_To}  >
                                 <div  className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300">
                                     <StaticImage
                                         src="../../assets/images/welcome/toBuy.webp"
