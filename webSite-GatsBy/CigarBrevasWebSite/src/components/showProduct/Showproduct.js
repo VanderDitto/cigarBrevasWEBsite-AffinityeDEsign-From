@@ -114,7 +114,7 @@ if (voucher.length === 0) return;
         <>
             <section className="w-[81vw] relative top-0 left-0 z-1 m-auto h-full bg-white flex flex-col items-center justify-center">
                 <section className="grid grid-cols-2 border-red-300 border-2 w-full h-full">
-                    <div className="relative border-amber-300 border-2 bg-white w-full h-full">
+                    <div className="relative border-amber-300 border-2  bg-white w-full h-full">
                         <div className="flex gap-0 align-right flex-direction-row justify-end">
                             <div className="w-[25vw] h-[22vw] z-11 bg-[#9B7F49] flex items-center justify-center align-right mt-12 border-[#783689] border-3">
                                 <span className="w-[auto] h-[59vh]">
@@ -127,9 +127,9 @@ if (voucher.length === 0) return;
                                 </span>
                             </div>
 
-                            <div className="top-[2rem] w-[15vw] h-[45vh] shadow-xl border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
-                                <div className="flex flex-col items-center justify-center w-full h-full md:p-2 p-3">
-                                    <div className="w-full bg-[#783689] shadow-xl md:py-0.5 md:mb-1 py-1 mb-2 rounded">
+                            <div className="top-[2rem] w-[15vw] tb:h-[25vh]   h-[35vh] shadow-xl border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
+                                <div className="flex flex-col items-center justify-center w-full tb:h-[85%] tb:bg-amber-600 md:p-2 p-3">
+                                    <div className="w-full bg-[#783689] shadow-xl md:py-0.5 md:mb-1 py-1 mb-2 rounded text-center">
                                         <p className="text-[1.4rem] md:text-[1.2rem] font-bold text-white select-none uppercase tracking-wider">
                                             voucher
                                         </p>
@@ -218,7 +218,7 @@ if (voucher.length === 0) return;
                             </div>
                         </div>
 
-                        <p className="pl-2 text-[2.4em] text-right right-19 font-semibold text-[#783689] m-2 relative">
+                        <p className="pl-2 text-[1.6em] tb:text-[1.1em] text-right right-19 font-semibold text-[#cc7b41] m-2 relative">
                             ${precio} COP
                         </p>
 
@@ -226,8 +226,8 @@ if (voucher.length === 0) return;
                             id="find_cigar"
                             className="w-[full] h-[content] flex-row flex flex-row gap-5 m-auto z-12 items-center space-around justify-center mt-2 mb-1"
                         >
-                            <span className="w-[content] h-[content] cursor-pointer z-12 flex-inline">
-                                <span className="underline-estilo font-medium text-[1.9em] p-5 | m-7">
+                            <span className="w-[contend]  tb:text-[0.8em]   tb:w-[33%]  tb:left-13 relative  h-[content] cursor-pointer z-12 flex-inline">
+                                <span className="underline-estilo font-medium text-[1.4em] p-5 | m-7">
                                     <p>{cantidad_unidades}</p>
                                 </span>
                             </span>
@@ -237,7 +237,7 @@ if (voucher.length === 0) return;
                                     {name_cigar}
                                 </h2>
                                 <span className="relative">
-                                    <p className="text-[1.7em] underline  absolute font-bold text-black ml-5 pl-8 bottom-9 left-8 center">
+                                    <p className="text-[1.7em] tb:text-[1.2em] tb:w-[1/2] underline  absolute font-bold text-black ml-5 pl-8 bottom-9 left-6 center">
                                         &nbsp; {item_count}
                                     </p>
                                 </span>
@@ -245,7 +245,7 @@ if (voucher.length === 0) return;
                         </span>
 
                         <div onContextMenu={(e) => {
-    e.preventDefault();}} className="text-[0.9rem] leading-tight text-gray-500 font-light uppercase tracking-[0.2em] relative flex flex-row gap-2 w-[79%]  justify-end top-0 m-2 inset-1.5 select-none">
+    e.preventDefault();}} className="text-[1.2rem]  tb:text-[0.9rem] top-14  tb:p-3  tb:top-25 leading-tight text-gray-700 font-light uppercase tracking-[0.2em] relative flex flex-row gap-2 w-[79%]  justify-end tb:bootom-[1% + 0.4em] m-2 inset-1.5 select-none tb:w-[13%] tb:border-3 select-none">
                             No es solo hoja, es herencia; no es solo humo, es memoria. El cigarro nace de la constacia del
                             buen esmero y de la pasión que, durante generaciones, han tejido un símbolo de excelencia.
                         </div>
@@ -375,46 +375,51 @@ if (voucher.length === 0) return;
                                 </span>
                             </span>
 
-                            <div className="w-[32vw] h-auto bottom-[calc(15%-9em)] m-auto flex flex-col items-center justify-center relative align-content:space-between">
-                                <StaticImage
-                                    src="../../static/cigar-vitola/-base-circular.webp"
-                                    alt="Circular decorative base graphic behind the cigar display"
-                                    className="object-cover pointer-events-none select-none w-[content] h-[content]"
-                                    placeholder="dominantColor"
-                                    onContextMenu={(e) => e.preventDefault()}
-                                />
-
-                                <div className="w-[32vw] border-white absolute top-[5vh] m-auto h-[7vw] bg-[#783689] border border-1 flex items-center justify-center">
-                                    <span>
-                                        <img
-                                            src={second_image}
-                                            alt="Brevas cigar close-up displayed inside a purple and gold presentation panel"
-                                            className="bottom-[14px] relative object-cover pointer-events-none select-none w-[content] h-[content]"
-                                            onContextMenu={(e) => e.preventDefault()}
-                                        />
-                                    </span>
-                                </div>
-
-                                <div className="w-[25vw] absolute mt-5 top-[23vh] m-auto h-[17vw] bg-[#9B7F49] border flex items-center justify-center border-[white] border-3 border">
-                                    <span className="w-[23vw] h-[content] m-auto z-12 flex items-center justify-center absolute mt-5">
-                                        <img
-                                            src={third_image}
-                                            alt="Brevas cigar segment resting on a gold and brown display tray"
+                        <div className = "tb:relative tb:bottom-8 ">  
+                                    <div className="w-[32vw] relative h-auto bottom-[calc(15%-9em)] m-auto flex flex-col items-center justify-center  ">
+                                        <StaticImage
+                                            src="../../static/cigar-vitola/-base-circular.webp"
+                                            alt="Circular decorative base graphic behind the cigar display"
                                             className="object-cover pointer-events-none select-none w-[content] h-[content]"
+                                            placeholder="dominantColor"
                                             onContextMenu={(e) => e.preventDefault()}
                                         />
-                                    </span>
-                                </div>
+  <div className="w-[25vw] relative mt-1 absolute bottom-[43vh]  m-auto h-[auto] bg-[#9B7F49]  tb:bottom-[13vh] flex items-center justify-center border-[white] border-3 border">
+                                            <span className="w-[23vw] h-[content] m-auto z-12 flex items-center justify-center  mt-5">
+                                                <img
+                                                    src={third_image}
+                                                    alt="cigar brevas image dentro de una figuar geometrica de colores"
+                                                    className="object-cover pointer-events-none select-none w-[content] h-[content]"
+                                                    onContextMenu={(e) => e.preventDefault()}
+                                                />
+                                            </span>
+                                        </div>
 
-                                <span className="text-white w-[50%] h-[content] m-auto z-12 flex items-center justify-center mt-5">
-                                    <img
-                                        src="/cigar-vitola/compra-cigars-brevas/-name-enterprice-rec.webp"
-                                        alt="Brevas registered brand name graphic on a promotional panel"
-                                        className="object-cover pointer-events-none select-none w-[content] h-[content]"
-                                        onContextMenu={(e) => e.preventDefault()}
-                                    />
-                                </span>
-                            </div>
+                                        <div className="w-[32vw] border-white absolute top-[9vh] m-auto h-[7vw] bg-[#783689] border border-1 flex items-center justify-center">
+                                            <span>
+                                                <img
+                                                    src={second_image}
+                                                    alt="Brevas cigar close-up displayed inside a purple and gold presentation panel"
+                                                    className="bottom-[14px] relative object-cover pointer-events-none select-none w-[content] h-[content]"
+                                                    onContextMenu={(e) => e.preventDefault()}
+                                                />
+                                            </span>
+                                        </div>
+
+                                      
+
+                                        <span className="text-white w-[50%] h-[content] m-auto z-12 flex items-center justify-center mt-5">
+                                            <img
+                                                src="/cigar-vitola/compra-cigars-brevas/-name-enterprice-rec.webp"
+                                                alt="Brevas registered brand name graphic on a promotional panel"
+                                                className="object-cover pointer-events-none select-none w-[content] h-[content]"
+                                                onContextMenu={(e) => e.preventDefault()}
+                                            />
+                                        </span>
+                                    </div>
+
+            </div>
+
                         </div>
                     
 

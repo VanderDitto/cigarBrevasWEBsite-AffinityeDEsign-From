@@ -29,11 +29,11 @@ useEffect(() => {
 
   return (
 
-    <section className=" cursor-pointer z-99 w-[1/5] gap-2 h-auto flex flex-row ">
+    <section className=" cursor-pointer z-99 w-full gap-2 space-evenly h-auto flex flex-row  tb:absolute tb:left-[-10em] tb:top-0 tb:"  >
     <span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
             <button id="btn_default"
               onClick={() => changeLang("es")}
-              className = " flex flex-col items-center m-2 pt-1  rounded-lg border border-[#994743] hover:border-0  hover:bg-[#007f0d34] transition cursor-pointer bg-[#B8C2B9]"
+              className = "flex flex-col items-center m-2 pt-1 cursor-pointer hover:border-0  hover:bg-[#007f0d34] rounded-lg border border-[#994743] bg-[#B8C2B9]  transition cursor-pointer"
             >
               <StaticImage
                 src="../../assets/images/page1/colombia.webp"

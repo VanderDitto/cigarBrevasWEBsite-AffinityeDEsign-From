@@ -3,8 +3,8 @@
  @theme {
 
   --breakpoint-*: initial;
-  --breakpoint-tb:60rem;
-
+  --breakpoint-tb: 60rem;
+  
   --breakpoint-moniT: 71rem;
   --breakpoint-dest: 1900px;
 }

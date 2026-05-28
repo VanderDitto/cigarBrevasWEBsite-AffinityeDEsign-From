@@ -79,8 +79,8 @@ const IndexPage = () => {
                             onContextMenu={(e) => e.preventDefault()}
                         />
 
-                        <div className="bg-black/20  w-full   flex flex-col left-0 items-center justify-center relative">
-                            <span className="z-40 relative right-6.5 block-[content] ">
+                        <div className="bg-black/20  w-full wrap  tb:right-8  mr-15 pr-3 flex flex-col left-0 items-center justify-center relative">
+                            <span className="z-40 relative right-6.5 block-[content]  w-[content]">
                                 <LanguageSelector />
                                
                             </span>
@@ -219,11 +219,11 @@ const IndexPage = () => {
                         </svg>
                     </div>
 
-                    <div className="relative w-[85%] flex items-center justify-center pointer-events-auto moniT:top-[-88px] dest:top-[calc(full - full/2 + 100px)]">
+                    <div className="relative w-[85%] top-[calc(50% + 3em)]  flex items-center justify-center pointer-events-auto moniT:top-[-88px] dest:top-3 dest:border-2 dest:border-red-800">
                         <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large dest:top-3 moniT:bottom-4">SUFICIENTE</div>
                     </div>
 
-                    <div className="ml-[27svw] border-1  moniT:bottom-1/7   bungee-Tint-regular    mx-auto text-fluid pointer-events-auto  absolute dest:bottom-[123px] ">
+                    <div className="ml-[27svw] border-1  moniT:bottom-1/7 tb:bottom-33  bungee-Tint-regular    mx-auto text-fluid pointer-events-auto  absolute dest:bottom-[123px] ">
                         PARA FUMAR?  
                         <div className="flex justify-end-safe  w-25  items-stretch float-right bottom-3 dest:bottom-7  ">
                                
