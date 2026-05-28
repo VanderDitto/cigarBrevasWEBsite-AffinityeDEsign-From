@@ -65,7 +65,7 @@ const Welcome = () => {
                     </div>
 
                     {/* Right Column: Descriptions and Additional Images */}
-                    <div className="lg:col-span-7 space-y-12">
+                    <div className="lg:col-span-9 space-y-12">
                         
                         {/* Descriptive Text Section */}
                         <article className="bg-[#9B7F49] p-8 md:p-12 text-white shadow-2xl rounded-sm relative">
@@ -78,14 +78,14 @@ const Welcome = () => {
                         </article>
 
                         {/* Secondary Images Row */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 moniT:gap-13 moniT:flex moniT:flex-row moniT:space-around moniT:bg-red-500 w-[full+44px]   h-[content]">
                             {/* Vitolas */}
                             <div onClick={scrollToContacto}  className="flex flex-col items-center cursor-pointer">
-                                <div className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300">
+                                <div className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300 moniT:w-[88%]">
                                     <StaticImage
                                         src="../../assets/images/welcome/vitolario-puros.png"
                                         alt="Diversas Vitolas de Puros Brevas"
-                                        className="object-contain aspect-video w-full h-48"
+                                        className="object-contain aspect-video w-full moniT:w-1/2 moniT:h-33 h-48"
                                         placeholder="blurred"
                                         onContextMenu={(e) => e.preventDefault()}
                                     />
@@ -99,12 +99,12 @@ Vitolas
                             </div>
 
                             {/* MoldesTODO: Click goto */}
-                            <div className="flex flex-col items-center cursor-pointer" onClick={onScrool_To}  >
+                            <div className="flex flex-col items-center cursor-pointer moniT:m-0 moniT:bg-red-500" onClick={onScrool_To}  >
                                 <div  className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300">
                                     <StaticImage
                                         src="../../assets/images/welcome/toBuy.webp"
                                         alt="Moldes artesanales usados en la producción de cigarros"
-                                        className="object-cover w-full h-48"
+                                        className="object-cover w-full h-[auto]"
                                         placeholder="blurred"
                                         onContextMenu={(e) => e.preventDefault()}
                                     />

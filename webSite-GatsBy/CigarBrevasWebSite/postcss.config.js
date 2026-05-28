@@ -21,7 +21,8 @@ fontFamily:{
   "poiret": ["Poiret One" , "sans"],
   "bungee-shade": ["Bungee shade" , "sans"]
 
-}
+},
+
 
 },extends:{
 colors:{

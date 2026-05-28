@@ -219,19 +219,19 @@ const IndexPage = () => {
                         </svg>
                     </div>
 
-                    <div className="relative w-[85%] flex items-center justify-center pointer-events-auto">
-                        <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large">SUFICIENTE</div>
+                    <div className="relative w-[85%] flex items-center justify-center pointer-events-auto moniT:top-[-88px] dest:top-[calc(full - full/2 + 100px)]">
+                        <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large dest:top-3 moniT:bottom-4">SUFICIENTE</div>
                     </div>
 
-                    <div className="ml-[27svw]   bungee-Tint-regular  relative  mx-auto text-fluid pointer-events-auto">
+                    <div className="ml-[27svw] border-1  moniT:bottom-1/7   bungee-Tint-regular    mx-auto text-fluid pointer-events-auto  absolute dest:bottom-[123px] ">
                         PARA FUMAR?  
-                        <div className="flex justify-end-safe  w-25  items-stretch float-right bottom-3 relative ">
+                        <div className="flex justify-end-safe  w-25  items-stretch float-right bottom-3 dest:bottom-7  ">
                                
 
                             <StaticImage
                                 src="../assets/images/page1/icon-alarm.webp"
                                 alt="Imagen Icon Alarm"
-                                className="aspect-square w-[23] right-0 bottom-6 object-contain pointer-events-none block user-select-none"
+                                className="aspect-square w-[23] right-0 bottom-6 Dest:bottom-1 object-contain pointer-events-none block user-select-none"
                                 layout="constrained"
                                 placeholder="dominantColor"
                                 onContextMenu={(e) => e.preventDefault()}
