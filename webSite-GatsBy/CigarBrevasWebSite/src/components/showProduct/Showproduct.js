@@ -127,7 +127,7 @@ if (voucher.length === 0) return;
                                 </span>
                             </div>
 
-                            <div className="top-[2rem] w-[15vw] tb:h-[25vh]   h-[35vh] shadow-xl border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
+                            <div className="top-[2rem] w-[15vw] tb:h-[25vh] dest:h-1/2  h-[35vh] shadow-xl border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
                                 <div className="flex flex-col items-center justify-center w-full tb:h-[85%] tb:bg-amber-600 md:p-2 p-3">
                                     <div className="w-full bg-[#783689] shadow-xl md:py-0.5 md:mb-1 py-1 mb-2 rounded text-center">
                                         <p className="text-[1.4rem] md:text-[1.2rem] font-bold text-white select-none uppercase tracking-wider">
@@ -226,13 +226,13 @@ if (voucher.length === 0) return;
                             id="find_cigar"
                             className="w-[full] h-[content] flex-row flex flex-row gap-5 m-auto z-12 items-center space-around justify-center mt-2 mb-1"
                         >
-                            <span className="w-[contend]  tb:text-[0.8em]   tb:w-[33%]  tb:left-13 relative  h-[content] cursor-pointer z-12 flex-inline">
-                                <span className="underline-estilo font-medium text-[1.4em] p-5 | m-7">
-                                    <p>{cantidad_unidades}</p>
+                            <span className="cursor-none  w-[contend]  tb:text-[0.8em] dest:right-9  tb:w-[33%]  tb:left-13 relative  h-[content]  z-12 flex-inline ">
+                                <span className="underline-estilo font-medium text-[1.4em] p-5 | m-4 w-[88%] select-none">
+                                    <p className = "w-[88%]">{cantidad_unidades}</p>
                                 </span>
                             </span>
 
-                            <span className="top-45 right-4 relative flex-inline flex-col items-center justify-center z-12 ">
+                            <span className="top-45 right-0 relative flex-inline flex-col items-center justify-center z-12 ">
                                 <h2 className=" font-name-vitolas-center  m-2 bg-[#ffcf22] p-2  absolute   bottom-24">
                                     {name_cigar}
                                 </h2>
@@ -384,7 +384,7 @@ if (voucher.length === 0) return;
                                             placeholder="dominantColor"
                                             onContextMenu={(e) => e.preventDefault()}
                                         />
-  <div className="w-[25vw] relative mt-1 absolute bottom-[43vh]  m-auto h-[auto] bg-[#9B7F49]  tb:bottom-[13vh] flex items-center justify-center border-[white] border-3 border">
+  <div className="w-[25vw] relative mt-1  bottom-[41vh] tercer_image  m-auto h-[auto] bg-[#9B7F49]   tb:bottom-[12vh] flex items-center justify-center border-[white] border-3 border">
                                             <span className="w-[23vw] h-[content] m-auto z-12 flex items-center justify-center  mt-5">
                                                 <img
                                                     src={third_image}

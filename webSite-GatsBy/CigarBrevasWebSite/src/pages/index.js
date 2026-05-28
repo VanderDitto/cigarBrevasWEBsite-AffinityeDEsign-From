@@ -259,7 +259,7 @@ const IndexPage = () => {
                 <Banner />
             </span>
 
-            <div className="min-h-screen">
+            <div className="min-h-screen  w-[100% - 20px]">
                 <Heropage_features />
             </div>
 
@@ -271,9 +271,9 @@ const IndexPage = () => {
                 <CigarVitolar />
             </div>
 
-            <div className="h-[30px] pt-2 top-[15px] relative w-full m-auto mt-1 border-red-700 bg-red-800 block"></div>
+            <div className="h-[30px] pt-2 top-[12px] relative w-full m-auto mt-1 border-red-700 bg-red-800 block"></div>
             
-            <div id="compras"  className="min-h-screen w-full relative flex flex-col justify-center left-0 top-0 mt-9">
+            <div id="compras"  className="min-h-screen w-full relative flex flex-col justify-center left-0 top-2 mt-0">
                 <Showproduct />
             </div>
 <footer> 
