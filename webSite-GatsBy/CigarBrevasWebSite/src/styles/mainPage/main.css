@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+ @theme {
+
+  --breakpoint-*: initial;
+  --breakpoint-tb:60rem;
+
+  --breakpoint-moniT: 71rem;
+  --breakpoint-dest: 1900px;
+}
 
 
  /* @import url('https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap');
@@ -21,16 +29,6 @@ body {
   scroll-behavior: smooth; /* activa scroll suave */
 }
 
-
-@theme {
-
-
-  --breakpoint-*: initial;
-  --breakpoint-tb:60rem;
-
-  --breakpoint-moniT: 85rem;
-  --breakpoint-Dest: 89rem;
-}
 
 
 .cursor-default {
