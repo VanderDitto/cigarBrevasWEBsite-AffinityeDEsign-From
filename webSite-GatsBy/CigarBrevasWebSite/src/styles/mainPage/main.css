@@ -408,6 +408,14 @@ section #right {
 
 @media (min-width: 1100px) {
   .tercer_image {
-    bottom: 14em;
+    bottom: 7em;
   }
+  .text_show{
+      top:4em;
+  }
+  .total_precio{
+  font-size:1.1em;
+  }
+  
 }
+

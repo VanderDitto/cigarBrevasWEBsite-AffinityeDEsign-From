@@ -145,7 +145,7 @@ if (voucher.length === 0) return;
                                                     >
                                                         <div className="text-center w-full">
                                                             <p className="font-semibold md:text-[0.8rem] text-[0.7rem] truncate">{item.name}</p>
-                                                            <p className="md:text-[0.55rem] text-[0.8rem] opacity-90">${item.precio}</p>
+                                                            <p className="md:text-[0.55rem] text-[0.8rem]  opacity-90">${item.precio}</p>
                                                         </div>
                                                         <button
                                                             onClick={() => removeProduct(index)}
@@ -157,7 +157,7 @@ if (voucher.length === 0) return;
                                                 ))}
                                             </div>
                                             <div className="border-t border-white/30 md:pt-0.1 pt-1 w-full">
-                                                <p className="md:text-[0.75rem] text-black bg-amber-50 p-2 text-[0.85rem] font-semibold"> + Total ${totalCOP.toLocaleString("es-CO")} COP</p>
+                                                <p className="md:text-[0.75rem] total_precio text-black bg-amber-50 p-2 text-[0.85rem] font-semibold"> + Total ${totalCOP.toLocaleString("es-CO")} COP</p>
                                                 <p className=" bg-amber-50 p-2 text-black md:text-[0.6rem] text-[0.9rem] opacity-90">${totalUSD} USD</p>
                                             </div>
                                         </div>
@@ -245,7 +245,7 @@ if (voucher.length === 0) return;
                         </span>
 
                         <div onContextMenu={(e) => {
-    e.preventDefault();}} className="text-[1.2rem]  tb:text-[0.9rem] top-14  tb:p-3  tb:top-25 leading-tight text-gray-700 font-light uppercase tracking-[0.2em] relative flex flex-row gap-2 w-[79%]  justify-end tb:bootom-[1% + 0.4em] m-2 inset-1.5 select-none tb:w-[13%] tb:border-3 select-none">
+    e.preventDefault();}} className="text_show  text-[1.2rem]  tb:text-[0.9rem] top-14  tb:p-3  tb:top-25 leading-tight text-gray-700 font-light uppercase tracking-[0.2em] relative flex flex-row gap-2 w-[79%]  justify-end tb:bootom-[1% + 0.4em] m-2 inset-1.5 select-none tb:w-[13%] tb:border-3 select-none">
                             No es solo hoja, es herencia; no es solo humo, es memoria. El cigarro nace de la constacia del
                             buen esmero y de la pasión que, durante generaciones, han tejido un símbolo de excelencia.
                         </div>
@@ -395,7 +395,7 @@ if (voucher.length === 0) return;
                                             </span>
                                         </div>
 
-                                        <div className="w-[32vw] border-white absolute top-[9vh] m-auto h-[7vw] bg-[#783689] border border-1 flex items-center justify-center">
+                                        <div className="w-[32vw] border-white absolute top-[5vh] m-auto h-[7vw] bg-[#783689] border border-2 flex items-center  justify-center ">
                                             <span>
                                                 <img
                                                     src={second_image}
