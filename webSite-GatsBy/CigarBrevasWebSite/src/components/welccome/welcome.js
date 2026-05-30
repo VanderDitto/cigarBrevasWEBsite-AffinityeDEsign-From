@@ -58,7 +58,7 @@ const Welcome = () => {
                                
                              
                             </div>
-                            <p className="mt-4 text-center text-sm italic text-gray-500">
+                            <p className="mt-4 text-center text-sm italic text-gray-500 select-none">
                                 Fermentación y paciencia del maestro Torcedor
                             </p>
                         </div>
@@ -70,7 +70,7 @@ const Welcome = () => {
                         {/* Descriptive Text Section */}
                         <article className="bg-[#9B7F49] p-8 md:p-12 text-white shadow-2xl rounded-sm relative">
                             <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#783689] flex items-center justify-center text-2xl">“</div>
-                            <p className="text-xl md:text-2xl leading-relaxed font-light italic text-justify">
+                            <p className="text-xl md:text-2xl leading-relaxed font-light italic text-justify select-none">
                                 "Cada hoja, cada capa, cada detalle refleja el legado de generaciones dedicadas al tabaco, 
                                 donde la calidad no es una promesa, sino una herencia."
                             </p>

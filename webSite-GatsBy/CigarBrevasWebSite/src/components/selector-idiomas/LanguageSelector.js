@@ -19,9 +19,9 @@ const LanguageSelector = () => {
 
 useEffect(() => {
 
- document.getElementById("btn_default").style.border = "0"; 
- document.getElementById("btn_default").style.backgroundColor = "#007f0d34";
-  console.log("Idioma seleccionado:", i18n.language);
+ //document.getElementById("btn_default").style.border = "0";
+ //document.getElementById("btn_default").style.backgroundColor = "#007f0d34";
+  //console.log("Idioma seleccionado:", i18n.language);
 }, []);
 
 
@@ -33,7 +33,7 @@ useEffect(() => {
     <span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
             <button id="btn_default"
               onClick={() => changeLang("es")}
-              className = "flex flex-col items-center m-2 pt-1 cursor-pointer hover:border-0  hover:bg-[#007f0d34] rounded-lg border border-[#994743] bg-[#B8C2B9]  transition cursor-pointer"
+              className = "flex flex-col items-center m-2 pt-1 cursor-pointer hover:border-0  hover:bg-[#007f0d34] rounded-lg border border-[#994743]  bg-gray-400  transition "
             >
               <StaticImage
                 src="../../assets/images/page1/colombia.webp"
@@ -51,12 +51,12 @@ useEffect(() => {
 <span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
       <button
         onClick={() => changeLang("pt") }
-        className="flex flex-col items-center m-2 pt-1 cursor-pointer hover:border-0  hover:bg-[#007f0d34] rounded-lg border border-[#994743] bg-[#B8C2B9]  transition cursor-pointer"
+        className="flex flex-col items-center m-2 pt-1 cursor-pointer hover:border-0  hover:bg-[#007f0d34] rounded-lg border border-[#994743] bg-gray-400  transition cursor-pointer"
       >
         <StaticImage
           src="../../assets/images/page1/Brazil.webp"
           alt="Brazil"
-          className="w-[2rem] h-[2rem] cursor-pointer rounded-full object-cover pointer-events-none"
+          className="w-[2rem] h-[2rem] cursor-pointer rounded-full cursor-pointer object-cover pointer-events-none"
           layout="constrained"
           placeholder="dominantColor"
         />
@@ -67,12 +67,12 @@ useEffect(() => {
 <span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
       <button
         onClick={() => changeLang("en")}
-        className="flex flex-col items-center m-2 pt-1  rounded-lg border border-[#994743] hover:border-0  hover:bg-[#007f0d34] transition cursor-pointer bg-[#B8C2B9]"
+        className="flex flex-col items-center m-2 pt-1  rounded-lg border border-[#994743] hover:border-0  hover:bg-[#007f0d34] transition cursor-pointer bg-gray-400"
       >
         <StaticImage
           src="../../assets/images/page1/usa.webp"
           alt="USA"
-          className=" w-[2rem] h-[2rem] rounded-full cursor-pointer object-cover pointer-events-none   "
+          className=" w-[2rem] h-[2rem] rounded-full cursor-pointer object-cover pointer-events-none cursor-pointer  "
           layout="constrained"
           placeholder="dominantColor"
         />

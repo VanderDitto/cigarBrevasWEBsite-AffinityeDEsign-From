@@ -416,6 +416,13 @@ section #right {
   .total_precio{
   font-size:1.1em;
   }
-  
+
+.voucher_long {
+
+  @apply mb-[5rem];
+  height: 74vh;
+  padding-bottom: 2rem; /* agrega espacio extra */
+}
+
 }
 

@@ -79,7 +79,7 @@ const IndexPage = () => {
                             onContextMenu={(e) => e.preventDefault()}
                         />
 
-                        <div className="bg-black/20  w-full wrap  tb:right-8  mr-15 pr-3 flex flex-col left-0 items-center justify-center relative">
+                        <div className="bg-black/20  w-full wrap  h-1/2  tb:right-8  mr-15 pr-3 flex flex-col left-0 items-center justify-center relative">
                             <span className="z-40 relative right-6.5 block-[content]  w-[content]">
                                 <LanguageSelector />
                                
@@ -223,10 +223,10 @@ const IndexPage = () => {
                         <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large dest:top-3 moniT:bottom-4">SUFICIENTE</div>
                     </div>
 
-                    <div className="ml-[27svw] border-1  moniT:bottom-1/7 tb:bottom-33  bungee-Tint-regular    mx-auto text-fluid pointer-events-auto  absolute dest:bottom-[123px] ">
+                    <div className="ml-[27svw] border-1  moniT:bottom-[1/7] tb:bottom-33  bungee-Tint-regular    mx-auto text-fluid pointer-events-auto  absolute dest:bottom-[123px] ">
                         PARA FUMAR?  
                         <div className="flex justify-end-safe  w-25  items-stretch float-right bottom-3 dest:bottom-7  ">
-                               
+
 
                             <StaticImage
                                 src="../assets/images/page1/icon-alarm.webp"
@@ -255,7 +255,7 @@ const IndexPage = () => {
 
             </main>
 
-            <span className="mt-9 bg-amber-400 max-w-full block ">
+            <span className="mt-9 bg-transparent max-w-full block ">
                 <Banner />
             </span>
 

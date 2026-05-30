@@ -25,22 +25,23 @@ const handleClick = (option) => {
 };
 
 const Btn_select = () => {
-
-  return ["yes", "no"].map((option) => (
-    <div id ="btn-action"
-  key={option}
-  className="w-full h-12 right-0 top-[3rem] flex flex-row items-center justify-around bg-[#b8c2b922]"
->
-  <div className="relative z-50 pt-2 pb-2  border-[#994743] border bg-[#B8C2B9] pt-0.5 pl-0.3  flex items-center justify-around w-25 m-auto">
-    <button
-      onClick={() => handleClick(option)}
-      className="bg-[#007F0D] text-[1.2em] border border-[#994743] w-[1/7] pl-5 pr-5   text-white font-bold rounded cursor-pointer"
+  return (
+    <div
+      id="btn-action"
+      className="flex hover:bg-gray-600  flex-row items-center justify-center gap-4 bg-[#b8c2b922] p-4"
     >
-      {option}
-    </button>
-  </div>
-</div>
-  ));
+      {["yes", "no"].map((option) => (
+        <button
+          key={option}
+          onClick={() => handleClick(option)}
+          className="bg-[#007F0D] hover:bg-gray-400 hover:border-3 text-[1.2em] border border-[#994743] px-5 py-2 text-white font-bold rounded cursor-pointer"
+        >
+          {option}
+        </button>
+      ))}
+    </div>
+  );
 };
+
 
 export default Btn_select;

@@ -6,7 +6,7 @@ const Heropage_features = () => {
 <div class="grid grid-cols-6 grid-rows-5 gap-4  h-screen bg-[url('../../assets/images/page2/Background-Image-cigar-Brevas.webp')] bg-contain bg-no-repeat bg-center">
         <div class="col-span-2 col-start-2 row-start-2">
 
-           <StaticImage src="../../assets/images/page2/name-cigar-brevas.webp" alt="Imagen Maquina de Rollero y cortadora" className=" w-[100%- 20px] h-auto object-cover  pointer-events-none  user-select-none"
+           <StaticImage src="../../assets/images/page2/name-cigar-brevas.webp" alt="Imagen Maquina de Rollero y cortadora" className=" w-[100%- 20px] h-auto object-cover  pointer-events-none  user-select-none select-none"
              layout="constrained" placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
         </div>
 
@@ -19,8 +19,8 @@ const Heropage_features = () => {
 
        <div className="w-full relative   right-0   text-center">
            <div className="p-6 bg-[#B55832] shadow absolute rounded">
-            <h3 className="font-semibold text-xl text-white  mb-2">Beneficio</h3>
-             <p className ="poiret-one-Festy text-[#B59A2E]" >
+            <h3 className="font-semibold text-xl text-white  mb-2 select-none">Beneficio</h3>
+             <p className ="poiret-one-Festy text-white select-none" >
                El placer de una pausa: tradición colombiana que acompaña tu
                descanso.
              </p>

@@ -106,7 +106,7 @@ if (voucher.length === 0) return;
         message += `Total USD: $${totalUSD}\n`;
 
         const encodedMessage = encodeURIComponent(message);
-        window.open(`https://t.me/usuario?text=${encodedMessage}`, "_blank");
+        window.open(`https://t.me/cigargamospurosbrevas?text=${encodedMessage}`, "_blank");
     
     };
 
@@ -116,7 +116,7 @@ if (voucher.length === 0) return;
                 <section className="grid grid-cols-2 border-red-300 border-2 w-full h-full">
                     <div className="relative border-amber-300 border-2  bg-white w-full h-full">
                         <div className="flex gap-0 align-right flex-direction-row justify-end">
-                            <div className="w-[25vw] h-[22vw] z-11 bg-[#9B7F49] flex items-center justify-center align-right mt-12 border-[#783689] border-3">
+                            <div className="w-[25vw] h-[22vw] z-11   bg-[#9B7F49] flex items-center justify-center align-right mt-12 border-[#783689] border-3">
                                 <span className="w-[auto] h-[59vh]">
                                     <img
                                         src={first_image}
@@ -127,7 +127,7 @@ if (voucher.length === 0) return;
                                 </span>
                             </div>
 
-                            <div className="top-[2rem] w-[15vw] tb:h-[25vh] dest:h-1/2  h-[35vh] shadow-xl border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
+                            <div className="top-[2rem] w-[15vw] tb:h-[25vh] voucher_long  h-[35vh] shadow-xl border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
                                 <div className="flex flex-col items-center justify-center w-full tb:h-[85%] tb:bg-amber-600 md:p-2 p-3">
                                     <div className="w-full bg-[#783689] shadow-xl md:py-0.5 md:mb-1 py-1 mb-2 rounded text-center">
                                         <p className="text-[1.4rem] md:text-[1.2rem] font-bold text-white select-none uppercase tracking-wider">
@@ -141,7 +141,7 @@ if (voucher.length === 0) return;
                                                 {voucher.map((item, index) => (
                                                     <div 
                                                         key={index}
-                                                        className="bg-white/10 md:mb-0.5 md:p-1 mb-1 p-1.5 rounded text-xs flex flex-col items-center justify-center md:gap-0.25 gap-0.5 hover:bg-white/20 transition"
+                                                        className="bg-white/10 md:mb-0.125rem md:p-0.25rem mb-0.25rem p-0.375rem rounded text-xs flex flex-col items-center justify-center md:gap-0.0625rem gap-0.125rem hover:bg-white/20 transition"
                                                     >
                                                         <div className="text-center w-full">
                                                             <p className="font-semibold md:text-[0.8rem] text-[0.7rem] truncate">{item.name}</p>
@@ -254,7 +254,7 @@ if (voucher.length === 0) return;
 
 
                         <div className="flex flex-col items-center justify-center center space-between h-auto w-fulll">
-                            <span className="w-[full] h-[16vh] letter-spacing-[5px] mt-9 font-name-vitolas bg-[#E1E4E9] z-12 flex wrap-normal flex-row">
+                            <span className="w-[full] h-[16vh] letter-spacing-[0.3125rem] mt-9 font-name-vitolas bg-[#E1E4E9] z-12 flex wrap-normal flex-row">
                                 <span
                                     id="numero_1"
                                     onClick={() => Handle_InfCigar(0, "numero_1")}
@@ -267,7 +267,7 @@ if (voucher.length === 0) return;
                                     <span
                                         id="numero_2"
                                         onClick={() => Handle_InfCigar(1, "numero_2")}
-                                        className="cursor-pointer bg-red-600 w-[25px] h-[27px] relative text-center text-white text-[15px]"
+                                        className="cursor-pointer bg-red-600 w-[1.5625rem] h-[1.6875rem] relative text-center text-white text-[0.9375rem]"
                                     >
                                         10
                                     </span>
@@ -278,7 +278,7 @@ if (voucher.length === 0) return;
                                     <span
                                         id="numero_3"
                                         onClick={() => Handle_InfCigar(2, "numero_3")}
-                                        className="cursor-pointer bg-red-600 w-[25px] h-[50px] text-center text-[15px] text-white"
+                                        className="cursor-pointer bg-red-600 w-[1.5625rem] h-[3.125rem] text-center text-[0.9375rem] text-white"
                                     >
                                         25
                                     </span>
@@ -296,7 +296,7 @@ if (voucher.length === 0) return;
                                     <span
                                         id="numero_5"
                                         onClick={() => Handle_InfCigar(4, "numero_5")}
-                                        className="cursor-pointer bg-red-600 w-[25px] h-[27px] relative text-center text-white text-[15px]"
+                                        className="cursor-pointer bg-red-600 w-[1.5625rem] h-[1.6875rem] relative text-center text-white text-[0.9375rem]"
                                     >
                                         25
                                     </span>
@@ -307,7 +307,7 @@ if (voucher.length === 0) return;
                                     <span
                                         id="numero_6"
                                         onClick={() => Handle_InfCigar(5, "numero_6")}
-                                        className="cursor-pointer bg-red-600 w-[25px] h-[27px] text-center text-[15px] text-white"
+                                        className="cursor-pointer bg-red-600 w-[1.5625rem] h-[1.6875rem] text-center text-[0.9375rem] text-white"
                                     >
                                         10
                                     </span>
@@ -330,7 +330,7 @@ if (voucher.length === 0) return;
                                     <span
                                         id="numero_8"
                                         onClick={() => Handle_InfCigar(7, "numero_8")}
-                                        className="cursor-pointer bg-red-600 w-[25px] h-[27px] text-center text-white text-[15px]"
+                                        className="cursor-pointer bg-red-600 w-[1.5625rem] h-[1.6875rem] text-center text-white text-[0.9375rem]"
                                     >
                                         10
                                     </span>
@@ -340,7 +340,7 @@ if (voucher.length === 0) return;
                                     <span
                                         id="numero_9"
                                         onClick={() => Handle_InfCigar(8, "numero_9")}
-                                        className="cursor-pointer bg-red-600 w-[25px] h-[70px] text-center text-white text-[15px]"
+                                        className="cursor-pointer bg-red-600 w-[1.5625rem] h-[4.375rem] text-center text-white text-[0.9375rem]"
                                     >
                                         20
                                     </span>
@@ -358,11 +358,11 @@ if (voucher.length === 0) return;
                                     <span
                                         id="numero_11"
                                         onClick={() => Handle_InfCigar(10, "numero_11")}
-                                        className="bg-red-600 w-[25px] h-[27px] text-center text-white text-[15px]"
+                                        className="bg-red-600 w-[1.5625rem] h-[1.6875rem] text-center text-white text-[0.9375rem]"
                                     >
                                         10
                                     </span>
-                                    <span id="numero_9" className="text-center flex justify-center items-center select-none">
+                                    <span className="text-center flex justify-center items-center select-none">
                                         Brevas <br /> Torpedo
                                     </span>
                                     <span
@@ -384,8 +384,8 @@ if (voucher.length === 0) return;
                                             placeholder="dominantColor"
                                             onContextMenu={(e) => e.preventDefault()}
                                         />
-  <div className="w-[25vw] relative mt-1  bottom-[41vh] tercer_image  m-auto h-[auto] bg-[#9B7F49]   tb:bottom-[12vh] flex items-center justify-center border-[white] border-3 border">
-                                            <span className="w-[23vw] h-[content] m-auto z-12 flex items-center justify-center  mt-5">
+  <div className="w-[25vw] relative mt-[0.0625rem] tercer_image m-auto h-auto bg-[#9B7F49] tb:bottom-[12vh] flex items-center justify-center border-[white] border-[0.1875rem] border">
+                                            <span className="w-[23vw] h-[content] m-auto z-12 flex items-center justify-center mt-[1.25rem]">
                                                 <img
                                                     src={third_image}
                                                     alt="cigar brevas image dentro de una figuar geometrica de colores"
@@ -400,7 +400,7 @@ if (voucher.length === 0) return;
                                                 <img
                                                     src={second_image}
                                                     alt="Brevas cigar close-up displayed inside a purple and gold presentation panel"
-                                                    className="bottom-[14px] relative object-cover pointer-events-none select-none w-[content] h-[content]"
+                                                    className="bottom-[0.875rem] relative object-cover pointer-events-none select-none w-[content] h-[content]"
                                                     onContextMenu={(e) => e.preventDefault()}
                                                 />
                                             </span>
