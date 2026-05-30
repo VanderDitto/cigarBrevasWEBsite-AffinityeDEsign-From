@@ -19,7 +19,7 @@ const Welcome = () => {
 
 
     return (
-        <section id='welcome-section' className="relative w-full min-h-screen py-24 px-6 sm:px-12 lg:px-24 overflow-hidden bg-white">
+        <section id='welcome-section' className="relative w-full  min-h-screen py-24 px-6 sm:px-12 lg:px-24 overflow-hidden bg-white">
             {/* Background Decorative Elements */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-5">
                 <div className="absolute top-10 left-10 w-96 h-96 border-2 border-amber-900 rounded-full"></div>

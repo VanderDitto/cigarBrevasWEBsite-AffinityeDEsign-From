@@ -1,4 +1,4 @@
-import React, { useState, useMemo } from "react";
+import React, { useState, useMemo, useEffect } from "react";
 import { StaticImage } from "gatsby-plugin-image";
 import { CigarVitolas_Price } from "./../../page-data/page-data";
 
@@ -19,7 +19,24 @@ const Showproduct = () => {
     const item_count = selected_card.num_item;
     const precio = selected_card.precio;
 
-    const exchangeRate = 4200; // Example exchange rate COP to USD
+   // const exchangeRate = 4200; // Example exchange rate COP to USD
+
+    const [exchangeRate, setRate] = useState(null);
+
+  useEffect(() => {
+    const getRate = async () => {
+      try {
+        const response = await fetch("https://api.exchangerate-api.com/v4/latest/USD");
+        const data = await response.json();
+        setRate(data.rates.COP); // tasa USD → COP
+      } catch (error) {
+        console.error("Error consultando la tasa:", error);
+      }
+    };
+
+    getRate();
+  }, []);
+
 
     const parsePrice = (priceStr) => {
         if (!priceStr) return 0;
@@ -127,7 +144,7 @@ if (voucher.length === 0) return;
                                 </span>
                             </div>
 
-                            <div className="top-[2.5rem] w-[22vw] tb:h-[32vh] voucher_long h-[45vh] shadow-2xl border border-2 border-amber-50 left-[-2rem] flex-col absolute m-[8] z-30 bg-[#783689] flex items-center justify-center rounded-2xl transform transition-all duration-500">
+                            <div className="top-[2.5rem] w-[22vw] z-[0] hover:z-[888]   tb:h-[32vh] voucher_long h-[45vh] shadow-2xl border border-2 border-amber-50 left-[-9rem] flex-col absolute m-[8]  bg-[#783689] flex items-center justify-center rounded-2xl transform transition-all duration-500">
                                 <div className="flex flex-col items-center justify-center w-full h-[85%] md:p-3 p-5">
                                     <div className="w-full bg-[#783689] shadow-2xl py-2 mb-3 rounded-lg text-center border-b border-white/10">
                                         <p className="text-[2rem] md:text-[1.6rem] font-extrabold text-white select-none uppercase tracking-widest">
@@ -202,8 +219,8 @@ if (voucher.length === 0) return;
                             </div>
 
                             <div
-                                onClick={addProduct}
-                                className="w-[11vw] h-auto absolute top-[12%] m-auto z-18 cursor-pointer mt-29 flex-end right-[-4.5rem] hover:scale-110 transition-transform"
+                                onClick={addProduct} 
+                                className="w-[8vw] h-auto onhover:{action_show} absolute top-[32%] m-auto z-18 cursor-pointer mt-29 flex-end right-[-3.5rem] hover:scale-110 transition-transform"
                             >
                                 <StaticImage
                                     src="../../static/cigar-vitola/-pluss-count.webp"
@@ -229,7 +246,7 @@ if (voucher.length === 0) return;
                                 </span>
                             </span>
 
-                            <span className="top-45 right-0 relative flex-inline flex-col items-center justify-center z-12 ">
+                            <span className="top-45 left-4 relative flex-inline flex-col items-center justify-center z-12 ">
                                 <h2 className="font-name-vitolas-center text-2xl md:text-3xl font-extrabold m-2 bg-[#ffcf22] px-4 py-2.5 absolute bottom-28 rounded-lg shadow-lg">
                                     {name_cigar}
                                 </h2>
@@ -242,7 +259,7 @@ if (voucher.length === 0) return;
                         </span>
 
                         <div onContextMenu={(e) => {
-                            e.preventDefault();}} className="text_show text-[1.5rem] tb:text-[1.2rem] top-24 tb:top-28 leading-relaxed text-[#311615] bg-[#e6d8bc]/50 p-6 border border-[#9B7F49]/20 rounded-xl tracking-[0.22em] relative flex flex-row gap-2 w-[79%] justify-end m-2 select-none shadow-lg">
+                            e.preventDefault();}} className="text_show text-[1.1rem] tb:text-[1.2rem] top-24 tb:top-28 leading-relaxed text-[#311615] bg-[#e6d8bc]/50 p-6 border border-[#9B7F49]/20 rounded-xl tracking-[0.22em] relative flex flex-row gap-2 w-[79%] justify-end m-2 select-none shadow-lg">
                             No es solo hoja, es herencia; no es solo humo, es memoria. El cigarro nace de la constacia del
                             buen esmero y de la pasión que, durante generaciones, han tejido un símbolo de excelencia.
                         </div>
@@ -397,7 +414,7 @@ if (voucher.length === 0) return;
                                                 <img
                                                     src={second_image}
                                                     alt="Brevas cigar close-up displayed inside a purple and gold presentation panel"
-                                                    className="bottom-[0.875rem] relative object-cover pointer-events-none select-none w-[content] h-[content]"
+                                                    className="bottom-[0.475rem] relative object-cover pointer-events-none select-none w-[content] h-[content]"
                                                     onContextMenu={(e) => e.preventDefault()}
                                                 />
                                             </span>

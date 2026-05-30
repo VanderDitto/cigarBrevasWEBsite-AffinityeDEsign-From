@@ -81,8 +81,8 @@ const IndexPage = () => {
                             onContextMenu={(e) => e.preventDefault()}
                         />
 
-                        <div className="bg-black/20  w-full wrap  h-1/2  tb:right-8  mr-15 pr-3 flex flex-col left-0 items-center justify-center relative">
-                            <span className="z-40 relative right-6.5 block-[content]  w-[content]">
+                        <div className="bg-black/20  w-full wrap right-1/2  h-1/2  tb:right-9  mr-15 pr-3 flex flex-col left-0 items-center justify-center relative">
+                            <span className="z-40 relative right-19.5 block-[content]  w-[content]">
                                 <LanguageSelector />
                                
                             </span>
@@ -152,13 +152,13 @@ const IndexPage = () => {
                 </section>
 
                 {/* Layer 2: Decorative Grid Text */}
-                <section className="w-full h-dvh grid grid-cols-4 grid-rows-3 absolute left-0 top-0 z-10 pointer-events-none">
-                    <div className="chevron transform rotation-190 w-full flex items-center justify-center">
+                <section className = "w-full h-dvh grid grid-cols-4 grid-rows-3 absolute left-0 top-0 z-10 pointer-events-none">
+                    <div className = "chevron transform rotation-190 w-full flex items-center justify-center">
                         <div>
-                            <span className="firstPage-word-font text-fluid-mini text-center w-full vertical-text text-[funnel]">
+                            <span className = "firstPage-word-font text-fluid-mini text-center w-full vertical-text text-[funnel]">
                                 tiempo
                             </span>
-                            <span className="mr-22 mt-12 text-[2px] text-white firstPage-word-font text-fluid-mini text-center w-full vertical-text text-[funnel]">
+                            <span className = "mr-22 mt-12 text-[2px] text-white firstPage-word-font text-fluid-mini text-center w-full vertical-text text-[funnel]">
                                 jubilo
                             </span>
                         </div>
@@ -277,7 +277,7 @@ const IndexPage = () => {
                 <Heropage_features />
             </div>
 
-            <div className="mt-15 w-[78vw] relative z-1 m-auto bg-white flex flex-col items-center justify-center">
+            <div className="mt-15 w-[78vw] moniT:w-full  relative z-1 m-auto bg-white flex flex-col items-center justify-center">
                 <Welcome />
             </div>
 
