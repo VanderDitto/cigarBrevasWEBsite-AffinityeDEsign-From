@@ -116,97 +116,94 @@ if (voucher.length === 0) return;
                 <section className="grid grid-cols-2 border-red-300 border-2 w-full h-full">
                     <div className="relative border-amber-300 border-2  bg-white w-full h-full">
                         <div className="flex gap-0 align-right flex-direction-row justify-end">
-                            <div className="w-[25vw] h-[22vw] z-11   bg-[#9B7F49] flex items-center justify-center align-right mt-12 border-[#783689] border-3">
-                                <span className="w-[auto] h-[59vh]">
+                            <div className="w-[33vw] h-[29vw] z-11 bg-[#9B7F49] flex items-center justify-center align-right mt-12 border-[#783689] border-4 rounded-xl shadow-xl transition-all duration-300 hover:shadow-yellow-900/10">
+                                <span className="w-[auto] h-[68vh] flex items-center justify-center">
                                     <img
                                         src={first_image}
                                         alt="Brevas cigar product shot showing a single premium cigar in a styled presentation"
-                                        className="object-contain pointer-events-none select-none w-[auto] h-[59vh]"
+                                        className="object-contain pointer-events-none select-none w-[auto] h-[68vh]"
                                         onContextMenu={(e) => e.preventDefault()}
                                     />
                                 </span>
                             </div>
 
-                            <div className="top-[2rem] w-[15vw] tb:h-[25vh] voucher_long  h-[35vh] shadow-xl border border-2 border-amber-50 left-[0.1rem] -inset-s-7 flex-col absolute m-[8] z-[-0] bg-[#783689] flex items-center justify-center">
-                                <div className="flex flex-col items-center justify-center w-full tb:h-[85%] tb:bg-amber-600 md:p-2 p-3">
-                                    <div className="w-full bg-[#783689] shadow-xl md:py-0.5 md:mb-1 py-1 mb-2 rounded text-center">
-                                        <p className="text-[1.4rem] md:text-[1.2rem] font-bold text-white select-none uppercase tracking-wider">
+                            <div className="top-[2.5rem] w-[22vw] tb:h-[32vh] voucher_long h-[45vh] shadow-2xl border border-2 border-amber-50 left-[-2rem] flex-col absolute m-[8] z-30 bg-[#783689] flex items-center justify-center rounded-2xl transform transition-all duration-500">
+                                <div className="flex flex-col items-center justify-center w-full h-[85%] md:p-3 p-5">
+                                    <div className="w-full bg-[#783689] shadow-2xl py-2 mb-3 rounded-lg text-center border-b border-white/10">
+                                        <p className="text-[2rem] md:text-[1.6rem] font-extrabold text-white select-none uppercase tracking-widest">
                                             voucher
                                         </p>
                                     </div>
                                     
                                     {voucher.length > 0 ? (
                                         <div className="text-white text-center flex flex-col items-center justify-center w-full h-full">
-                                            <div className="w-full  flex-1 overflow-y-auto md:pr-0.5 pr-1 md:mb-1 mb-2">
+                                            <div className="w-full flex-1 overflow-y-auto md:pr-1 pr-2 md:mb-2 mb-3 space-y-2">
                                                 {voucher.map((item, index) => (
                                                     <div 
                                                         key={index}
-                                                        className="bg-white/10 md:mb-0.125rem md:p-0.25rem mb-0.25rem p-0.375rem rounded text-xs flex flex-col items-center justify-center md:gap-0.0625rem gap-0.125rem hover:bg-white/20 transition"
+                                                        className="bg-white/10 mb-2 p-3 rounded-lg border border-white/10 flex flex-col items-center justify-center gap-1.5 hover:bg-white/20 transition"
                                                     >
                                                         <div className="text-center w-full">
-                                                            <p className="font-semibold md:text-[0.8rem] text-[0.7rem] truncate">{item.name}</p>
-                                                            <p className="md:text-[0.55rem] text-[0.8rem]  opacity-90">${item.precio}</p>
+                                                            <p className="font-extrabold md:text-[1.1rem] text-[0.95rem] leading-snug truncate">{item.name}</p>
+                                                            <p className="md:text-[0.95rem] text-[0.85rem] opacity-90 font-medium">${item.precio}</p>
                                                         </div>
                                                         <button
                                                             onClick={() => removeProduct(index)}
-                                                            className="bg-red-500 hover:bg-red-600 text-white rounded md:px-0.5 md:py-0.1 px-1 py-0.2 md:text-[0.55rem] text-[0.65rem] font-bold transition"
+                                                            className="bg-red-500 hover:bg-red-600 text-white rounded-md px-3.5 py-1 md:text-[0.85rem] text-[0.75rem] font-extrabold transition-all transform hover:scale-105 cursor-pointer"
                                                         >
                                                             ✕ Eliminar
                                                         </button>
                                                     </div>
                                                 ))}
                                             </div>
-                                            <div className="border-t border-white/30 md:pt-0.1 pt-1 w-full">
-                                                <p className="md:text-[0.75rem] total_precio text-black bg-amber-50 p-2 text-[0.85rem] font-semibold"> + Total ${totalCOP.toLocaleString("es-CO")} COP</p>
-                                                <p className=" bg-amber-50 p-2 text-black md:text-[0.6rem] text-[0.9rem] opacity-90">${totalUSD} USD</p>
+                                            <div className="border-t border-white/30 pt-2.5 w-full space-y-1.5">
+                                                <p className="md:text-[1.15rem] total_precio text-[#311615] bg-[#ECCD00] p-3 text-[1rem] font-extrabold rounded-lg shadow-md"> + Total ${totalCOP.toLocaleString("es-CO")} COP</p>
+                                                <p className="bg-[#ECCD00]/85 p-2 text-[#311615] md:text-[0.95rem] text-[0.85rem] font-bold rounded">${totalUSD} USD</p>
                                             </div>
                                         </div>
                                     ) : (
-                                        <span className="md:text-[0.7rem] text-[0.8rem] text-white font-light text-center px-2 select-none italic opacity-80">
+                                        <span className="md:text-[1rem] text-[1.1rem] text-white font-light text-center px-4 select-none italic opacity-85 leading-relaxed">
                                             <p>No pierdas esta oportunidad de adquirir este producto</p>
                                         </span>
                                     )}
                                 </div>
 
-                                <div id="solicitar_on" className = "flex  opacity-10 flex-row space-around gap-4 h-full w-full center justify-center "> 
-                                  <div 
-                                onClick={sendWhatsApp}
-                                className="cursor-pointer bottom-[-5.4rem] left-2   group flex flex-col items-center transition-all hover:scale-110 absolute z-18"
-                            >
-                                <div className="bg-white md:p-1.5 p-2 rounded-full shadow-lg group-hover:bg-green-50 transition-colors">
-                                    <StaticImage
-                                        src="../../static/footer/-logo-msn-whatup.webp"
-                                        alt="Send order via WhatsApp"
-                                        className="md:w-9 md:h-9 w-10 h-10"
-                                        placeholder="blurred"
-                                    />
+                                <div id="solicitar_on" className="flex opacity-10 flex-row space-around gap-6 h-full w-full center justify-center pb-2"> 
+                                    <div 
+                                        onClick={sendWhatsApp}
+                                        className="cursor-pointer bottom-[-7rem] left-4 group flex flex-col items-center transition-all hover:scale-110 absolute z-18"
+                                    >
+                                        <div className="bg-white md:p-2 p-2.5 rounded-full shadow-2xl border border-green-500/10 group-hover:bg-green-50 transition-colors">
+                                            <StaticImage
+                                                src="../../static/footer/-logo-msn-whatup.webp"
+                                                alt="Send order via WhatsApp"
+                                                className="md:w-12 md:h-12 w-14 h-14"
+                                                placeholder="blurred"
+                                            />
+                                        </div>
+                                        <p className="md:text-[0.85rem] text-[0.95rem] md:mt-1.5 mt-2 font-extrabold group-hover:underline text-center text-[#311615]">Solicitar</p>
+                                    </div>
+
+                                    <div 
+                                        onClick={sendTelegram}
+                                        className="cursor-pointer bottom-[-7rem] right-10 group flex flex-col items-center transition-all hover:scale-110 absolute z-18"
+                                    >
+                                        <div className="bg-white md:p-2 p-2.5 rounded-full shadow-2xl border border-blue-400/10 group-hover:bg-blue-50 transition-colors">
+                                            <StaticImage
+                                                src="../../static/footer/-logo-msn-telegram.webp"
+                                                alt="Send order via Telegram"
+                                                className="md:w-12 md:h-12 w-14 h-14"
+                                                placeholder="blurred"
+                                            />
+                                        </div>
+                                        <p className="md:text-[0.85rem] text-[0.95rem] md:mt-1.5 mt-2 font-extrabold group-hover:underline text-center text-[#311615]">Solicitar</p>
+                                    </div>
                                 </div>
-                                <p className="md:text-[0.6rem] text-[0.75rem] md:mt-0.5 mt-1 font-medium group-hover:underline text-center">Solicitar</p>
                             </div>
-
-                                           <div 
-                                onClick={sendTelegram}
-                                className="cursor-pointer bottom-[-5.4rem] right-7 group flex flex-col items-center transition-all hover:scale-110 absolute z-18"
-                            >
-                                <div className="bg-white  md:p-1.5 p-2 rounded-full shadow-lg group-hover:bg-green-50 transition-colors">
-                                    <StaticImage
-                                        src="../../static/footer/-logo-msn-telegram.webp"
-                                        alt="Send order via WhatsApp"
-                                        className="md:w-9 md:h-9 w-10 h-10"
-                                        placeholder="blurred"
-                                    />
-                                </div>
-                                <p className="md:text-[0.6rem] text-[0.75rem] md:mt-0.5 mt-1 font-medium group-hover:underline text-center">Solicitar</p>
-                            </div>
-                                            </div>
-
-                            </div>
-
-                
 
                             <div
                                 onClick={addProduct}
-                                className="w-[8vw] h-auto absolute top-[12%] m-auto z-18 cursor-pointer mt-29 flex-end right-[-3rem] hover:scale-110 transition-transform"
+                                className="w-[11vw] h-auto absolute top-[12%] m-auto z-18 cursor-pointer mt-29 flex-end right-[-4.5rem] hover:scale-110 transition-transform"
                             >
                                 <StaticImage
                                     src="../../static/cigar-vitola/-pluss-count.webp"
@@ -218,7 +215,7 @@ if (voucher.length === 0) return;
                             </div>
                         </div>
 
-                        <p className="pl-2 text-[1.6em] tb:text-[1.1em] text-right right-19 font-semibold text-[#cc7b41] m-2 relative">
+                        <p className="pl-2 text-[2.2em] tb:text-[1.6em] text-right right-19 font-extrabold text-[#cc7b41] m-2 relative">
                             ${precio} COP
                         </p>
 
@@ -226,18 +223,18 @@ if (voucher.length === 0) return;
                             id="find_cigar"
                             className="w-[full] h-[content] flex-row flex flex-row gap-5 m-auto z-12 items-center space-around justify-center mt-2 mb-1"
                         >
-                            <span className="cursor-none  w-[contend]  tb:text-[0.8em] dest:right-9  tb:w-[33%]  tb:left-13 relative  h-[content]  z-12 flex-inline ">
-                                <span className="underline-estilo font-medium text-[1.4em] p-5 | m-4 w-[88%] select-none">
-                                    <p className = "w-[88%]">{cantidad_unidades}</p>
+                            <span className="cursor-none w-[contend] tb:text-[1em] dest:right-9 tb:w-[33%] tb:left-13 relative h-[content] z-12 flex-inline">
+                                <span className="underline-estilo font-bold text-[1.8em] py-3 px-6 m-4 w-[88%] select-none rounded shadow-sm border border-[#c79941]/20">
+                                    <p className="w-[88%]">{cantidad_unidades}</p>
                                 </span>
                             </span>
 
                             <span className="top-45 right-0 relative flex-inline flex-col items-center justify-center z-12 ">
-                                <h2 className=" font-name-vitolas-center  m-2 bg-[#ffcf22] p-2  absolute   bottom-24">
+                                <h2 className="font-name-vitolas-center text-2xl md:text-3xl font-extrabold m-2 bg-[#ffcf22] px-4 py-2.5 absolute bottom-28 rounded-lg shadow-lg">
                                     {name_cigar}
                                 </h2>
                                 <span className="relative">
-                                    <p className="text-[1.7em] tb:text-[1.2em] tb:w-[1/2] underline  absolute font-bold text-black ml-5 pl-8 bottom-9 left-6 center">
+                                    <p className="text-[2.2em] tb:text-[1.6em] tb:w-[1/2] underline absolute font-extrabold text-black ml-5 pl-8 bottom-9 left-6 center">
                                         &nbsp; {item_count}
                                     </p>
                                 </span>
@@ -245,7 +242,7 @@ if (voucher.length === 0) return;
                         </span>
 
                         <div onContextMenu={(e) => {
-    e.preventDefault();}} className="text_show  text-[1.2rem]  tb:text-[0.9rem] top-14  tb:p-3  tb:top-25 leading-tight text-gray-700 font-light uppercase tracking-[0.2em] relative flex flex-row gap-2 w-[79%]  justify-end tb:bootom-[1% + 0.4em] m-2 inset-1.5 select-none tb:w-[13%] tb:border-3 select-none">
+                            e.preventDefault();}} className="text_show text-[1.5rem] tb:text-[1.2rem] top-24 tb:top-28 leading-relaxed text-[#311615] bg-[#e6d8bc]/50 p-6 border border-[#9B7F49]/20 rounded-xl tracking-[0.22em] relative flex flex-row gap-2 w-[79%] justify-end m-2 select-none shadow-lg">
                             No es solo hoja, es herencia; no es solo humo, es memoria. El cigarro nace de la constacia del
                             buen esmero y de la pasión que, durante generaciones, han tejido un símbolo de excelencia.
                         </div>

@@ -29,55 +29,53 @@ useEffect(() => {
 
   return (
 
-    <section className=" cursor-pointer z-99 w-full gap-2 space-evenly h-auto flex flex-row  tb:absolute tb:left-[-10em] tb:top-0 tb:"  >
-    <span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
-            <button id="btn_default"
-              onClick={() => changeLang("es")}
-              className = "flex flex-col items-center m-2 pt-1 cursor-pointer hover:border-0  hover:bg-[#007f0d34] rounded-lg border border-[#994743]  bg-gray-400  transition "
-            >
-              <StaticImage
-                src="../../assets/images/page1/colombia.webp"
-                alt="Colombia"
-                className="w-[2rem] h-[2rem] rounded-full cursor-pointer object-cover pointer-events-none "
-                layout="constrained"
-                placeholder="dominantColor"
-              />
-              <span className="mt-2 text-sm p-0.5 font-bold text-[#994743]">Español</span>
-          
-          
-          </button>
-    </span>
+    <section className="cursor-pointer z-99 w-full gap-4 space-evenly h-auto flex flex-row tb:absolute tb:left-[-12em] tb:top-0">
+      <span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
+        <button id="btn_default"
+          onClick={() => changeLang("es")}
+          className="flex flex-col items-center m-2 p-3 cursor-pointer hover:border-0 hover:bg-[#007f0d44] rounded-xl border border-[#994743] bg-gray-400/90 transition shadow-md hover:scale-105"
+        >
+          <StaticImage
+            src="../../assets/images/page1/colombia.webp"
+            alt="Colombia"
+            className="w-[2.7rem] h-[2.7rem] rounded-full cursor-pointer object-cover pointer-events-none"
+            layout="constrained"
+            placeholder="dominantColor"
+          />
+          <span className="mt-2 text-base p-0.5 font-bold text-[#994743]">Español</span>
+        </button>
+      </span>
 
-<span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
-      <button
-        onClick={() => changeLang("pt") }
-        className="flex flex-col items-center m-2 pt-1 cursor-pointer hover:border-0  hover:bg-[#007f0d34] rounded-lg border border-[#994743] bg-gray-400  transition cursor-pointer"
-      >
-        <StaticImage
-          src="../../assets/images/page1/Brazil.webp"
-          alt="Brazil"
-          className="w-[2rem] h-[2rem] cursor-pointer rounded-full cursor-pointer object-cover pointer-events-none"
-          layout="constrained"
-          placeholder="dominantColor"
-        />
-        <span className="mt-2 text-sm p-0.5 font-bold text-[#994743]">Português</span>
-      </button>
-</span>
+      <span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
+        <button
+          onClick={() => changeLang("pt")}
+          className="flex flex-col items-center m-2 p-3 cursor-pointer hover:border-0 hover:bg-[#007f0d44] rounded-xl border border-[#994743] bg-gray-400/90 transition shadow-md hover:scale-105"
+        >
+          <StaticImage
+            src="../../assets/images/page1/Brazil.webp"
+            alt="Brazil"
+            className="w-[2.7rem] h-[2.7rem] rounded-full cursor-pointer object-cover pointer-events-none"
+            layout="constrained"
+            placeholder="dominantColor"
+          />
+          <span className="mt-2 text-base p-0.5 font-bold text-[#994743]">Português</span>
+        </button>
+      </span>
 
-<span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
-      <button
-        onClick={() => changeLang("en")}
-        className="flex flex-col items-center m-2 pt-1  rounded-lg border border-[#994743] hover:border-0  hover:bg-[#007f0d34] transition cursor-pointer bg-gray-400"
-      >
-        <StaticImage
-          src="../../assets/images/page1/usa.webp"
-          alt="USA"
-          className=" w-[2rem] h-[2rem] rounded-full cursor-pointer object-cover pointer-events-none cursor-pointer  "
-          layout="constrained"
-          placeholder="dominantColor"
-        />
-        <span className="mt-2 p-0.5 text-sm font-bold text-[#994743]">English</span>
-      </button>
+      <span className="flex flex-col items-center m-2 pt-1 cursor-pointer">   
+        <button
+          onClick={() => changeLang("en")}
+          className="flex flex-col items-center m-2 p-3 cursor-pointer hover:border-0 hover:bg-[#007f0d44] rounded-xl border border-[#994743] bg-gray-400/90 transition shadow-md hover:scale-105"
+        >
+          <StaticImage
+            src="../../assets/images/page1/usa.webp"
+            alt="USA"
+            className="w-[2.7rem] h-[2.7rem] rounded-full cursor-pointer object-cover pointer-events-none"
+            layout="constrained"
+            placeholder="dominantColor"
+          />
+          <span className="mt-2 text-base p-0.5 font-bold text-[#994743]">English</span>
+        </button>
       </span>
     </section>
   );

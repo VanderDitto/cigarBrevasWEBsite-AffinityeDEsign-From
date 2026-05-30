@@ -28,13 +28,13 @@ const Btn_select = () => {
   return (
     <div
       id="btn-action"
-      className="flex hover:bg-gray-600  flex-row items-center justify-center gap-4 bg-[#b8c2b922] p-4"
+      className="flex hover:bg-gray-600/30 flex-row items-center justify-center gap-6 bg-[#b8c2b922] p-6"
     >
       {["yes", "no"].map((option) => (
         <button
           key={option}
           onClick={() => handleClick(option)}
-          className="bg-[#007F0D] hover:bg-gray-400 hover:border-3 text-[1.2em] border border-[#994743] px-5 py-2 text-white font-bold rounded cursor-pointer"
+          className="bg-[#007F0D] hover:bg-green-600 hover:scale-105 border-2 border-[#994743] px-9 py-3.5 text-[1.6em] text-white font-bold rounded-lg cursor-pointer transition shadow-lg uppercase tracking-wider"
         >
           {option}
         </button>

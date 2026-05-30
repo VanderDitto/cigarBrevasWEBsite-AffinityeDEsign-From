@@ -19,103 +19,93 @@ const Welcome = () => {
 
 
     return (
-        <section id='welcome-section' className="relative w-full min-h-screen py-16 px-4 sm:px-8 lg:px-16 overflow-hidden bg-white">
-            {/* Background Decorative Elements (Optional) */}
+        <section id='welcome-section' className="relative w-full min-h-screen py-24 px-6 sm:px-12 lg:px-24 overflow-hidden bg-white">
+            {/* Background Decorative Elements */}
             <div className="absolute top-0 left-0 w-full h-full pointer-events-none opacity-5">
-                <div className="absolute top-10 left-10 w-64 h-64 border-2 border-amber-900 rounded-full"></div>
-                <div className="absolute bottom-10 right-10 w-96 h-96 border-2 border-amber-900 rounded-full"></div>
+                <div className="absolute top-10 left-10 w-96 h-96 border-2 border-amber-900 rounded-full"></div>
+                <div className="absolute bottom-10 right-10 w-[500px] h-[500px] border-2 border-amber-900 rounded-full"></div>
             </div>
 
-            <div className="max-w-7xl mx-auto flex flex-col items-center">
+            <div className="max-w-8xl mx-auto flex flex-col items-center">
                 {/* Header Section */}
-                <header className="text-center mb-12">
-                    <h2 className="bungee-shade-regular text-4xl md:text-6xl lg:text-7xl mb-4 text-[#783689]">
+                <header className="text-center mb-16 md:mb-24">
+                    <h2 className="bungee-shade-regular text-5xl md:text-7xl lg:text-8xl mb-6 text-[#783689] drop-shadow-lg">
                         {t("wellcome")}
                     </h2>
-                    <div className="w-24 h-1 bg-[#9B7F49] mx-auto"></div>
+                    <div className="w-36 h-1.5 bg-[#9B7F49] mx-auto rounded-full"></div>
                 </header>
 
                 {/* Main Content Grid */}
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 xl:gap-24 items-center w-full">
                     
-                    {/* Left Column: Torpedo Image & Vertical Text */}
-                    <div className="lg:col-span-3 flex flex-row items-center justify-center relative">
-                        <div className="relative ">
-                            {/* <p className="text-[#9B7F49] vertical-text font-bold text-2xl uppercase tracking-widest absolute -left-12 top-1/2 -translate-y-1/2 select-none"> 
-                                {t("hecho")}
-                            </p> */}
-                            <div className="border-8 border-[#F3F4F6] p-4 bg-white shadow-xl transform rotate-2 hover:rotate-0 transition-transform duration-500">
-                               
-                               <div className = "w-[content] h-auto ">
-                                        <StaticImage
-                                    src="../../assets/images/welcome/foto-7.webp"
-                                    alt="img fundadora cigar brevas"
-                                    className="object-contain w-full max-w-sm"
-                                    placeholder="blurred"
-                                    onContextMenu={(e) => e.preventDefault()}
-                                />
+                    {/* Left Column: Torpedo Image */}
+                    <div className="lg:col-span-4 flex flex-row items-center justify-center relative">
+                        <div className="relative transform transition-all duration-700 hover:scale-105">
+                            <div className="border-[12px] border-[#F3F4F6] p-6 bg-white shadow-2xl rounded-lg transform rotate-2 hover:rotate-0 transition-transform duration-500">
+                               <div className="w-full h-auto">
+                                    <StaticImage
+                                        src="../../assets/images/welcome/foto-7.webp"
+                                        alt="img fundadora cigar brevas"
+                                        className="object-contain w-full max-w-md rounded"
+                                        placeholder="blurred"
+                                        onContextMenu={(e) => e.preventDefault()}
+                                    />
                                </div>
-                               
-                             
                             </div>
-                            <p className="mt-4 text-center text-sm italic text-gray-500 select-none">
+                            <p className="mt-6 text-center text-base italic text-gray-500 font-medium select-none">
                                 Fermentación y paciencia del maestro Torcedor
                             </p>
                         </div>
                     </div>
 
                     {/* Right Column: Descriptions and Additional Images */}
-                    <div className="lg:col-span-9 space-y-12">
+                    <div className="lg:col-span-8 space-y-16">
                         
                         {/* Descriptive Text Section */}
-                        <article className="bg-[#9B7F49] p-8 md:p-12 text-white shadow-2xl rounded-sm relative">
-                            <div className="absolute -top-4 -left-4 w-12 h-12 bg-[#783689] flex items-center justify-center text-2xl">“</div>
-                            <p className="text-xl md:text-2xl leading-relaxed font-light italic text-justify select-none">
+                        <article className="bg-[#9B7F49] p-10 md:p-16 text-white shadow-2xl rounded-xl relative transform transition-all duration-500 hover:shadow-amber-800/20">
+                            <div className="absolute -top-6 -left-6 w-16 h-16 bg-[#783689] flex items-center justify-center text-4xl font-serif rounded-full shadow-lg">“</div>
+                            <p className="text-2xl md:text-3xl lg:text-4xl leading-relaxed font-light italic text-justify select-none">
                                 "Cada hoja, cada capa, cada detalle refleja el legado de generaciones dedicadas al tabaco, 
                                 donde la calidad no es una promesa, sino una herencia."
                             </p>
-                            <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-[#783689] flex items-center justify-center text-2xl">”</div>
+                            <div className="absolute -bottom-6 -right-6 w-16 h-16 bg-[#783689] flex items-center justify-center text-4xl font-serif rounded-full shadow-lg">”</div>
                         </article>
 
                         {/* Secondary Images Row */}
-                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 moniT:gap-13 moniT:flex moniT:flex-row moniT:space-around  w-[full+44px]   h-[content]">
+                        <div className="grid grid-cols-1 sm:grid-cols-2 gap-12 w-full">
                             {/* Vitolas */}
-                            <div onClick={scrollToContacto}  className="flex flex-col items-center cursor-pointer">
-                                <div className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300 moniT:w-[88%]">
+                            <div onClick={scrollToContacto} className="flex flex-col items-center cursor-pointer group">
+                                <div className="border-8 border-[#F3F4F6] p-4 bg-white shadow-xl rounded-lg transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl w-full">
                                     <StaticImage
                                         src="../../assets/images/welcome/vitolario-puros.png"
                                         alt="Diversas Vitolas de Puros Brevas"
-                                        className="object-contain aspect-video w-full moniT:w-1/2 moniT:h-33 h-48"
+                                        className="object-contain aspect-video w-full h-56 md:h-64"
                                         placeholder="blurred"
                                         onContextMenu={(e) => e.preventDefault()}
                                     />
                                 </div>
-                                
-                                <span className="mt-3 font-bold uppercase tracking-widest text-[#783689]">
-Vitolas
+                                <span className="mt-4 text-xl font-extrabold uppercase tracking-widest text-[#783689] transition-colors group-hover:text-[#9B7F49]">
+                                    Vitolas
                                 </span>
-                            
-                            
                             </div>
 
-                            {/* MoldesTODO: Click goto */}
-                            <div className="flex flex-col items-center cursor-pointer moniT:m-0 " onClick={onScrool_To}  >
-                                <div  className="border-4 border-[#F3F4F6] p-2 bg-white shadow-md hover:scale-105 transition-transform duration-300">
+                            {/* Moldes */}
+                            <div className="flex flex-col items-center cursor-pointer group" onClick={onScrool_To}>
+                                <div className="border-8 border-[#F3F4F6] p-4 bg-white shadow-xl rounded-lg transition-all duration-500 group-hover:scale-105 group-hover:shadow-2xl w-full">
                                     <StaticImage
                                         src="../../assets/images/welcome/toBuy.webp"
                                         alt="Moldes artesanales usados en la producción de cigarros"
-                                        className="object-cover w-full h-[auto]"
+                                        className="object-cover w-full h-56 md:h-64 rounded"
                                         placeholder="blurred"
                                         onContextMenu={(e) => e.preventDefault()}
                                     />
                                 </div>
-                                <span className="mt-3 font-bold uppercase tracking-widest text-[#783689]">compras</span>
+                                <span className="mt-4 text-xl font-extrabold uppercase tracking-widest text-[#783689] transition-colors group-hover:text-[#9B7F49]">
+                                    compras
+                                </span>
                             </div>
-                            
                         </div>
                     </div>
-
-
 
                 </div>
             </div>

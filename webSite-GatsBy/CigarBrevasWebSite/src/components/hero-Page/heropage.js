@@ -1,68 +1,43 @@
 import React from 'react';
 import { StaticImage } from "gatsby-plugin-image";
+
 const Heropage_features = () => {
   return (
     <>
-<div class="grid grid-cols-6 grid-rows-5 gap-4  h-screen bg-[url('../../assets/images/page2/Background-Image-cigar-Brevas.webp')] bg-contain bg-no-repeat bg-center">
-        <div class="col-span-2 col-start-2 row-start-2">
+      <div className="relative w-full min-h-screen flex flex-col items-center justify-center py-16 bg-[url('../../assets/images/page2/Background-Image-cigar-Brevas.webp')] bg-cover md:bg-contain bg-no-repeat bg-center overflow-hidden">
+        {/* Soft background dark overlay to increase contrast on large monitors */}
+        <div className="absolute inset-0 bg-black/15 pointer-events-none"></div>
 
-           <StaticImage src="../../assets/images/page2/name-cigar-brevas.webp" alt="Imagen Maquina de Rollero y cortadora" className=" w-[100%- 20px] h-auto object-cover  pointer-events-none  user-select-none select-none"
-             layout="constrained" placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
+        {/* Frosted glass container to bundle the elements beautifully */}
+        <div className="relative z-10 flex flex-col items-center justify-center text-center max-w-2xl px-8 py-10 rounded-3xl bg-black/40 backdrop-blur-md border border-white/10 shadow-2xl space-y-8 mx-4 transform transition-all duration-1000 hover:shadow-amber-900/10 hover:border-white/20">
+          
+          {/* Name Image - centered and scaled */}
+          <div className="w-full max-w-md select-none transform transition-all duration-700 hover:scale-105">
+            <StaticImage 
+              src="../../assets/images/page2/name-cigar-brevas.webp" 
+              alt="Name Cigar Brevas" 
+              className="w-full h-auto object-contain pointer-events-none user-select-none select-none"
+              layout="constrained" 
+              width={1000}
+              quality={95}
+              placeholder="dominantColor" 
+              onContextMenu={(e) => e.preventDefault()} 
+            />
+          </div>
+
+          {/* Centered Beneficio Panel (Larger fonts) */}
+          <div className="w-full border-t border-white/20 pt-6">
+            <h3 className="font-name-vitolas uppercase tracking-wider text-2xl md:text-3xl text-[#c79941] mb-3 select-none">
+              Beneficio
+            </h3>
+            <p className="poiret-one-Festy text-white text-2xl md:text-3xl leading-relaxed select-none font-semibold px-4">
+              El placer de una pausa: tradición colombiana que acompaña tu descanso.
+            </p>
+          </div>
+
         </div>
-
-    <div class="col-start-6 row-start-2 z-77 text-center text-white text-[2px]">2
-      {/* <div className="bg-[url('../../assets/images/page2/logo-cigar-brevas.webp')] bg-no-repeat bg-contain bg-center w-[49svh] h-aauto " */}
-         {/* ></div> */}
-    </div>
-
-    <div class="col-span-2 row-span-2 col-start-5 row-start-3">
-
-       <div className="w-full relative   right-0   text-center">
-           <div className="p-6 bg-[#B55832] shadow absolute rounded">
-            <h3 className="font-semibold text-xl text-white  mb-2 select-none">Beneficio</h3>
-             <p className ="poiret-one-Festy text-white select-none" >
-               El placer de una pausa: tradición colombiana que acompaña tu
-               descanso.
-             </p>
-           </div>
-         </div>
-
-
-    </div>
-</div>
+      </div>
     </>
-    //</>
-//       <section
-//         id="features"
-//         className="py-12 pl-7.5 w-full h-screen bg-[url('../../assets/images/page2/Background-Image-cigar-Brevas.webp')] bg-contain bg-no-repeat bg-center relative flex  justify-between items-center flex-row z-50"
-//       >
-// <div className = " w-1/2 h-auto flex flex-col-1 justify-center items-center gap-1 right-0 flex-row-reverse"> 
-//         <div
-//           className="bg-[url('../../assets/images/page2/logo-cigar-brevas.webp')] bg-no-repeat bg-contain bg-center w-[49svh] h-aauto "
-//         ></div>
-
-        
-//         <div className="max-w-5xl relative  bottom-0  right-0 size-1/2  text-center">
-//           <div className="p-6 bg-[#a0875b7e] shadow absolute rounded">
-//             <h3 className="font-semibold text-xl text-white  mb-2">Beneficio</h3>
-//             <p className ="poiret-one-Festy text-[#B59A2E]" >
-//               El placer de una pausa: tradición colombiana que acompaña tu
-//               descanso.
-//             </p>
-//           </div>
-//         </div>
-
-// </div>
-
-//         <div className="flex justify-start relative  top-[1rem] items-stretch">
-//           <StaticImage src="../../assets/images/page2/name-cigar-brevas.webp" alt="Imagen Maquina de Rollero y cortadora" className=" w-[20vw] h-auto object-cover  pointer-events-none  user-select-none"
-//             layout="constrained" placeholder="dominantColor" onContextMenu={(e) => e.preventDefault()} />
-//         </div>
-
-
-//       </section>
-
-    
   );
 };
 

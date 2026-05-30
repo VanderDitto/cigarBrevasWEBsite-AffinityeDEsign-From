@@ -75,6 +75,8 @@ const IndexPage = () => {
                             alt="Imagen perillas bitola N°5"
                             className="aspect-square w-full h-full object-cover pointer-events-none user-select-none"
                             layout="constrained"
+                            width={1800}
+                            quality={95}
                             placeholder="dominantColor"
                             onContextMenu={(e) => e.preventDefault()}
                         />
@@ -91,6 +93,8 @@ const IndexPage = () => {
                             alt="Imagen fachada de Cigar Brevas"
                             className="aspect-square w-1/2 h-1/2 object-cover pointer-events-none user-select-none"
                             layout="constrained"
+                            width={1200}
+                            quality={95}
                             placeholder="dominantColor"
                             onContextMenu={(e) => e.preventDefault()}
                         />
@@ -99,6 +103,8 @@ const IndexPage = () => {
                             alt="Imagen abuela torcedora trabajadora"
                             className="aspect-square w-full h-full object-cover pointer-events-none user-select-none"
                             layout="constrained"
+                            width={1800}
+                            quality={95}
                             placeholder="dominantColor"
                             onContextMenu={(e) => e.preventDefault()}
                         />
@@ -109,6 +115,8 @@ const IndexPage = () => {
                                 alt="Imagen Cortadora de Cigarro Brevas"
                                 className="w-3/4 h-3/4 object-cover pointer-events-none right-0 user-select-none"
                                 layout="constrained"
+                                width={1500}
+                                quality={95}
                                 placeholder="dominantColor"
                                 onContextMenu={(e) => e.preventDefault()}
                             />
@@ -120,6 +128,8 @@ const IndexPage = () => {
                                 alt="Imagen Maquina de Rollero y cortadora"
                                 className="w-3/4 h-3/4 object-cover pointer-events-none user-select-none"
                                 layout="constrained"
+                                width={1500}
+                                quality={95}
                                 placeholder="dominantColor"
                                 onContextMenu={(e) => e.preventDefault()}
                             />
@@ -132,6 +142,8 @@ const IndexPage = () => {
                                 alt="Imagen tabaco flor"
                                 className="w-33 h-full object-cover pointer-events-none user-select-none"
                                 layout="constrained"
+                                width={1500}
+                                quality={95}
                                 placeholder="dominantColor"
                                 onContextMenu={(e) => e.preventDefault()}
                             />
@@ -206,7 +218,7 @@ const IndexPage = () => {
                         <span className="mr-[4rem] mt-[4rem] w-full bungee-Tint-regular pointer-events-auto"> {t("tienes")} </span>
                     </div>
 
-                    <div className="w-dvh ml-[22rem] mt-[2rem] bungee-Tint-regular mx-auto text-[clamp(1.7rem,2vw+0.8rem,2.9rem)] pointer-events-auto">
+                    <div className="w-dvh ml-[22rem] mt-[2rem] bungee-Tint-regular mx-auto text-[clamp(1.7rem,2vw+0.8rem,2.9rem)] pointer-events-auto moniT:ml-[28rem] dest:ml-[35rem] 2k:ml-[48rem] 4k:ml-[68rem]">
                         IDADE
                     </div>
 
@@ -220,10 +232,10 @@ const IndexPage = () => {
                     </div>
 
                     <div className="relative w-[85%] top-[calc(50% + 3em)]  flex items-center justify-center pointer-events-auto moniT:top-[-88px] dest:top-3 dest:border-2 dest:border-red-800">
-                        <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large dest:top-3 moniT:bottom-4">SUFICIENTE</div>
+                        <div className="mt-[1svh] ml-[22rem] bungee-Tint-regular-large dest:top-3 moniT:bottom-4 moniT:ml-[28rem] dest:ml-[35rem] 2k:ml-[48rem] 4k:ml-[68rem]">SUFICIENTE</div>
                     </div>
 
-                    <div className="ml-[27svw] border-1  moniT:bottom-[1/7] tb:bottom-33  bungee-Tint-regular    mx-auto text-fluid pointer-events-auto  absolute dest:bottom-[123px] ">
+                    <div className="ml-[27svw] border-1  moniT:bottom-[1/7] tb:bottom-33  bungee-Tint-regular    mx-auto text-fluid pointer-events-auto  absolute dest:bottom-[123px] moniT:ml-[32svw] dest:ml-[38svw] 2k:ml-[44svw] 4k:ml-[50svw] 2k:bottom-[180px] 4k:bottom-[240px]">
                         PARA FUMAR?  
                         <div className="flex justify-end-safe  w-25  items-stretch float-right bottom-3 dest:bottom-7  ">
 
@@ -233,6 +245,8 @@ const IndexPage = () => {
                                 alt="Imagen Icon Alarm"
                                 className="aspect-square w-[23] right-0 bottom-6 Dest:bottom-1 object-contain pointer-events-none block user-select-none"
                                 layout="constrained"
+                                width={120}
+                                quality={95}
                                 placeholder="dominantColor"
                                 onContextMenu={(e) => e.preventDefault()}
                             />
