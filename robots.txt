@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
-Sitemap: https://www.cigarrosbrevas.com/sitemap-index.xml
+Sitemap: https://www.cigarrosbrevas.com/cigarBrevasWEBsite-AffinityeDEsign-From/sitemap-index.xml
 Host: https://www.cigarrosbrevas.com
